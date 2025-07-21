@@ -50,6 +50,24 @@
             font-size: 0.9rem;
             margin: 2rem 0 1rem 0;
         }
+        /* Responsive Google Form */
+        .form-responsive {
+            position: relative;
+            width: 100%;
+            padding-bottom: 160%; /* Aspect ratio for form (height/width * 100) */
+            height: 0;
+            overflow: hidden;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+        .form-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +132,9 @@
             </p>
             <p><small><em>Disclaimer: By submitting a nomination, you acknowledge that the future of human civilisation may depend on people learning from these examples. No pressure.</em></small></p>
         </section>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2N_yi1LEelMqWfA6wcmY1l-3_z1KYeMxCexuc6hwIQcs1Uw/viewform?embedded=true" width="640" height="1286" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="form-responsive">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2N_yi1LEelMqWfA6wcmY1l-3_z1KYeMxCexuc6hwIQcs1Uw/viewform?embedded=true" allowfullscreen>Loading…</iframe>
+        </div>
     </main>
     <div class="footer">
         &copy; 2025 AI Darwin Awards. No humans or robots were harmed (yet) in the making of this website.
