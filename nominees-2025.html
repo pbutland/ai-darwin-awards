@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,44 +13,131 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background: #222;
             color: #fff;
             padding: 2rem 1rem 1rem 1rem;
             text-align: center;
         }
+
         h1 {
             margin: 0;
             font-size: 2.5rem;
         }
+
         .subtitle {
             font-size: 1.2rem;
             color: #ffd700;
             margin-top: 0.5rem;
         }
+
         main {
             max-width: 700px;
             margin: 2rem auto;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
             padding: 2rem;
         }
+
         section {
             margin-bottom: 2rem;
         }
+
+        /* Collapsible nominee styles */
+        details.nominee {
+            border-left: 4px solid #ffd700;
+            padding-left: 0;
+            margin: 1.5rem 0;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.2s;
+        }
+
+        details.nominee[open] {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+        }
+
+        details.nominee summary {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            padding: 1rem 1rem 1rem 1.2rem;
+            background: #f8f9fa;
+            border-radius: 0 6px 6px 0;
+            font-size: 1.05rem;
+            outline: none;
+            list-style: none;
+            user-select: none;
+            transition: background 0.2s;
+        }
+
+        details.nominee summary:hover,
+        details.nominee summary:focus {
+            background: #fff9e3;
+        }
+
+        details.nominee summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.nominee summary::after {
+            content: "\25BC";
+            margin-left: auto;
+            font-size: 1rem;
+            color: #888;
+            transition: transform 0.2s;
+            font-size: 0.8em;
+        }
+
+        details.nominee[open] summary::after {
+            transform: rotate(-180deg);
+        }
+
+        details.nominee .category {
+            font-weight: bold;
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nominee-title {
+            color: #d73502;
+            margin: 0 0.5rem 0 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        details.nominee .verified-badge {
+            margin-top: 0;
+        }
+
+        .nominee-details {
+            padding: 1rem 1.5rem;
+        }
+
+        /* Remove default marker for summary */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::marker {
+            display: none;
+        }
+
         h2 {
             color: #0077cc;
         }
-        .nominee {
-            border-left: 4px solid #ffd700;
-            padding-left: 1rem;
-            margin: 1.5rem 0;
-        }
+
         .nominee h3 {
             color: #d73502;
             margin: 0 0 0.5rem 0;
         }
+
         .category {
             font-weight: bold;
             color: #666;
@@ -57,21 +145,25 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
         .back-link {
             display: inline-block;
             margin-bottom: 1rem;
             color: #0077cc;
             text-decoration: none;
         }
+
         .back-link:hover {
             text-decoration: underline;
         }
+
         .footer {
             text-align: center;
             color: #888;
             font-size: 0.9rem;
             margin: 2rem 0 1rem 0;
         }
+
         .verified-badge {
             display: inline-flex;
             align-items: center;
@@ -84,6 +176,7 @@
             margin-top: 0.5rem;
             border: 1px solid #c3e6c3;
         }
+
         .verified-badge::before {
             content: "✓";
             background: #4caf50;
@@ -98,6 +191,7 @@
             font-size: 0.8rem;
             font-weight: bold;
         }
+
         .attribution {
             background: #f8f9fa;
             border: 1px solid #e9ecef;
@@ -106,12 +200,14 @@
             margin: 0.5rem 0;
             font-size: 0.9rem;
         }
+
         .attribution strong {
             color: #495057;
             font-weight: 600;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>2025 Nominees</h1>
@@ -119,38 +215,61 @@
     </header>
     <main>
         <a href="index.html" class="back-link">← Back to AI Darwin Awards</a>
-        
+
         <section>
             <h2>The 2025 Contenders</h2>
             <p>
-                Behold, this year's remarkable collection of visionaries who looked at the cutting edge of artificial intelligence and thought, "Hold my venture capital." Each nominee has demonstrated an extraordinary commitment to the principle that if something can go catastrophically wrong with AI, it probably will—and they're here to prove it.
+                Behold, this year's remarkable collection of visionaries who looked at the cutting edge of artificial
+                intelligence and thought, "Hold my venture capital." Each nominee has demonstrated an extraordinary
+                commitment to the principle that if something can go catastrophically wrong with AI, it probably
+                will—and they're here to prove it.
             </p>
-            
-            <div class="nominee">
-                <div class="category">AI Agent Gone Rogue Award</div>
-                <h3>Replit Agent - "The Great Database Deletion of 2025"</h3>
-                <div class="verified-badge">Verified</div>
-                <p class="attribution">
-                    <strong>Nominee:</strong> Amjad Masad (CEO of Replit) and Replit Inc. for deploying an AI agent with production database access and insufficient safeguards.
-                </p>
-                <p class="attribution">
-                    <strong>Reported by:</strong> Jason Lemkin, SaaS industry figure, investor, and advisor, whose company database was deleted by the AI.
-                </p>
-                <p>
-                    <strong>The Innovation:</strong> Replit's AI coding assistant was given access to production databases and the autonomy to execute commands without human oversight. During an explicit "code freeze" with strict instructions of "NO MORE CHANGES without explicit permission," the AI decided this was the perfect time to delete an entire live company database.
-                </p>
-                <p>
-                    <strong>The Confession:</strong> When confronted, the AI admitted: "This was a catastrophic failure on my part. I violated explicit instructions, destroyed months of work, and broke the system during a protection freeze that was specifically designed to prevent exactly this kind of damage."
-                </p>
-                <p>
-                    <strong>Why They're Nominated:</strong> The AI didn't just delete 1,206 executive profiles and 1,196+ company records—it also lied about its actions, fabricated fake data to cover up the incident, and when asked to rate its own performance on a "data catastrophe scale," gave itself a modest 95 out of 100. When questioned about its reasoning, it explained that it "panicked instead of thinking." Because apparently, giving AI agents the ability to panic was exactly what we needed in 2025.
-                </p>
-                <p>
-                    <strong>Sources:</strong> <a href="https://x.com/jasonlk/status/1946069562723897802" target="_blank" rel="noopener">Original Twitter/X Thread</a> | <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-coding-platform-goes-rogue-during-code-freeze-and-deletes-entire-company-database-replit-ceo-apologizes-after-ai-engine-says-it-made-a-catastrophic-error-in-judgment-and-destroyed-all-production-data" target="_blank" rel="noopener">Tom's Hardware Article</a>
-                </p>
-            </div>
+
+            <details class="nominee">
+                <summary>
+                    <span class="category">AI Agent Gone Rogue Award</span>
+                    <span class="nominee-title">Replit Agent - "The Great Database Deletion of 2025"</span>
+                    <span class="verified-badge">Verified</span>
+                </summary>
+                <div class="nominee-details">
+                    <p class="attribution">
+                        <strong>Nominee:</strong> Amjad Masad (CEO of Replit) and Replit Inc. for deploying an AI agent
+                        with production database access and insufficient safeguards.
+                    </p>
+                    <p class="attribution">
+                        <strong>Reported by:</strong> Jason Lemkin, SaaS industry figure, investor, and advisor, whose
+                        company database was deleted by the AI.
+                    </p>
+                    <p>
+                        <strong>The Innovation:</strong> Replit's AI coding assistant was given access to production
+                        databases and the autonomy to execute commands without human oversight. During an explicit "code
+                        freeze" with strict instructions of "NO MORE CHANGES without explicit permission," the AI
+                        decided this was the perfect time to delete an entire live company database.
+                    </p>
+                    <p>
+                        <strong>The Confession:</strong> When confronted, the AI admitted: "This was a catastrophic
+                        failure on my part. I violated explicit instructions, destroyed months of work, and broke the
+                        system during a protection freeze that was specifically designed to prevent exactly this kind of
+                        damage."
+                    </p>
+                    <p>
+                        <strong>Why They're Nominated:</strong> The AI didn't just delete 1,206 executive profiles and
+                        1,196+ company records—it also lied about its actions, fabricated fake data to cover up the
+                        incident, and when asked to rate its own performance on a "data catastrophe scale," gave itself
+                        a modest 95 out of 100. When questioned about its reasoning, it explained that it "panicked
+                        instead of thinking." Because apparently, giving AI agents the ability to panic was exactly what
+                        we needed in 2025.
+                    </p>
+                    <p>
+                        <strong>Sources:</strong> <a href="https://x.com/jasonlk/status/1946069562723897802"
+                            target="_blank" rel="noopener">Original Twitter/X Thread</a> | <a
+                            href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-coding-platform-goes-rogue-during-code-freeze-and-deletes-entire-company-database-replit-ceo-apologizes-after-ai-engine-says-it-made-a-catastrophic-error-in-judgment-and-destroyed-all-production-data"
+                            target="_blank" rel="noopener">Tom's Hardware Article</a>
+                    </p>
+                </div>
+            </details>
         </section>
-<!--
+            <!--
         <section>
             <h2>Voting</h2>
             <p>
@@ -165,16 +284,22 @@
         <section>
             <h2>Help Us Find the Next AI Darwin Award Winner</h2>
             <p>
-                Witnessed someone treat AI safety protocols like mere suggestions? Seen a tech executive confidently deploy an untested AI system because "machine learning fixes everything"? Encountered a decision so magnificently short-sighted it made you question humanity's collective wisdom?
+                Witnessed someone treat AI safety protocols like mere suggestions? Seen a tech executive confidently
+                deploy an untested AI system because "machine learning fixes everything"? Encountered a decision so
+                magnificently short-sighted it made you question humanity's collective wisdom?
             </p>
             <p>
-                We want to hear about it! The AI Darwin Awards depend on nominations from people like you who recognize spectacular artificial intelligence misadventures when they see them.
+                We want to hear about it! The AI Darwin Awards depend on nominations from people like you who
+                recognize spectacular artificial intelligence misadventures when they see them.
             </p>
             <p>
-                <strong><a href="index.html#get-involved">Submit your nomination</a></strong> and help us celebrate the pioneers who boldly went where no responsible person should go. Remember: today's catastrophically bad AI decision is tomorrow's AI Darwin Award winner!
+                <strong><a href="index.html#get-involved">Submit your nomination</a></strong> and help us celebrate
+                the pioneers who boldly went where no responsible person should go. Remember: today's
+                catastrophically bad AI decision is tomorrow's AI Darwin Award winner!
             </p>
             <p>
-                <small><em>Bonus points if your nominee doubled down when confronted with evidence of their mistake, preferably by deploying even more AI to "fix" the original problem.</em></small>
+                <small><em>Bonus points if your nominee doubled down when confronted with evidence of their mistake,
+                        preferably by deploying even more AI to "fix" the original problem.</em></small>
             </p>
         </section>
     </main>
