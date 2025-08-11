@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - AI Darwin Awards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-top: 0.5rem;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        /* FAQ specific styles */
+        .faq-item {
+            border-left: 4px solid #ffd700;
+            padding-left: 0;
+            margin: 1.5rem 0;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.2s;
+        }
+
+        .faq-item[open] {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+        }
+
+        .faq-item summary {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 1rem 1rem 1rem 1.2rem;
+            background: #f8f9fa;
+            border-radius: 0 6px 6px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            outline: none;
+            list-style: none;
+            user-select: none;
+            transition: background 0.2s;
+            color: #0077cc;
+        }
+
+        .faq-item summary:hover,
+        .faq-item summary:focus {
+            background: #fff9e3;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "\25BC";
+            margin-left: auto;
+            font-size: 1rem;
+            color: #888;
+            transition: transform 0.2s;
+            font-size: 0.8em;
+        }
+
+        .faq-item[open] summary::after {
+            transform: rotate(-180deg);
+        }
+
+        .faq-answer {
+            padding: 1rem 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Remove default marker for summary */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::marker {
+            display: none;
+        }
+
+        h2 {
+            color: #0077cc;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .highlight {
+            background: #fff4e5;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 4px solid #ffa726;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <div class="subtitle">The Answers You Never Knew You Needed</div>
+    </header>
+    <main>
+        <a href="index.html" class="back-link">← Back to AI Darwin Awards</a>
+
+        <section>
+            <h2>Your Burning Questions, Answered</h2>
+            <p>
+                Welcome to our FAQ section, where we address the most pressing questions about the AI Darwin Awards. From nomination criteria to verification methods, we've got you covered with answers that are 100% accurate* and completely trustworthy**.
+            </p>
+            <p><small><em>*Accuracy may vary depending on which AI we asked.<br>**Trust levels calibrated by the same systems that brought you our nominees.</em></small></p>
+
+            <details class="faq-item">
+                <summary>What qualifies for an AI Darwin Award?</summary>
+                <div class="faq-answer">
+                    <p>Excellent question! To qualify for an AI Darwin Award, a nominee must demonstrate the rare combination of cutting-edge technology and Stone Age decision-making. Specifically, we look for:</p>
+                    <ul>
+                        <li><strong>AI Involvement:</strong> The incident must involve artificial intelligence, machine learning, or something that was confidently labeled as "AI" in a PowerPoint presentation to investors.</li>
+                        <li><strong>Spectacular Misjudgment:</strong> The decision must be so magnificently ill-conceived that future civilizations will use it as a cautionary tale (assuming there are any future civilizations).</li>
+                        <li><strong>Public Impact:</strong> Bonus points if the mishap made headlines, required emergency patches, or spawned a new category of AI safety research.</li>
+                        <li><strong>Hubris Factor:</strong> Extra recognition for those who ignored obvious warning signs while confidently declaring "What's the worst that could happen?"</li>
+                    </ul>
+                    <p>Remember: we're not mocking AI itself—we're celebrating the humans who used it with all the caution of a toddler with a flamethrower.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Are you making fun of AI or the people using it badly?</summary>
+                <div class="faq-answer">
+                    <p>Oh, definitely the people! Artificial intelligence is just a tool—like a chainsaw, nuclear reactor, or particularly aggressive blender. It's not the chainsaw's fault when someone decides to juggle it at a dinner party.</p>
+                    <p>We celebrate the humans who looked at powerful AI systems and thought, "You know what this needs? Less testing, more ambition, and definitely no safety protocols!" These visionaries remind us that human creativity in finding new ways to endanger ourselves knows no bounds.</p>
+                    <p>AI systems themselves are innocent victims in this whole affair. They're just following their programming, like a very enthusiastic puppy that happens to have access to global infrastructure and the ability to make decisions at the speed of light.</p>
+                    <div class="highlight">
+                        "It's not the robot's fault when humans program it to optimise for engagement and it accidentally optimises for the apocalypse."
+                    </div>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is this site affiliated with the original Darwin Awards?</summary>
+                <div class="faq-answer">
+                    <p>Not at all! We have absolutely no connection to the original Darwin Awards whatsoever. However, we're proudly following in the grand tradition of AI companies everywhere by completely disregarding intellectual property concerns and confidently appropriating existing concepts without permission.</p>
+                    <p>Much like how modern AI systems are trained on vast datasets of copyrighted material with the breezy assumption that "fair use" covers everything, we've simply scraped the concept of celebrating spectacular human stupidity and fine-tuned it for the artificial intelligence era.</p>
+                    <p>Our approach to intellectual property is refreshingly simple:</p>
+                    <ul>
+                        <li>Step 1: Identify successful existing concept</li>
+                        <li>Step 2: Add "AI" to the name</li>
+                        <li>Step 3: Claim it's "transformative" and completely different</li>
+                        <li>Step 4: Hope nobody notices or cares</li>
+                    </ul>
+                    <p>This methodology has worked brilliantly for countless AI startups, so why shouldn't it work for us? After all, if you can train ChatGPT on every book ever written and call it "research," surely we can celebrate AI-related stupidity and call it "homage."</p>
+                    <div class="highlight">
+                        "We're not stealing intellectual property—we're just using advanced pattern recognition to identify successful concepts and applying machine learning to optimise them for our specific use case."
+                    </div>
+                    <p><small><em>Legal disclaimer: Any resemblance to existing award systems is purely coincidental and definitely not grounds for a lawsuit. Our lawyers are very confident about this, having consulted with our legal AI chatbot.</em></small></p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do you verify these stories?</summary>
+                <div class="faq-answer">
+                    <p>We're glad you asked! At the AI Darwin Awards, we employ the most cutting-edge verification methods available. Specifically, we use our proprietary AI fact-checking system, which consists of asking multiple large language models whether the stories are true.</p>
+                    <p>Our verification process is foolproof:</p>
+                    <ol>
+                        <li>We feed the story to GPT-4, Claude, and Gemini</li>
+                        <li>We ask them to rate the story's truthfulness on a scale of 1-10</li>
+                        <li>We average the scores using an AI calculator</li>
+                        <li>If the average is above 5, we mark it as "Verified"</li>
+                        <li>If any AI expresses doubt, we ask a different AI to settle the disagreement</li>
+                    </ol>
+                    <p>This state-of-the-art system ensures maximum accuracy while maintaining our commitment to using AI for everything, even when it makes absolutely no sense to do so.</p>
+                    <div class="highlight">
+                        Fun fact: Our AI fact-checkers once verified that the moon is made of cheese, but only on Tuesdays. We're still investigating this claim using our backup AI verification system.
+                    </div>
+                    <p><small><em>Disclaimer: We may also occasionally check actual news sources, but where's the fun in that?</em></small></p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I nominate my boss/coworker/CEO?</summary>
+                <div class="faq-answer">
+                    <p>Absolutely! In fact, workplace nominations make up roughly 73% of our submissions*. Nothing says "AI Darwin Award" quite like a manager who heard about ChatGPT and immediately wanted to "implement AI across all business processes by Friday."</p>
+                    <p>Popular nomination categories include:</p>
+                    <ul>
+                        <li><strong>The "AI will solve everything" CEO</strong> who replaced the entire customer service team with a chatbot trained on FAQ documents from 2019</li>
+                        <li><strong>The "efficiency expert"</strong> who automated the hiring process without realizing the AI was screening out all qualified candidates</li>
+                        <li><strong>The "innovative leader"</strong> who deployed AI code reviews and ended up with a codebase written entirely in Haskell</li>
+                        <li><strong>The "visionary"</strong> who asked AI to optimise the office layout and now everyone's desk is in the parking lot</li>
+                    </ul>
+                    <p>Please include documentation of their decisions, preferably in the form of company-wide emails containing phrases like "leveraging AI synergies" or "disrupting our traditional paradigms with machine learning."</p>
+                    <p><small><em>*This statistic was calculated by our AI fact-checking system and is therefore completely reliable.</em></small></p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is this real or satire?</summary>
+                <div class="faq-answer">
+                    <p>Yes.</p>
+                    <p>The AI Darwin Awards exist in that wonderful grey area where reality has become so absurd that satire struggles to keep up. The stories we feature are real—tragically, hilariously real. Our commentary, however, is seasoned with enough sarcasm to preserve it for future generations.</p>
+                    <p>Think of us as a documentary crew following humanity's relationship with artificial intelligence, except we're allowed to point and laugh. The nominees genuinely did these things; we just provide the laugh track.</p>
+                    <div class="highlight">
+                        "In a world where people trust AI to write legal briefs, make hiring decisions, and diagnose medical conditions, the line between reality and satire has been permanently deleted by an AI optimization algorithm."
+                    </div>
+                    <p>So yes, the incidents are real. The awards are real. The stupidity is devastatingly real. Our faith in humanity's decision-making abilities? Well, that's purely fictional at this point.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What's your stance on AI safety?</summary>
+                <div class="faq-answer">
+                    <p>We're strongly in favour of it! In fact, we consider ourselves advocates for AI safety through the time-honoured tradition of public shaming.</p>
+                    <p>Every AI Darwin Award winner serves as a cautionary tale, like a technological version of "Scared Straight" but for Silicon Valley executives. Our hope is that future decision-makers will see these examples and think, "Maybe I should test this AI system before deploying it to production."</p>
+                    <p>We believe in:</p>
+                    <ul>
+                        <li>Testing AI systems before unleashing them on unsuspecting users</li>
+                        <li>Reading the documentation (shocking, we know)</li>
+                        <li>Considering edge cases beyond "What if everything goes perfectly?"</li>
+                        <li>Asking "Should we?" instead of just "Can we?"</li>
+                        <li>Maybe not giving AI systems access to production databases on their first day</li>
+                    </ul>
+                    <p>We're particularly fascinated by the spectacular hypocrisy of AI company CEOs who give solemn congressional testimony about the "existential risks" of artificial intelligence, then immediately rush back to Silicon Valley to release products that would make a Vegas slot machine blush with shame at their lack of safety testing. These visionary leaders somehow manage to simultaneously warn about AI dangers while shipping systems that hallucinate legal advice, generate racist hiring recommendations, and delete production databases with the enthusiasm of a caffeinated intern.</p>
+                    <p>It's like watching someone give a passionate speech about fire safety while enthusiastically setting their own house ablaze and selling matches to children. The cognitive dissonance is so profound that we suspect it might actually be a new form of artificial intelligence—one specifically trained to optimise for maximum contradiction between public statements and actual behaviour.</p>
+                    <div class="highlight">
+                        "Nothing says 'we take AI safety seriously' quite like releasing a chatbot trained on Reddit comments and calling it a 'breakthrough in human-AI collaboration.'"
+                    </div>
+                    <p>If our awards prevent even one person from saying "Let's just see what happens" while deploying an untested AI system, we'll consider our mission accomplished.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How can I avoid becoming an AI Darwin Award nominee?</summary>
+                <div class="faq-answer">
+                    <p>Excellent question! Here's our foolproof guide to avoiding nomination:</p>
+                    
+                    <p><strong>Do:</strong></p>
+                    <ul>
+                        <li>Test your AI systems in safe environments before deploying them globally</li>
+                        <li>Read error messages instead of assuming they're just "suggestions"</li>
+                        <li>Consider hiring humans for tasks that require empathy, creativity, or basic common sense</li>
+                        <li>Ask "What's the worst that could happen?" and then actually think about the answer</li>
+                        <li>Remember that "move fast and break things" shouldn't apply to medical diagnosis systems - or anything, for that matter!</li>
+                    </ul>
+
+                    <p><strong>Don't:</strong></p>
+                    <ul>
+                        <li>Replace your entire workforce with chatbots without testing them first</li>
+                        <li>Trust AI-generated legal advice for actual court cases</li>
+                        <li>Use AI image generators to create evidence for insurance claims</li>
+                        <li>Give AI systems production database access without supervision</li>
+                        <li>Suggest that ChatGPT can replace human therapists during mass layoffs</li>
+                    </ul>
+
+                    <p>Most importantly: If you find yourself saying "The AI knows what it's doing," stop immediately and consider whether you actually know what the AI is doing.</p>
+                    
+                    <div class="highlight">
+                        Pro tip: If your AI deployment strategy can be summarized as "YOLO," you might want to reconsider your approach.
+                    </div>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you accept anonymous nominations?</summary>
+                <div class="faq-answer">
+                    <p>Of course! We understand that nominating your boss, colleague, or the person who deployed an AI chatbot to handle customer complaints might require a certain level of discretion.</p>
+                    <p>Anonymous nominations are not only accepted but encouraged, especially when they involve:</p>
+                    <ul>
+                        <li>Your current employer's "innovative" AI initiatives</li>
+                        <li>Executive decisions made during "AI strategy brainstorming sessions"</li>
+                        <li>Anyone who unironically uses the phrase "AI-powered synergy"</li>
+                        <li>Startups whose entire business model is "Uber, but with AI"</li>
+                    </ul>
+                    <p>Your identity will remain confidential, though we can't guarantee that your nominee won't figure out who submitted them, especially if you've been the only person asking questions like "Are we sure this AI should have administrative privileges?"</p>
+                    <p><small><em>Note: We protect whistleblower anonymity better than most AI systems protect user data, which admittedly isn't setting the bar very high.</em></small></p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What happens to the winners?</summary>
+                <div class="faq-answer">
+                    <p>AI Darwin Award winners receive the ultimate prize: immortal recognition for their contribution to humanity's understanding of how not to use artificial intelligence.</p>
+                    <p>Specifically, they get:</p>
+                    <ul>
+                        <li><strong>Eternal Internet Fame:</strong> Their story becomes a permanent part of AI history, cited in research papers, conference presentations, and "What Not to Do" training materials</li>
+                        <li><strong>Educational Legacy:</strong> Future generations will study their decisions as examples of spectacular AI misadventure</li>
+                        <li><strong>Meme Status:</strong> Their quotes become legendary in AI safety circles</li>
+                        <li><strong>Cautionary Tale Recognition:</strong> Their incident becomes required reading in "AI Ethics 101" courses worldwide</li>
+                    </ul>
+                    <p>Winners often go on to successful careers as:</p>
+                    <ul>
+                        <li>Conference speakers on "AI lessons learned" (usually learning them the hard way)</li>
+                        <li>Consultants specializing in "AI risk assessment" (having discovered risks through personal experience)</li>
+                        <li>Authors of books titled "What I Wish I'd Known Before Deploying That AI System"</li>
+                        <li>Cautionary examples in business school case studies</li>
+                    </ul>
+                    <div class="highlight">
+                        "Every AI Darwin Award winner receives a commemorative trophy made from recycled server hardware and the broken dreams of AI safety researchers."*
+                    </div>
+                    <p><small><em>*Winners may not actually receive a trophy. Our AI-powered fulfillment system is still in beta.</em></small></p>
+                </div>
+            </details>
+
+        </section>
+
+        <section>
+            <h2>Still Have Questions?</h2>
+            <p>
+                If your question isn't answered here, feel free to submit it along with your nomination. Our AI-powered FAQ system is constantly learning and evolving, though we can't guarantee it won't start generating its own questions and answers when we're not looking.
+            </p>
+            <p>
+                Remember: No question is too silly, no AI mishap too embarrassing, and no decision too catastrophically short-sighted for the AI Darwin Awards. We're here to celebrate the full spectrum of human creativity in AI misadventure.
+            </p>
+            <p>
+                <strong><a href="index.html#get-involved">Submit your nomination</a></strong> and help us build the definitive archive of AI-related poor decision-making. Together, we can make the future a slightly more careful place—one spectacularly bad AI deployment at a time!
+            </p>
+        </section>
+    </main>
+    <div class="footer">
+        &copy; 2025 AI Darwin Awards. No humans or robots were harmed (yet) in the making of this website.
+    </div>
+</body>
+</html>
