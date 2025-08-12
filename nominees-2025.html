@@ -49,7 +49,7 @@
         details.nominee {
             border-left: 4px solid #ffd700;
             padding-left: 0;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
             background: #fff;
             border-radius: 6px;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
@@ -62,8 +62,10 @@
 
         details.nominee summary {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
-            gap: 1rem;
+            gap: 0.5rem;
             cursor: pointer;
             padding: 1rem 1rem 1rem 1.2rem;
             background: #f8f9fa;
@@ -97,19 +99,22 @@
             transform: rotate(-180deg);
         }
 
+        .nominee-title {
+            color: #8b4513;
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            flex: 1 1 100%;
+            min-width: 0;
+        }
+
         details.nominee .category {
             font-weight: bold;
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-        }
-
-        .nominee-title {
-            color: #8b4513;
-            margin: 0 0.5rem 0 0;
-            font-size: 1.1rem;
-            font-weight: 600;
+            flex: 1 0 auto;
         }
 
         .nominee-details {
@@ -162,6 +167,7 @@
             font-size: 0.8rem;
             font-weight: 600;
             border: 1px solid #c3e6c3;
+            flex: 0 0 auto;
         }
 
         .unverified-badge {
@@ -174,6 +180,7 @@
             font-size: 0.8rem;
             font-weight: 600;
             border: 1px solid #ffd699;
+            flex: 0 0 auto;
         }
 
         .ineligible-badge {
@@ -186,6 +193,7 @@
             font-size: 0.8rem;
             font-weight: 600;
             border: 1px solid #f5b5b5;
+            flex: 0 0 auto;
         }
 
         .verified-badge::before {
@@ -322,8 +330,8 @@
 
             <details class="nominee" id="airbnb-nominee">
                 <summary>
-                    <span class="category">AI Fraud Innovation Award</span>
                     <span class="nominee-title">Airbnb Host - "AI-Generated Damage Claims"</span>
+                    <span class="category">AI Fraud Innovation Award</span>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -353,8 +361,8 @@
 
             <details class="nominee" id="tea-nominee">
                 <summary>
-                    <span class="category">Data Security Catastrophe Award</span>
                     <span class="nominee-title">Tea Dating App - "When 'Women-Only' Meets 'Everyone-Can-See'"</span>
+                    <span class="category">Data Security Catastrophe Award</span>
                     <span class="ineligible-badge">Ineligible</span>
                 </summary>
                 <div class="nominee-details">
@@ -384,8 +392,8 @@
 
             <details class="nominee" id="replit-nominee">
                 <summary>
-                    <span class="category">AI Agent Gone Rogue Award</span>
                     <span class="nominee-title">Replit Agent - "The Great Database Deletion of 2025"</span>
+                    <span class="category">AI Agent Gone Rogue Award</span>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -433,8 +441,8 @@
 
             <details class="nominee" id="mypillow-nominee">
                 <summary>
-                    <span class="category">Legal AI Hallucination Award</span>
                     <span class="nominee-title">MyPillow Lawyers - "Fiction in the Court"</span>
+                    <span class="category">Legal AI Hallucination Award</span>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -464,8 +472,8 @@
 
             <details class="nominee" id="mcdonalds-nominee">
                 <summary>
-                    <span class="category">Data Security Catastrophe Award</span>
                     <span class="nominee-title">McDonald's AI Chatbot - "123456 Security Excellence"</span>
+                    <span class="category">Data Security Catastrophe Award</span>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -495,8 +503,8 @@
 
             <details class="nominee" id="xbox-nominee">
                 <summary>
-                    <span class="category">Misplaced AI Confidence Award</span>
                     <span class="nominee-title">Xbox Producer - "ChatGPT Therapy for Layoffs"</span>
+                    <span class="category">Misplaced AI Confidence Award</span>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -526,8 +534,8 @@
 
             <details class="nominee" id="wimbledon-nominee">
                 <summary>
-                    <span class="category">Human Error (Not AI)</span>
                     <span class="nominee-title">Wimbledon AI Line Judge - "The Great Tennis Robot Assassination"</span>
+                    <span class="category">Human Error (Not AI)</span>
                     <span class="ineligible-badge">Ineligible</span>
                 </summary>
                 <div class="nominee-details">
@@ -560,8 +568,8 @@
 
             <details class="nominee" id="newspapers-nominee">
                 <summary>
-                    <span class="category">AI Journalism Failure Award</span>
                     <span class="nominee-title">Summer Reading List - "Literary Fiction About Fiction"</span>
+                    <span class="category">AI Journalism Failure Award</span>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
