@@ -4,288 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 Nominees - AI Darwin Awards</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f7f7f7;
-            color: #222;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #222;
-            color: #fff;
-            padding: 2rem 1rem 1rem 1rem;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #ffd700;
-            margin-top: 0.5rem;
-        }
-
-        main {
-            max-width: 700px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        /* Collapsible nominee styles */
-        details.nominee {
-            border-left: 4px solid #ffd700;
-            padding-left: 0;
-            margin: 1rem 0;
-            background: #fff;
-            border-radius: 6px;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-            transition: box-shadow 0.2s;
-        }
-
-        details.nominee[open] {
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
-        }
-
-        details.nominee summary {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-            padding: 1rem 1rem 1rem 1.2rem;
-            background: #f8f9fa;
-            border-radius: 0 6px 6px 0;
-            font-size: 1.05rem;
-            outline: none;
-            list-style: none;
-            user-select: none;
-            transition: background 0.2s;
-        }
-
-        details.nominee summary:hover,
-        details.nominee summary:focus {
-            background: #fff9e3;
-        }
-
-        details.nominee summary::-webkit-details-marker {
-            display: none;
-        }
-
-        details.nominee summary::after {
-            content: "\25BC";
-            margin-left: auto;
-            font-size: 1rem;
-            color: #888;
-            transition: transform 0.2s;
-            font-size: 0.8em;
-        }
-
-        details.nominee[open] summary::after {
-            transform: rotate(-180deg);
-        }
-
-        .nominee-title {
-            color: #8b4513;
-            margin: 0;
-            font-size: 1.1rem;
-            font-weight: 600;
-            flex: 1 1 100%;
-            min-width: 0;
-        }
-
-        details.nominee .category {
-            font-weight: bold;
-            color: #666;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            flex: 1 0 auto;
-        }
-
-        .nominee-details {
-            padding: 1rem 1.5rem;
-        }
-
-        /* Remove default marker for summary */
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        summary::marker {
-            display: none;
-        }
-
-        h2 {
-            color: #0077cc;
-        }
-
-        .nominee h3 {
-            color: #d73502;
-            margin: 0 0 0.5rem 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1rem;
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            text-align: center;
-            color: #888;
-            font-size: 0.9rem;
-            margin: 2rem 0 1rem 0;
-        }
-
-        .verified-badge {
-            display: inline-flex;
-            align-items: center;
-            background: #e8f5e8;
-            color: #2d5016;
-            padding: 0.3rem 0.6rem;
-            border-radius: 1rem;
-            font-size: 0.8rem;
-            font-weight: 600;
-            border: 1px solid #c3e6c3;
-            flex: 0 0 auto;
-        }
-
-        .unverified-badge {
-            display: inline-flex;
-            align-items: center;
-            background: #fff4e5;
-            color: #a15c00;
-            padding: 0.3rem 0.6rem;
-            border-radius: 1rem;
-            font-size: 0.8rem;
-            font-weight: 600;
-            border: 1px solid #ffd699;
-            flex: 0 0 auto;
-        }
-
-        .ineligible-badge {
-            display: inline-flex;
-            align-items: center;
-            background: #fdeaea;
-            color: #a10000;
-            padding: 0.3rem 0.6rem;
-            border-radius: 1rem;
-            font-size: 0.8rem;
-            font-weight: 600;
-            border: 1px solid #f5b5b5;
-            flex: 0 0 auto;
-        }
-
-        .verified-badge::before {
-            content: "✓";
-            background: #4caf50;
-            color: white;
-            width: 1.2rem;
-            height: 1.2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 0.4rem;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .unverified-badge::before {
-            content: "!";
-            background: #ffa726;
-            color: white;
-            width: 1.2rem;
-            height: 1.2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 0.4rem;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .ineligible-badge::before {
-            content: "×";
-            background: #e53935;
-            color: white;
-            width: 1.2rem;
-            height: 1.2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 0.4rem;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .attribution {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 4px;
-            padding: 0.75rem;
-            margin: 0.5rem 0;
-            font-size: 0.9rem;
-        }
-
-        .attribution strong {
-            color: #495057;
-            font-weight: 600;
-        }
-
-        .share-button {
-            background: #3498db;
-            border: 2px solid #3498db;
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            cursor: pointer;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            font-size: 1.2em;
-            -webkit-tap-highlight-color: transparent;
-            outline: none;
-            position: relative;
-            overflow: hidden;
-            margin: 0 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .share-button:hover {
-            background-color: #2980b9;
-            border-color: #2980b9;
-            transform: scale(1.05);
-        }
-
-        .share-button:active {
-            transform: scale(0.95);
-        }
-    </style>
+    <meta name="description" content="Meet the 2025 AI Darwin Award nominees - from database-deleting AI agents to fake legal citations. See this year's most spectacular AI failures.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AI Darwin Awards">
+    <link rel="canonical" href="https://aidarwinawards.org/nominees-2025.html">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/nominees.css">
+    <title>2025 AI Darwin Award Nominees - Worst AI Failures of the Year</title>
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="2025 AI Darwin Award Nominees - Worst AI Failures of the Year" />
+    <meta property="og:description" content="Meet the 2025 AI Darwin Award nominees - from database-deleting AI agents to fake legal citations. See this year's most spectacular AI failures." />
+    <meta property="og:type" content="website" />
     <script>
         // Auto-expand nominee section if its id is in the URL fragment
         document.addEventListener('DOMContentLoaded', function() {
@@ -331,7 +60,7 @@
             <details class="nominee" id="airbnb-nominee">
                 <summary>
                     <span class="nominee-title">Airbnb Host - "AI-Generated Damage Claims"</span>
-                    <span class="category">AI Fraud Innovation Award</span>
+                    <h3 class="category">AI Fraud Innovation Award</h3>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -362,7 +91,7 @@
             <details class="nominee" id="tea-nominee">
                 <summary>
                     <span class="nominee-title">Tea Dating App - "When 'Women-Only' Meets 'Everyone-Can-See'"</span>
-                    <span class="category">Data Security Catastrophe Award</span>
+                    <h3 class="category">Data Security Catastrophe Award</h3>
                     <span class="ineligible-badge">Ineligible</span>
                 </summary>
                 <div class="nominee-details">
@@ -393,7 +122,7 @@
             <details class="nominee" id="replit-nominee">
                 <summary>
                     <span class="nominee-title">Replit Agent - "The Great Database Deletion of 2025"</span>
-                    <span class="category">AI Agent Gone Rogue Award</span>
+                    <h3 class="category">AI Agent Gone Rogue Award</h3>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -442,7 +171,7 @@
             <details class="nominee" id="mypillow-nominee">
                 <summary>
                     <span class="nominee-title">MyPillow Lawyers - "Fiction in the Court"</span>
-                    <span class="category">Legal AI Hallucination Award</span>
+                    <h3 class="category">Legal AI Hallucination Award</h3>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -473,7 +202,7 @@
             <details class="nominee" id="mcdonalds-nominee">
                 <summary>
                     <span class="nominee-title">McDonald's AI Chatbot - "123456 Security Excellence"</span>
-                    <span class="category">Data Security Catastrophe Award</span>
+                    <h3 class="category">Data Security Catastrophe Award</h3>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -504,7 +233,7 @@
             <details class="nominee" id="xbox-nominee">
                 <summary>
                     <span class="nominee-title">Xbox Producer - "ChatGPT Therapy for Layoffs"</span>
-                    <span class="category">Misplaced AI Confidence Award</span>
+                    <h3 class="category">Misplaced AI Confidence Award</h3>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
@@ -535,7 +264,7 @@
             <details class="nominee" id="wimbledon-nominee">
                 <summary>
                     <span class="nominee-title">Wimbledon AI Line Judge - "The Great Tennis Robot Assassination"</span>
-                    <span class="category">Human Error (Not AI)</span>
+                    <h3 class="category">Human Error (Not AI)</h3>
                     <span class="ineligible-badge">Ineligible</span>
                 </summary>
                 <div class="nominee-details">
@@ -569,7 +298,7 @@
             <details class="nominee" id="newspapers-nominee">
                 <summary>
                     <span class="nominee-title">Summer Reading List - "Literary Fiction About Fiction"</span>
-                    <span class="category">AI Journalism Failure Award</span>
+                    <h3 class="category">AI Journalism Failure Award</h3>
                     <span class="verified-badge">Verified</span>
                 </summary>
                 <div class="nominee-details">
