@@ -3,7 +3,7 @@ import path from 'path';
 
 // Paths
 const nomineesPath = path.join(__dirname, 'nominees-2025.json');
-const htmlPath = path.join(__dirname, '../nominees-2025.html');
+const htmlPath = path.join(__dirname, '../docs/nominees-2025.html');
 
 // Read nominees JSON
 const nominees = JSON.parse(fs.readFileSync(nomineesPath, 'utf-8'));
