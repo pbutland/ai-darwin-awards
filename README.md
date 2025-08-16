@@ -25,7 +25,7 @@ The automation script (`scripts/generate-nominees.ts`) is designed to keep the n
 
 1. **Install dependencies** (if not already):
    ```sh
-   npm install --save-dev tsx typescript
+   npm install --save-dev tsx typescript @types/node
    ```
 
 2. **Edit nominee data** in `scripts/nominees-2025.json` as needed.
