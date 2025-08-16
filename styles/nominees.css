@@ -77,6 +77,11 @@ h3.category {
     padding: 1rem 1.5rem;
 }
 
+.nominee-section h3 {
+    font-size: 1.1em;
+    margin-block-end: 0;
+}
+
 .verified-badge {
     display: inline-flex;
     align-items: center;

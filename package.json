@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "generate-nominees": "tsx scripts/generate-nominees.ts"
+  }
+}
