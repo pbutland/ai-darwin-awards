@@ -1,0 +1,212 @@
+details.nominee {
+    border-left: 4px solid #ffd700;
+    padding-left: 0;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s;
+}
+
+details.nominee[open] {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+details.nominee summary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 1rem 1rem 1rem 1.2rem;
+    background: #f8f9fa;
+    border-radius: 0 6px 6px 0;
+    font-size: 1.05rem;
+    outline: none;
+    list-style: none;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+details.nominee summary:hover,
+details.nominee summary:focus {
+    background: #fff9e3;
+}
+
+details.nominee summary::-webkit-details-marker {
+    display: none;
+}
+
+details.nominee summary::after {
+    content: "\25BC";
+    margin-left: auto;
+    font-size: 1rem;
+    color: #888;
+    transition: transform 0.2s;
+    font-size: 0.8em;
+}
+
+details.nominee[open] summary::after {
+    transform: rotate(-180deg);
+}
+
+.nominee-title {
+    color: #8b4513;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex: 1 1 100%;
+    min-width: 0;
+}
+
+details.nominee .category {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex: 1 0 auto;
+}
+
+h3.category {
+    margin: 0;
+}
+
+.nominee-details {
+    padding: 1rem 1.5rem;
+}
+
+.nominee-section h3 {
+    font-size: 1.1em;
+    margin-block-end: 0;
+}
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #e8f5e8;
+    color: #2d5016;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #c3e6c3;
+    flex: 0 0 auto;
+}
+
+.unverified-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fff4e5;
+    color: #a15c00;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #ffd699;
+    flex: 0 0 auto;
+}
+
+.ineligible-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fdeaea;
+    color: #a10000;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #f5b5b5;
+    flex: 0 0 auto;
+}
+
+.verified-badge::before {
+    content: "✓";
+    background: #4caf50;
+    color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.unverified-badge::before {
+    content: "!";
+    background: #ffa726;
+    color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.ineligible-badge::before {
+    content: "×";
+    background: #e53935;
+    color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.attribution {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.attribution strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+.share-button {
+    background: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.share-button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.share-button:active {
+    transform: scale(0.95);
+}
