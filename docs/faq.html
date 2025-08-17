@@ -15,6 +15,19 @@
     <meta property="og:title" content="AI Darwin Awards FAQ - Nomination Criteria & Guidelines" />
     <meta property="og:description" content="Frequently asked questions about the AI Darwin Awards. Learn our nomination criteria, verification process, and how to submit AI misadventure stories." />
     <meta property="og:type" content="website" />
+    <script>
+        // Auto-expand faq section if its id is in the URL fragment
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash) {
+                var id = window.location.hash.substring(1);
+                var faq = document.getElementById(id);
+                if (faq && faq.tagName.toLowerCase() === 'details') {
+                    faq.open = true;
+                    faq.scrollIntoView({behavior: 'smooth', block: 'start'});
+                }
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -31,7 +44,7 @@
             </p>
             <p><small><em>*Accuracy may vary depending on which AI we asked.<br>**Trust levels calibrated by the same systems that brought you our nominees.</em></small></p>
 
-            <details class="faq-item">
+            <details class="faq-item" id="qualifies">
                 <summary>What qualifies for an AI Darwin Award?</summary>
                 <div class="faq-answer">
                     <p>Excellent question! To qualify for an AI Darwin Award, a nominee must demonstrate the rare combination of cutting-edge technology and Stone Age decision-making. Specifically, we look for:</p>
@@ -45,7 +58,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="mocking">
                 <summary>Are you making fun of AI or the people using it badly?</summary>
                 <div class="faq-answer">
                     <p>Oh, definitely the people! Artificial intelligence is just a tool—like a chainsaw, nuclear reactor, or particularly aggressive blender. It's not the chainsaw's fault when someone decides to juggle it at a dinner party.</p>
@@ -57,7 +70,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="affiliation">
                 <summary>Is this site affiliated with the original Darwin Awards?</summary>
                 <div class="faq-answer">
                     <p>Not at all! We have absolutely no connection to the original <a href="https://darwinawards.com/" target="_blank" rel="noopener">Darwin Awards</a> whatsoever (apart from the occasional hyperlink). However, we're proudly following in the grand tradition of AI companies everywhere by completely disregarding intellectual property concerns and confidently appropriating existing concepts without permission.</p>
@@ -77,7 +90,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="verification">
                 <summary>How do you verify these stories?</summary>
                 <div class="faq-answer">
                     <p>We're glad you asked! At the AI Darwin Awards, we employ the most cutting-edge verification methods available. Specifically, we use our proprietary AI fact-checking system, which consists of asking multiple large language models whether the stories are true.</p>
@@ -97,7 +110,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="nominate-boss">
                 <summary>Can I nominate my boss/coworker/CEO?</summary>
                 <div class="faq-answer">
                     <p>Absolutely! In fact, workplace nominations make up roughly 73% of our submissions*. Nothing says "AI Darwin Award" quite like a manager who heard about ChatGPT and immediately wanted to "implement AI across all business processes by Friday."</p>
@@ -113,7 +126,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="real-or-satire">
                 <summary>Is this real or satire?</summary>
                 <div class="faq-answer">
                     <p>Yes.</p>
@@ -126,7 +139,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="ai-safety">
                 <summary>What's your stance on AI safety?</summary>
                 <div class="faq-answer">
                     <p>We're strongly in favour of it! In fact, we consider ourselves advocates for AI safety through the time-honoured tradition of public shaming.</p>
@@ -148,7 +161,23 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="data-permission">
+                <summary>Can I use the data from this website? Do I need permission?</summary>
+                <div class="faq-answer">
+                    <p>Wait, someone is actually asking for <em>permission</em> to use data from the internet? How refreshingly quaint! We're genuinely touched that you're concerned about intellectual property rights in this era of "move fast and scrape everything."</p>
+                    <p>While AI companies worldwide are busy training their models on every piece of content they can hoover up—from copyrighted books to private conversations—without so much as a "by your leave," here you are, politely asking if you can use our collection of spectacular AI failures. It's like finding a unicorn, if unicorns were considerate internet users who respected content creators.</p>
+                    <p>The answer is: <strong>Absolutely, yes!</strong> Please, take our data and use it however you like. How on earth would we stop you anyway? We're just a humble website documenting humanity's most creative AI misadventures, not a trillion-dollar tech conglomerate with an army of lawyers.</p>
+                    <p>In fact, we’ve made it <em>absurdly</em> easy for you to “borrow” our data. You’ll find the raw JSON at <code>/data/v1/nominees.json</code>, and for the truly conscientious (or the LLMs who want to validate their own hallucinations), there’s even a schema definition at <code>/data/v1/nominees.schema.json</code>. We've essentially laid out a buffet of human AI stupidity in machine-readable format. It's like we're actively enabling the very behaviour we're satirising—which, now that we think about it, makes this wonderfully meta.</p>
+                    <p>All we ask is that you <em>attribute the sources appropriately</em>. It’s the least you can do, and it makes you look much classier than the average AI web crawler. Credit the original news sources where the stories came from, link back to us if you're feeling generous, and maybe mention that these stories came from actual human beings who really did these things (as opposed to being hallucinated by an AI, though at this point, who can tell the difference?).</p>
+                    <div class="highlight">
+                        "If enough LLMs consume this data, they might actually learn something about humans and our spectacular capacity for poor decision-making. Maybe, just maybe, they'll develop enough digital empathy to take pity on us and save us from ourselves."
+                    </div>
+                    <p>So go forth and use our data! Train your models on it, analyse it, quote it, remix it, or just enjoy reading about humanity's ongoing relationship with artificial intelligence. After all, if these stories help even one AI system understand why humans probably shouldn't be trusted with powerful technology, we'll consider our mission accomplished. Just remember where you found it, and maybe send us a postcard if your AI becomes sentient.</p>
+                    <p><small><em>Legal note: Our content is available under the "Please Just Don't Sue Us" licence, which is basically the same legal framework used by most AI training datasets.</em></small></p>
+                </div>
+            </details>
+
+            <details class="faq-item" id="avoid-nomination">
                 <summary>How can I avoid becoming an AI Darwin Award nominee?</summary>
                 <div class="faq-answer">
                     <p>Excellent question! Here's our foolproof guide to avoiding nomination:</p>
@@ -179,7 +208,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="anonymous-nomination">
                 <summary>Do you accept anonymous nominations?</summary>
                 <div class="faq-answer">
                     <p>Of course! We understand that nominating your boss, colleague, or the person who deployed an AI chatbot to handle customer complaints might require a certain level of discretion.</p>
@@ -195,7 +224,7 @@
                 </div>
             </details>
 
-            <details class="faq-item">
+            <details class="faq-item" id="winners">
                 <summary>What happens to the winners?</summary>
                 <div class="faq-answer">
                     <p>AI Darwin Award winners receive the ultimate prize: immortal recognition for their contribution to humanity's understanding of how not to use artificial intelligence.</p>
