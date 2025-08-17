@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 
 // List of static HTML files to always include in the sitemap, with optional priority
-const staticPages: Array<{ file: string; priority?: string }> = [
-  { file: 'index.html', priority: '1.0' },
+const staticPages: Array<{ file: string; priority?: string; url?: string }> = [
+  { file: 'index.html', url: '', priority: '1.0' }, // Use root URL for homepage
   { file: 'nominees-2025.html', priority: '0.9' },
   { file: 'faq.html', priority: '0.7' },
 ];
@@ -24,9 +24,11 @@ function sitemapEntry(url: string, lastmod?: string, priority = '0.7') {
 }
 
 export function generateSitemap(baseUrl: string, docsDir: string, nomineeSlugs: string[]) {
-  const staticEntries = staticPages.map(({ file, priority }) => {
+  const staticEntries = staticPages.map(({ file, priority, url }) => {
     const filePath = path.join(docsDir, file);
-    return sitemapEntry(`${baseUrl}/${file}`, getLastMod(filePath), priority || '0.7');
+    const pageUrl = url !== undefined ? url : file; // Use custom URL if provided, otherwise use filename
+    const fullUrl = pageUrl ? `${baseUrl}/${pageUrl}` : baseUrl; // Handle root URL case
+    return sitemapEntry(fullUrl, getLastMod(filePath), priority || '0.7');
   });
 
   const nomineeEntries = nomineeSlugs.map(slug => {
