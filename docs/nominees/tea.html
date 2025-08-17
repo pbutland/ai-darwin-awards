@@ -66,6 +66,11 @@
       <!-- Full nominee content sections go here -->
       <section id="details">
     <div class="nominee-details">
+      <div class="nominee-actions">
+        <button class="share-button" data-share-url="https://aidarwinawards.org/nominees/tea.html" title="Share this nominee" aria-label="Share this nominee">
+          <img src="../images/share.svg" alt="Share this nominee" />
+        </button>
+      </div>
       <p class="attribution"><strong>Nominee:</strong> Tea Dating Advice Inc. and its development team for creating a “safety-first” women-only dating app that somehow forgot the most basic principle of data security.</p>
       <p class="attribution"><strong>Reported by:</strong> Multiple cybersecurity researchers and confirmed by Tea&#39;s official statement following widespread exposure of user data - July 26, 2025.</p>
       <div class="nominee-section"><h3>The Innovation</h3><p>Tea marketed itself as the ultimate women&#39;s safety platform—a “Yelp for men” where women could anonymously share dating experiences and red flags. Their revolutionary approach to data security? Store 72,000+ sensitive images, including driver&#39;s licenses and selfies, in an unprotected Firebase bucket that was essentially a digital yard sale accessible to anyone with basic technical skills.</p></div><div class="nominee-section"><h3>The Double-Down</h3><p>After the first breach exposed tens of thousands of images with EXIF location data (creating literal maps of users), a second breach revealed over one million private messages about highly sensitive topics. Because apparently, the first catastrophic security failure wasn&#39;t quite catastrophic enough.</p></div><div class="nominee-section"><h3>Why They&#39;re Ineligible</h3><p>While Tea&#39;s spectacular failure to secure user data is certainly Darwin Award-worthy, this appears to be a classic case of basic cybersecurity incompetence rather than AI misadventure. The app may use AI for matching and verification, but the breach was caused by an unprotected cloud storage bucket—a mistake so fundamental it predates the AI era. This is old-school human stupidity dressed up in modern app clothing.</p></div><div class="nominee-section"><h3>The Irony</h3><p>An app designed to protect women from dangerous men ended up creating a database that stalkers and bad actors could only dream of—complete with photos, locations, and detailed personal information. It&#39;s like building a fortress and then leaving the keys in the front door with a neon sign reading “Free Personal Data Inside.”</p></div>
@@ -77,5 +82,7 @@
   <div class="footer">
     &copy; 2025 AI Darwin Awards. No humans or robots were harmed (yet) in the making of this website.
   </div>
+  <div id="nominee-toast"></div>
 </body>
+<script src="../js/nominee-actions.js"></script>
 </html>

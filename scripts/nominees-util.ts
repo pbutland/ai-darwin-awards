@@ -10,6 +10,9 @@ export function escapeHtml(str) {
 
 // Generate nominee HTML for the list page
 export function nomineeHtml(nominee: any) {
+  const slug = getSlug(nominee);
+  const nomineeUrl = `nominees/${slug}.html`;
+  const nomineeShareUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   return `
             <details class="nominee" id="${escapeHtml(nominee.id)}">
                 <summary>
@@ -24,24 +27,24 @@ export function nomineeHtml(nominee: any) {
                     <p class="attribution">
                         <strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}
                     </p>
-                    ${nominee.sections.map((section: any) => `<div class="nominee-section">
+                    <div class="nominee-actions">
+                        <button class="share-button" data-share-url="${escapeHtml(nomineeShareUrl)}" title="Share this nominee" aria-label="Share this nominee">
+                            <img src="images/share.svg" alt="Share this nominee" />
+                        </button>
+                        <button class="open-new-window-button" data-open-url="${escapeHtml(nomineeUrl)}" title="Open in new window" aria-label="Open in new window">
+                            <img src="images/open-new-window.svg" alt="Open in new window" />
+                        </button>
+                    </div>
+                    ${nominee.sections.map((section: any) => `
+                    <div class="nominee-section">
                         <h3>${escapeHtml(section.heading)}</h3>
                         <p>${escapeHtml(section.content)}</p>
-                    </div>
-                    `).join('')}<p>
+                    </div>`).join('')}
+                    <p>
                         <strong>Sources:</strong> ${nominee.sources.map((src: any) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>`).join(' | ')}
                     </p>
                 </div>
             </details>`;
-// TODO - add action buttons
-                    // <div class="nominee-actions">
-                    //     <button class="share-button" title="Share this nominee" aria-label="Share this nominee">
-                    //         <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 8.5V6.75A2.75 2.75 0 0 0 12.25 4h-6.5A2.75 2.75 0 0 0 3 6.75v6.5A2.75 2.75 0 0 0 5.75 16h6.5A2.75 2.75 0 0 0 15 13.25V11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 7l-4 4m0 0l4 4m-4-4h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    //     </button>
-                    //     <button class="open-new-window-button" title="Open in new window" aria-label="Open in new window">
-                    //         <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 13h6a2 2 0 0 0 2-2V7m-8 6V7a2 2 0 0 1 2-2h6m-8 6h6m0 0V7a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    //     </button>
-                    // </div>
 }
 
 
@@ -56,8 +59,14 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
   const slug = getSlug(nominee);
   const summary = nominee.summary || nominee.sections?.[0]?.content?.slice(0, 160) || '';
   const image = nominee.image ? nominee.image.replace(/^docs\/images\//, '') : 'aidarwinawards-banner.png';
+  const nomineeUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   const detailsHtml = `
     <div class="nominee-details">
+      <div class="nominee-actions">
+        <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
+          <img src="../images/share.svg" alt="Share this nominee" />
+        </button>
+      </div>
       <p class="attribution"><strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}</p>
       <p class="attribution"><strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}</p>
       ${nominee.sections.map((section) => `<div class="nominee-section"><h3>${escapeHtml(section.heading)}</h3><p>${escapeHtml(section.content)}</p></div>`).join('')}
@@ -66,7 +75,8 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
   `;
   // Get the first part of the title before the first ' - '
   const h1Title = nominee.title.split(' - ')[0];
-  return nomineeTemplate
+  // Add script and toast container if not present
+  let html = nomineeTemplate
     .replace(/<h1>.*?<\/h1>/, `<h1>${escapeHtml(h1Title)}</h1>`)
     .replace(/\[Nominee Title\]/g, escapeHtml(nominee.title))
     .replace(/\[Nominee-specific description\]/g, escapeHtml(summary))
@@ -77,4 +87,13 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
     .replace(/\[Image description\]/g, escapeHtml(nominee.title))
     .replace(/\[Brief nominee summary\]/g, escapeHtml(summary))
     .replace('[Details, sources, quotes, images]', detailsHtml);
+  // Ensure nominee-actions.js is included
+  if (!/nominee-actions\.js/.test(html)) {
+    html = html.replace('</body>', `<script src=\"../js/nominee-actions.js\"></script>\n</body>`);
+  }
+  // Add toast container if not present
+  if (!/id=\"nominee-toast\"/.test(html)) {
+    html = html.replace('</body>', `<div id=\"nominee-toast\" style=\"display:none\"></div>\n</body>`);
+  }
+  return html;
 }

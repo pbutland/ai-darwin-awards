@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Square outline, one path, open at top-right quadrant. Starts at top center, goes anti-clockwise, ends at middle right. -->
+  <path d="M12 3 H6 a3 3 0 0 0 -3 3 V18 a3 3 0 0 0 3 3 H18 a3 3 0 0 0 3-3 V12" />
+  <!-- Arrow from center to outside top-right, using lines -->
+  <line x1="12" y1="12" x2="23" y2="1" />
+  <line x1="23" y1="1" x2="23" y2="7" />
+  <line x1="17" y1="1" x2="23" y2="1" />
+</svg>

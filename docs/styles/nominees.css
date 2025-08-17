@@ -216,8 +216,8 @@ h3.category {
 }
 
 .open-new-window-button {
-    background: #27ae60;
-    border: 2px solid #27ae60;
+    background: #3498db;
+    border: 2px solid #3498db;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -237,8 +237,8 @@ h3.category {
 }
 
 .open-new-window-button:hover {
-    background-color: #219150;
-    border-color: #219150;
+    background-color: #2980b9;
+    border-color: #2980b9;
     transform: scale(1.05);
 }
 
@@ -251,4 +251,25 @@ h3.category {
     gap: 0.5rem;
     margin: 1rem 0;
     flex-wrap: wrap;
+}
+
+/* Make nominee action button SVG icons white */
+.nominee-actions button img {
+    filter: invert(1) brightness(2);
+}
+
+/* Toast notification for nominee actions */
+#nominee-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border-radius: 2em;
+    font-size: 1rem;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
