@@ -5,6 +5,6 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "generate-nominees": "tsx scripts/generate-nominees.ts"
+    "generate": "tsx scripts/generate.ts"
   }
 }

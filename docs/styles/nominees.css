@@ -19,7 +19,7 @@ details.nominee summary {
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    padding: 1rem 1rem 1rem 1.2rem;
+    padding: 1rem;
     background: #f8f9fa;
     border-radius: 0 6px 6px 0;
     font-size: 1.05rem;
@@ -75,6 +75,10 @@ h3.category {
 
 .nominee-details {
     padding: 1rem 1.5rem;
+}
+
+.single-nominee .nominee-details {
+  padding: 0;
 }
 
 .nominee-section h3 {
@@ -209,4 +213,42 @@ h3.category {
 
 .share-button:active {
     transform: scale(0.95);
+}
+
+.open-new-window-button {
+    background: #27ae60;
+    border: 2px solid #27ae60;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.open-new-window-button:hover {
+    background-color: #219150;
+    border-color: #219150;
+    transform: scale(1.05);
+}
+
+.open-new-window-button:active {
+    transform: scale(0.95);
+}
+
+.nominee-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
 }

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/data/v1/nominees.schema.json",
+  "title": "AI Darwin Awards Nominee List",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id", "title", "category", "badge", "nominee", "reportedBy", "reportedDate", "sections", "sources", "image"
+    ],
+    "properties": {
+      "id": { "type": "string" },
+      "title": { "type": "string" },
+      "category": { "type": "string" },
+      "badge": { "type": "string" },
+      "nominee": { "type": "string" },
+      "reportedBy": { "type": "string" },
+      "reportedDate": { "type": "string", "format": "date" },
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["heading", "content"],
+          "properties": {
+            "heading": { "type": "string" },
+            "content": { "type": "string" }
+          }
+        }
+      },
+      "sources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "url"],
+          "properties": {
+            "name": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        }
+      },
+      "image": { "type": "string" }
+    }
+  }
+}

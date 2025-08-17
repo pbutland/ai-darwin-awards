@@ -16,22 +16,24 @@ A satirical project documenting the most spectacular, misguided, or catastrophic
 
 The automation script (`scripts/generate-nominees.ts`) is designed to keep the nominee details on the website consistent, up-to-date, and optimised for both readers and social media/SEO. It works by:
 
-- Reading all nominee data from the single source-of-truth JSON file (`scripts/nominees-2025.json`), which contains detailed narrative sections and sources for each nominee.
-- Automatically generating the full nominee HTML sections for `nominees-2025.html`.
+- Reading all nominee data from the single source-of-truth JSON file (`docs/data/v1/nominees-2025.json`), which contains detailed narrative sections and sources for each nominee.
+- Automatically generating the full nominee HTML sections for `docs/nominees-2025.html`.
 - Updating only the content between special comment markers in the HTML file, so manual edits elsewhere are preserved.
+- Automatically generating a separate HTML file for each nominee in `docs/nominees/`.
+- Automatically generating a sitemap.
 - Making it easy to add, edit, or remove nominees by simply editing the JSON file and rerunning the script - no manual HTML or meta tag editing required.
 
 ### How to Install and Run
 
 1. **Install dependencies** (if not already):
    ```sh
-   npm install --save-dev tsx typescript @types/node
+   npm install
    ```
 
 2. **Edit nominee data** in `scripts/nominees-2025.json` as needed.
 
 3. **Run the script** to update the HTML:
    ```sh
-   npx tsx scripts/generate-nominees.ts
+   npm run generate
    ```
-   This will read the JSON, generate nominee HTML, and update `nominees-2025.html` between the designated comment markers.
+   This will read the JSON, generate nominee HTML, create a sitemap, and update `nominees-2025.html` between the designated comment markers.
