@@ -8,6 +8,24 @@ export function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
+// Generate JSON-LD hasPart array for nominees
+export function generateJsonLdNominees(nominees: any[]) {
+  return nominees.map(nominee => {
+    const slug = getSlug(nominee);
+    const summary = nominee.summary || nominee.sections?.[0]?.content?.slice(0, 160) || '';
+    return {
+      "@type": "Article",
+      "name": nominee.title,
+      "description": summary,
+      "url": `https://aidarwinawards.org/nominees/${slug}.html`,
+      "author": {
+        "@type": "Organization",
+        "name": "AI Darwin Awards"
+      }
+    };
+  });
+}
+
 // Generate nominee HTML for the list page
 export function nomineeHtml(nominee: any) {
   const slug = getSlug(nominee);
@@ -62,6 +80,7 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
   const summary = nominee.summary || nominee.sections?.[0]?.content?.slice(0, 160) || '';
   const image = nominee.image ? nominee.image.replace(/^docs\/images\//, '') : 'aidarwinawards-banner.png';
   const nomineeUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
+  const breadcrumbTitle = nominee.title.split(' - ')[0];
   const detailsHtml = `
         <div class="nominee-details">
           <div class="nominee-actions">
@@ -85,6 +104,7 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
     .replace(/\[Nominee-specific description\]/g, escapeHtml(summary))
     .replace(/\[Nominee description\]/g, escapeHtml(summary))
     .replace(/\[Nominee Description\]/g, escapeHtml(summary))
+    .replace(/\[Nominee Breadcrumb Title\]/g, escapeHtml(breadcrumbTitle))
     .replace(/\[nominee-slug\]/g, escapeHtml(slug))
     .replace(/\[nominee-image\]/g, escapeHtml(image.replace(/\.(png|jpg|jpeg|svg)$/i, '')))
     .replace(/\[Image description\]/g, escapeHtml(nominee.title))

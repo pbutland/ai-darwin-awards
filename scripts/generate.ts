@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { nomineeHtml, nomineeDetailHtml, getSlug } from './nominees-util.js';
+import { nomineeHtml, nomineeDetailHtml, getSlug, generateJsonLdNominees } from './nominees-util.js';
 import { generateSitemap } from './sitemap-util.js';
 
 // Paths
@@ -34,11 +34,22 @@ for (const nominee of nominees) {
 
 // Update nominees-2025.html
 let html = fs.readFileSync(htmlPath, 'utf-8');
+
+// Replace the HTML nominees section
 html = html.replace(
   /<!-- BEGIN NOMINEES -->(.|\n|\r)*?<!-- END NOMINEES -->/g,
   `<!-- BEGIN NOMINEES -->${nominees.map(nomineeHtml).join('\n')}
             <!-- END NOMINEES -->`
 );
+
+// Replace the JSON-LD hasPart array
+const jsonLdNominees = generateJsonLdNominees(nominees);
+const jsonLdString = JSON.stringify(jsonLdNominees, null, 2).replace(/(?<=\n)^/gm, '            ');
+html = html.replace(
+  /"hasPart": \[[\s\S]*?\]/,
+  `"hasPart": ${jsonLdString}`
+);
+
 fs.writeFileSync(htmlPath, html, 'utf-8');
 
 console.log('Nominee HTML and detail pages generated.');

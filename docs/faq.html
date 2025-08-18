@@ -131,7 +131,24 @@
                     "text": "We're proud to announce that the AI Darwin Awards website is built using the most cutting-edge technology available: HTML, CSS, and a tiny sprinkle of JavaScript. We believe in the 'Just use HTML' philosophy. Our sophisticated architecture uses no frontend framework, static JSON files as a database, handcrafted CSS, and we copy files to a server for deployment. Sometimes the best technology is the one that just works."
                 }
             }
-        ]
+        ],
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://aidarwinawards.org/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "FAQ",
+                    "item": "https://aidarwinawards.org/faq.html"
+                }
+            ]
+        }
     }
     </script>
 
@@ -155,7 +172,12 @@
         <div class="subtitle">The Answers You Never Knew You Needed</div>
     </header>
     <main>
-        <a href="index.html" class="back-link">← Back to AI Darwin Awards</a>
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><span class="current">FAQ</span></li>
+            </ol>
+        </nav>
 
         <section>
             <h2>Your Burning Questions, Answered</h2>
