@@ -16,7 +16,8 @@ function getLastMod({ filePath, url, prevSitemapMap }: { filePath: string, url: 
   if (!prevSitemapMap) {
     try {
       const stats = fs.statSync(filePath);
-      return stats.mtime.toISOString().split('T')[0];
+      // Return local date in YYYY-MM-DD format
+      return stats.mtime.toLocaleDateString('sv-SE');
     } catch {
       return '';
     }
@@ -39,7 +40,8 @@ function getLastMod({ filePath, url, prevSitemapMap }: { filePath: string, url: 
   if (changed) {
     try {
       const stats = fs.statSync(filePath);
-      return stats.mtime.toISOString().split('T')[0];
+      // Return local date in YYYY-MM-DD format
+      return stats.mtime.toLocaleDateString('sv-SE');
     } catch {
       return '';
     }

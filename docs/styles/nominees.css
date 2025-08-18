@@ -273,3 +273,10 @@ h3.category {
     opacity: 0;
     transition: opacity 0.3s;
 }
+
+@media (max-width: 768px) {
+    #nominee-toast {
+        bottom: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
