@@ -87,7 +87,6 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
     .replace(/\[nominee-slug\]/g, escapeHtml(slug))
     .replace(/\[nominee-image\]/g, escapeHtml(image.replace(/\.(png|jpg|jpeg|svg)$/i, '')))
     .replace(/\[Image description\]/g, escapeHtml(nominee.title))
-    .replace(/\[Brief nominee summary\]/g, escapeHtml(summary))
     .replace('[Details, sources, quotes, images]', detailsHtml);
   // Ensure nominee-actions.js is included
   if (!/nominee-actions\.js/.test(html)) {

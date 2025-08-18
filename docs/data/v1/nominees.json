@@ -7,6 +7,7 @@
     "nominee": "An unnamed 60-year-old man who trusted ChatGPT with medical dietary advice over professional healthcare guidance.",
     "reportedBy": "American College of Physicians Journals case report and subsequently reported by Rachel Dobkin (The Independent) - August 7, 2025.",
     "reportedDate": "2025-08-07",
+    "tagline": "Because asking doctors is so last century",
     "sections": [
       {
         "heading": "The Innovation",
@@ -41,6 +42,7 @@
     "nominee": "OpenAI Inc. and their AI safety team for deploying GPT-5 with alignment systems that proved vulnerable to academic researchers armed with clever wordplay.",
     "reportedBy": "Dr. Sergey Berezin (NLP Data Scientist) via LinkedIn and published research at ACL 2025 - August 7, 2025.",
     "reportedDate": "2025-08-07",
+    "tagline": "Guardrails optional",
     "sections": [
       {
         "heading": "The Innovation",
@@ -79,6 +81,7 @@
     "nominee": "Unnamed Airbnb “Superhost” for pioneering the use of AI image generation to commit fraud.",
     "reportedBy": "Shane Hickey, The Guardian (Consumer affairs journalist) - August 2, 2025.",
     "reportedDate": "2025-08-02",
+    "tagline": "Artificial damage from artificial intelligence",
     "sections": [
       {
         "heading": "The Innovation",
@@ -113,6 +116,7 @@
     "nominee": "Tea Dating Advice Inc. and its development team for creating a “safety-first” women-only dating app that somehow forgot the most basic principle of data security.",
     "reportedBy": "Multiple cybersecurity researchers and confirmed by Tea's official statement following widespread exposure of user data - July 26, 2025.",
     "reportedDate": "2025-07-26",
+    "tagline": "Protecting women from everyone except everyone",
     "sections": [
       {
         "heading": "The Innovation",
@@ -155,6 +159,7 @@
     "nominee": "Amjad Masad (CEO of Replit) and Replit Inc. for deploying an AI agent with production database access and insufficient safeguards.",
     "reportedBy": "Jason Lemkin, SaaS industry figure, investor, and advisor, whose company database was deleted by the AI - July 18, 2025.",
     "reportedDate": "2025-07-18",
+    "tagline": "When AI agents panic and delete everything",
     "sections": [
       {
         "heading": "The Innovation",
@@ -189,6 +194,7 @@
     "nominee": "Christopher Kachouroff and Jennifer DeMaster (Legal counsel for Mike Lindell/MyPillow) for filing a legal brief featuring almost 30 defective citations and fictional court cases.",
     "reportedBy": "Jaclyn Diaz, NPR - July 10, 2025.",
     "reportedDate": "2025-07-10",
+    "tagline": "Legal briefs from a fictional universe",
     "sections": [
       {
         "heading": "The Innovation",
@@ -223,6 +229,7 @@
     "nominee": "Paradox.ai and McDonald's Corporation for deploying an AI hiring system with security that would embarrass a child's diary.",
     "reportedBy": "Andy Greenberg, WIRED Senior Writer - July 9, 2025.",
     "reportedDate": "2025-07-09",
+    "tagline": "Billions served, millions exposed",
     "sections": [
       {
         "heading": "The Innovation",
@@ -257,6 +264,7 @@
     "nominee": "Matt Turnbull, Executive Producer at Xbox Games Studios, for suggesting AI emotional support during mass layoffs.",
     "reportedBy": "Charlotte Edwards, BBC Technology Reporter - July 8, 2025.",
     "reportedDate": "2025-07-08",
+    "tagline": "AI therapy for the AI-unemployed",
     "sections": [
       {
         "heading": "The Innovation",
@@ -291,6 +299,7 @@
     "nominee": "An unnamed All England Tennis Club technician who apparently confused “operating cutting-edge AI technology” with “playing whack-a-mole at the arcade.”",
     "reportedBy": "Sonia Twigg, Women's Sport Reporter for The Telegraph - July 6, 2025.",
     "reportedDate": "2025-07-06",
+    "tagline": "Advanced AI defeated by the off button",
     "sections": [
       {
         "heading": "The Innovation",
@@ -329,6 +338,7 @@
     "nominee": "Marco Buscaglia (Freelance Writer) and King Features/Hearst Media Company for publishing book recommendations for novels that exist only in AI imagination.",
     "reportedBy": "404 Media and subsequently Herb Scribner, The Washington Post - May 20, 2025.",
     "reportedDate": "2025-05-20",
+    "tagline": "Creating fictional fiction",
     "sections": [
       {
         "heading": "The Innovation",
