@@ -54,6 +54,23 @@ fs.writeFileSync(htmlPath, html, 'utf-8');
 
 console.log('Nominee HTML and detail pages generated.');
 
+// Calculate the most recent nominee date and update JavaScript
+const lastNomineeDate = nominees
+  .filter(n => n.badge === 'Verified')
+  .map(n => new Date(n.reportedDate))
+  .sort((a, b) => b.getTime() - a.getTime())[0]
+  .toISOString().split('T')[0];
+
+// Update the JavaScript file with the latest nominee date
+const jsPath = path.join(__dirname, '../docs/js/countdown.js');
+let jsContent = fs.readFileSync(jsPath, 'utf-8');
+jsContent = jsContent.replace(
+  /const lastNomineeDate = '[^']*';/,
+  `const lastNomineeDate = '${lastNomineeDate}';`
+);
+fs.writeFileSync(jsPath, jsContent, 'utf-8');
+console.log(`Updated countdown date to: ${lastNomineeDate}`);
+
 // Generate sitemap.xml
 const nomineeSlugs = nominees.map(getSlug);
 let prevSitemapXml: string | undefined = undefined;

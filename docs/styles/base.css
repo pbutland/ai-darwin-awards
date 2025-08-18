@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f7f7f7;
+    background: #f8f8f8;
     color: #222;
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@ section {
 
 .footer {
     text-align: center;
-    color: #888;
+    color: #555;
     font-size: 0.9rem;
     margin: 1rem 0;
     padding: 0 1rem;

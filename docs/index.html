@@ -7,10 +7,12 @@
     <meta name="keywords" content="AI failures, artificial intelligence mistakes, AI safety awards, worst AI decisions, AI mishaps 2025, artificial intelligence disasters, machine learning failures, AI ethics, technology failures">
     <meta name="robots" content="index, follow">
     <meta name="author" content="AI Darwin Awards">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self';">
 
     <link rel="canonical" href="https://aidarwinawards.org/">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dseg@0.46.0/css/dseg.css">
     <title>AI Darwin Awards 2025 - Celebrating Spectacularly Bad AI Decisions</title>
 
     <!-- Open Graph meta tags -->
@@ -51,6 +53,7 @@
         "description": "Celebrating spectacularly bad AI decisions and honouring those who use artificial intelligence in reckless ways."
     }
     </script>
+    <script src="js/countdown.js"></script>
 </head>
 <body>
     <header>
@@ -61,6 +64,10 @@
     </header>
     <main>
         <section>
+            <div class="countdown-container">
+                <div class="countdown-label">Days Since Last AI catastrophe:</div>
+                <div class="countdown-style" id="countdown-days">---</div>
+            </div>
             <h2>What Are the AI Darwin Awards?</h2>
             <p>
                 Named after Charles Darwin's theory of natural selection, the original <a href="https://darwinawards.com/" target="_blank" rel="noopener">Darwin Awards</a> celebrated those who "improved the gene pool by removing themselves from it" through spectacularly stupid acts. Well, guess what? Humans have evolved! We're now so advanced that we've outsourced our poor decision-making to machines.
