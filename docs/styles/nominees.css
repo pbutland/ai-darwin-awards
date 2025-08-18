@@ -1,4 +1,4 @@
-details.nominee {
+article.nominee {
     border-left: 4px solid #ffd700;
     padding-left: 0;
     margin: 1rem 0;
@@ -8,11 +8,11 @@ details.nominee {
     transition: box-shadow 0.2s;
 }
 
-details.nominee[open] {
+article.nominee[open] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
 }
 
-details.nominee summary {
+article.nominee summary {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,16 +29,16 @@ details.nominee summary {
     transition: background 0.2s;
 }
 
-details.nominee summary:hover,
-details.nominee summary:focus {
+article.nominee summary:hover,
+article.nominee summary:focus {
     background: #fff9e3;
 }
 
-details.nominee summary::-webkit-details-marker {
+article.nominee summary::-webkit-details-marker {
     display: none;
 }
 
-details.nominee summary::after {
+article.nominee summary::after {
     content: "\25BC";
     margin-left: auto;
     font-size: 1rem;
@@ -47,8 +47,17 @@ details.nominee summary::after {
     font-size: 0.8em;
 }
 
-details.nominee[open] summary::after {
+article.nominee[open] summary::after {
     transform: rotate(-180deg);
+}
+
+article.nominee .category {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex: 1 0 auto;
 }
 
 .nominee-title {
@@ -58,15 +67,6 @@ details.nominee[open] summary::after {
     font-weight: 600;
     flex: 1 1 100%;
     min-width: 0;
-}
-
-details.nominee .category {
-    font-weight: bold;
-    color: #666;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    flex: 1 0 auto;
 }
 
 h3.category {

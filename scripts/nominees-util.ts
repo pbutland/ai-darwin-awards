@@ -14,37 +14,39 @@ export function nomineeHtml(nominee: any) {
   const nomineeUrl = `nominees/${slug}.html`;
   const nomineeShareUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   return `
-            <details class="nominee" id="${escapeHtml(nominee.id)}">
-                <summary>
-                    <span class="nominee-title">${escapeHtml(nominee.title)}</span>
-                    <h3 class="category">${escapeHtml(nominee.category)}</h3>
-                    <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>
-                </summary>
-                <div class="nominee-details">
-                    <p class="attribution">
-                        <strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}
-                    </p>
-                    <p class="attribution">
-                        <strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}
-                    </p>
-                    <div class="nominee-actions">
-                        <button class="share-button" data-share-url="${escapeHtml(nomineeShareUrl)}" title="Share this nominee" aria-label="Share this nominee">
-                            <img src="images/share.svg" alt="Share this nominee" />
-                        </button>
-                        <button class="open-new-window-button" data-open-url="${escapeHtml(nomineeUrl)}" title="Open in new window" aria-label="Open in new window">
-                            <img src="images/open-new-window.svg" alt="Open in new window" />
-                        </button>
+            <article class="nominee" id="${escapeHtml(nominee.id)}">
+                <details>
+                    <summary>
+                        <span class="nominee-title">${escapeHtml(nominee.title)}</span>
+                        <h3 class="category">${escapeHtml(nominee.category)}</h3>
+                        <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>
+                    </summary>
+                    <div class="nominee-details">
+                        <p class="attribution">
+                            <strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}
+                        </p>
+                        <p class="attribution">
+                            <strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}
+                        </p>
+                        <div class="nominee-actions">
+                            <button class="share-button" data-share-url="${escapeHtml(nomineeShareUrl)}" title="Share this nominee" aria-label="Share this nominee">
+                                <img src="images/share.svg" alt="Share this nominee" />
+                            </button>
+                            <button class="open-new-window-button" data-open-url="${escapeHtml(nomineeUrl)}" title="Open in new window" aria-label="Open in new window">
+                                <img src="images/open-new-window.svg" alt="Open in new window" />
+                            </button>
+                        </div>
+                        ${nominee.sections.map((section: any) => `
+                        <div class="nominee-section">
+                            <h3>${escapeHtml(section.heading)}</h3>
+                            <p>${escapeHtml(section.content)}</p>
+                        </div>`).join('')}
+                        <p>
+                            <strong>Sources:</strong> ${nominee.sources.map((src: any) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>`).join(' | ')}
+                        </p>
                     </div>
-                    ${nominee.sections.map((section: any) => `
-                    <div class="nominee-section">
-                        <h3>${escapeHtml(section.heading)}</h3>
-                        <p>${escapeHtml(section.content)}</p>
-                    </div>`).join('')}
-                    <p>
-                        <strong>Sources:</strong> ${nominee.sources.map((src: any) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>`).join(' | ')}
-                    </p>
-                </div>
-            </details>`;
+                </details>
+            </article>`;
 }
 
 
@@ -61,18 +63,18 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
   const image = nominee.image ? nominee.image.replace(/^docs\/images\//, '') : 'aidarwinawards-banner.png';
   const nomineeUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   const detailsHtml = `
-    <div class="nominee-details">
-      <div class="nominee-actions">
-        <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
-          <img src="../images/share.svg" alt="Share this nominee" />
-        </button>
-      </div>
-      <p class="attribution"><strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}</p>
-      <p class="attribution"><strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}</p>
-      ${nominee.sections.map((section) => `<div class="nominee-section"><h3>${escapeHtml(section.heading)}</h3><p>${escapeHtml(section.content)}</p></div>`).join('')}
-      <p><strong>Sources:</strong> ${nominee.sources.map((src) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>`).join(' | ')}</p>
-    </div>
-  `;
+        <div class="nominee-details">
+          <div class="nominee-actions">
+            <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
+              <img src="../images/share.svg" alt="Share this nominee" />
+            </button>
+          </div>
+          <p class="attribution"><strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}</p>
+          <p class="attribution"><strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}</p>
+          ${nominee.sections.map((section) => `<div class="nominee-section"><h3>${escapeHtml(section.heading)}</h3><p>${escapeHtml(section.content)}</p></div>`).join('')}
+          <p><strong>Sources:</strong> ${nominee.sources.map((src) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>`).join(' | ')}</p>
+        </div>
+      `;
   // Get the first part of the title before the first ' - '
   const h1Title = nominee.title.split(' - ')[0];
   // Add script and toast container if not present
