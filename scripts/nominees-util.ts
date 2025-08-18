@@ -68,6 +68,7 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
             <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
               <img src="../images/share.svg" alt="Share this nominee" />
             </button>
+            <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>
           </div>
           <p class="attribution"><strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}</p>
           <p class="attribution"><strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}</p>
