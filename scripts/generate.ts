@@ -45,6 +45,10 @@ console.log('Nominee HTML and detail pages generated.');
 
 // Generate sitemap.xml
 const nomineeSlugs = nominees.map(getSlug);
-const sitemapXml = generateSitemap(baseUrl, docsDir, nomineeSlugs);
+let prevSitemapXml: string | undefined = undefined;
+try {
+  prevSitemapXml = fs.readFileSync(sitemapPath, 'utf-8');
+} catch {}
+const sitemapXml = generateSitemap(baseUrl, docsDir, nomineeSlugs, prevSitemapXml);
 fs.writeFileSync(sitemapPath, sitemapXml, 'utf-8');
 console.log('Sitemap generated at docs/sitemap.xml');
