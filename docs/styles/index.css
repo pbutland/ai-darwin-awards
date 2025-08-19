@@ -22,11 +22,13 @@
   font-size: 3rem;
   color: #00ff41;
   
+  /* Moderate CRT-style glow effect */
+  text-shadow: 
+    0 0 8px #00ff41,
+    0 0 20px #00ff41;
+  
   /* Position relative for layering */
   position: relative;
-  
-  /* Subtle hover effect */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Create the background '8' characters showing all segments */
@@ -44,7 +46,8 @@
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 0.1em;
-  color: #005500;
+  color: #004400;
+  text-shadow: none;
   z-index: -1;
   pointer-events: none;
 }
