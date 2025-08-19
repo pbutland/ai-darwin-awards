@@ -1,6 +1,3 @@
-// nominee-actions.js
-// Handles nominee action buttons: share and open in new window, plus toast notification
-
 document.addEventListener('DOMContentLoaded', function () {
   // Delegate for share buttons
   document.body.addEventListener('click', function (e) {
@@ -35,7 +32,7 @@ function copyToClipboard(text) {
 }
 
 function showToast(message) {
-  const toast = document.getElementById('nominee-toast');
+  const toast = document.getElementById('toast');
   if (!toast) return;
   toast.textContent = message;
   toast.style.opacity = '1';

@@ -16,6 +16,7 @@
 .faq-item summary {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     cursor: pointer;
     padding: 1rem 1rem 1rem 1.2rem;
     background: #f8f9fa;
@@ -29,6 +30,12 @@
     color: #00598F;
 }
 
+.faq-summary-main {
+    display: inline;
+    min-width: 0;
+}
+
+
 .faq-item summary:hover,
 .faq-item summary:focus {
     background: #fff9e3;
@@ -38,13 +45,14 @@
     display: none;
 }
 
+
 .faq-item summary::after {
     content: "\25BC";
-    margin-left: auto;
     font-size: 1rem;
     color: #888;
     transition: transform 0.2s;
     font-size: 0.8em;
+    margin-left: 0.5em;
 }
 
 .faq-item[open] summary::after {
@@ -63,4 +71,21 @@
     border-left: 4px solid #ffa726;
     margin: 1rem 0;
     font-style: italic;
+}
+
+
+.faq-link-icon {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.15em;
+    vertical-align: -0.15em;
+    opacity: 0.7;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+summary:hover .faq-link-icon,
+summary:focus-within .faq-link-icon {
+    visibility: visible;
+    opacity: 1;
 }

@@ -46,7 +46,7 @@ export function nomineeHtml(nominee: any) {
                         <p class="attribution">
                             <strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}
                         </p>
-                        <div class="nominee-actions">
+                        <div class="actions">
                             <button class="share-button" data-share-url="${escapeHtml(nomineeShareUrl)}" title="Share this nominee" aria-label="Share this nominee">
                                 <img src="images/share.svg" alt="Share this nominee" />
                             </button>
@@ -83,7 +83,7 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
   const breadcrumbTitle = nominee.title.split(' - ')[0];
   const detailsHtml = `
         <div class="nominee-details">
-          <div class="nominee-actions">
+          <div class="actions">
             <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
               <img src="../images/share.svg" alt="Share this nominee" />
             </button>
@@ -110,13 +110,13 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
     .replace(/\[Image description\]/g, escapeHtml(nominee.title))
     .replace('[Details, sources, quotes, images]', detailsHtml)
     .replace(/\[Nominee tagline\]/g, escapeHtml(nominee.tagline));
-  // Ensure nominee-actions.js is included
-  if (!/nominee-actions\.js/.test(html)) {
-    html = html.replace('</body>', `<script src=\"../js/nominee-actions.js\"></script>\n</body>`);
+  // Ensure actions.js is included
+  if (!/actions\.js/.test(html)) {
+    html = html.replace('</body>', `<script src=\"../js/actions.js\"></script>\n</body>`);
   }
   // Add toast container if not present
-  if (!/id=\"nominee-toast\"/.test(html)) {
-    html = html.replace('</body>', `<div id=\"nominee-toast\" style=\"display:none\"></div>\n</body>`);
+  if (!/id=\"toast\"/.test(html)) {
+    html = html.replace('</body>', `<div id=\"toast\" style=\"display:none\"></div>\n</body>`);
   }
   return html;
 }

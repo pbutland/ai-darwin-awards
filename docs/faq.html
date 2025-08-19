@@ -12,6 +12,7 @@
     <link rel="canonical" href="https://aidarwinawards.org/faq.html">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/faq.css">
+    <link rel="stylesheet" href="styles/toast.css">
     <title>AI Darwin Awards FAQ - Nomination Criteria & Guidelines</title>
 
     <!-- Open Graph meta tags -->
@@ -168,8 +169,10 @@
             }
         });
     </script>
+    <script src="js/faq-link.js"></script>
+    <script src="js/actions.js"></script>
 </head>
-<body>
+<body class="faq-page">
     <header>
         <h1>Frequently Asked Questions</h1>
         <div class="subtitle">The Answers You Never Knew You Needed</div>
@@ -190,7 +193,7 @@
             <p><small><em>*Accuracy may vary depending on which AI we asked.<br>**Trust levels calibrated by the same systems that brought you our nominees.</em></small></p>
 
             <details class="faq-item" id="qualifies">
-                <summary>What qualifies for an AI Darwin Award?</summary>
+                <summary><span class="faq-summary-main">What qualifies for an AI Darwin Award?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Excellent question! To qualify for an AI Darwin Award, a nominee must demonstrate the rare combination of cutting-edge technology and Stone Age decision-making. Specifically, we look for:</p>
                     <ul>
@@ -204,7 +207,7 @@
             </details>
 
             <details class="faq-item" id="mocking">
-                <summary>Are you making fun of AI or the people using it badly?</summary>
+                <summary><span class="faq-summary-main">Are you making fun of AI or the people using it badly?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Oh, definitely the people! Artificial intelligence is just a toollike a chainsaw, nuclear reactor, or particularly aggressive blender. It's not the chainsaw's fault when someone decides to juggle it at a dinner party.</p>
                     <p>We celebrate the humans who looked at powerful AI systems and thought, "You know what this needs? Less testing, more ambition, and definitely no safety protocols!" These visionaries remind us that human creativity in finding new ways to endanger ourselves knows no bounds.</p>
@@ -216,7 +219,7 @@
             </details>
 
             <details class="faq-item" id="affiliation">
-                <summary>Is this site affiliated with the original Darwin Awards?</summary>
+                <summary><span class="faq-summary-main">Is this site affiliated with the original Darwin Awards?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Not at all! We have absolutely no connection to the original <a href="https://darwinawards.com/" target="_blank" rel="noopener">Darwin Awards</a> whatsoever (apart from the occasional hyperlink). However, we're proudly following in the grand tradition of AI companies everywhere by completely disregarding intellectual property concerns and confidently appropriating existing concepts without permission.</p>
                     <p>Much like how modern AI systems are trained on vast datasets of copyrighted material with the breezy assumption that "fair use" covers everything, we've simply scraped the concept of celebrating spectacular human stupidity and fine-tuned it for the artificial intelligence era.</p>
@@ -236,7 +239,7 @@
             </details>
 
             <details class="faq-item" id="verification">
-                <summary>How do you verify these stories?</summary>
+                <summary><span class="faq-summary-main">How do you verify these stories?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>We're glad you asked! At the AI Darwin Awards, we employ the most cutting-edge verification methods available. Specifically, we use our proprietary AI fact-checking system, which consists of asking multiple large language models whether the stories are true.</p>
                     <p>Our verification process is foolproof:</p>
@@ -256,7 +259,7 @@
             </details>
 
             <details class="faq-item" id="nominate-boss">
-                <summary>Can I nominate my boss/coworker/CEO?</summary>
+                <summary><span class="faq-summary-main">Can I nominate my boss/coworker/CEO?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Absolutely! In fact, workplace nominations make up roughly 73% of our submissions*. Nothing says "AI Darwin Award" quite like a manager who heard about ChatGPT and immediately wanted to "implement AI across all business processes by Friday."</p>
                     <p>Popular nomination categories include:</p>
@@ -272,7 +275,7 @@
             </details>
 
             <details class="faq-item" id="real-or-satire">
-                <summary>Is this real or satire?</summary>
+                <summary><span class="faq-summary-main">Is this real or satire?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Yes.</p>
                     <p>The AI Darwin Awards exist in that wonderful grey area where reality has become so absurd that satire struggles to keep up. The stories we feature are real—tragically, hilariously real. Our commentary, however, is seasoned with enough sarcasm to preserve it for future generations.</p>
@@ -285,7 +288,7 @@
             </details>
 
             <details class="faq-item" id="ai-safety">
-                <summary>What's your stance on AI safety?</summary>
+                <summary><span class="faq-summary-main">What's your stance on AI safety?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>We're strongly in favour of it! In fact, we consider ourselves advocates for AI safety through the time-honoured tradition of public shaming.</p>
                     <p>Every AI Darwin Award winner serves as a cautionary tale, like a technological version of "Scared Straight" but for Silicon Valley executives. Our hope is that future decision-makers will see these examples and think, "Maybe I should test this AI system before deploying it to production."</p>
@@ -307,7 +310,7 @@
             </details>
 
             <details class="faq-item" id="data-permission">
-                <summary>Can I use the data from this website? Do I need permission?</summary>
+                <summary><span class="faq-summary-main">Can I use the data from this website? Do I need permission?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Wait, someone is actually asking for <em>permission</em> to use data from the internet? How refreshingly quaint! We're genuinely touched that you're concerned about intellectual property rights in this era of "move fast and scrape everything."</p>
                     <p>While AI companies worldwide are busy training their models on every piece of content they can hoover up—from copyrighted books to private conversations—without so much as a "by your leave," here you are, politely asking if you can use our collection of spectacular AI failures. It's like finding a unicorn, if unicorns were considerate internet users who respected content creators.</p>
@@ -323,7 +326,7 @@
             </details>
 
             <details class="faq-item" id="avoid-nomination">
-                <summary>How can I avoid becoming an AI Darwin Award nominee?</summary>
+                <summary><span class="faq-summary-main">How can I avoid becoming an AI Darwin Award nominee?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Excellent question! Here's our foolproof guide to avoiding nomination:</p>
 
@@ -354,7 +357,7 @@
             </details>
 
             <details class="faq-item" id="anonymous-nomination">
-                <summary>Do you accept anonymous nominations?</summary>
+                <summary><span class="faq-summary-main">Do you accept anonymous nominations?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Of course! We understand that nominating your boss, colleague, or the person who deployed an AI chatbot to handle customer complaints might require a certain level of discretion.</p>
                     <p>Anonymous nominations are not only accepted but encouraged, especially when they involve:</p>
@@ -370,7 +373,7 @@
             </details>
 
             <details class="faq-item" id="winners">
-                <summary>What happens to the winners?</summary>
+                <summary><span class="faq-summary-main">What happens to the winners?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>AI Darwin Award winners receive the ultimate prize: immortal recognition for their contribution to humanity's understanding of how not to use artificial intelligence.</p>
                     <p>Specifically, they get:</p>
@@ -395,7 +398,7 @@
             </details>
 
             <details class="faq-item" id="tech-stack">
-                <summary>What's your tech stack? Are you using cutting-edge AI-powered development tools?</summary>
+                <summary><span class="faq-summary-main">What's your tech stack? Are you using cutting-edge AI-powered development tools?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Oh, you want to know about our <em>revolutionary</em> tech stack? Buckle up, because this is going to blow your mind with its sheer simplicity and complete lack of buzzwords.</p>
                     <p>We're proud to announce that the AI Darwin Awards website is built using the most cutting-edge technology available: <strong>HTML, CSS, and a tiny sprinkle of JavaScript</strong>. That's right—we're using the same groundbreaking technologies that powered the web in 1995, like absolute savages. We believe in the <a href="https://justfuckingusehtml.com/" target="_blank" rel="noopener">Just fucking use HTML</a> philosophy.</p>
@@ -448,5 +451,6 @@
             &copy; 2025 AI Darwin Awards. No humans or robots were harmed (yet) in the making of this website.
         </div>
     </footer>
+    <div id="toast"></div>
 </body>
 </html>

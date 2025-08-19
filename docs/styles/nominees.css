@@ -246,37 +246,14 @@ h3.category {
     transform: scale(0.95);
 }
 
-.nominee-actions {
+.actions {
     display: flex;
     gap: 0.5rem;
     margin: 1rem 0;
     flex-wrap: wrap;
 }
 
-/* Make nominee action button SVG icons white */
-.nominee-actions button img {
+/* Make action button SVG icons white */
+.actions button img {
     filter: invert(1) brightness(2);
-}
-
-/* Toast notification for nominee actions */
-#nominee-toast {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0,0,0,0.85);
-    color: #fff;
-    padding: 0.75em 1.5em;
-    border-radius: 2em;
-    font-size: 1rem;
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-@media (max-width: 768px) {
-    #nominee-toast {
-        bottom: 1.5rem;
-        font-size: 0.8rem;
-    }
 }
