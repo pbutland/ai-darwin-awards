@@ -45,14 +45,18 @@
     display: none;
 }
 
-
 .faq-item summary::after {
-    content: "\25BC";
-    font-size: 1rem;
-    color: #888;
-    transition: transform 0.2s;
-    font-size: 0.8em;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
     margin-left: 0.5em;
+    background: url("../images/arrowhead.svg") no-repeat center center;
+    background-size: contain;
+    transition: transform 0.2s;
+    vertical-align: middle;
+    will-change: transform;
+    transform-origin: 50% 50%;
 }
 
 .faq-item[open] summary::after {

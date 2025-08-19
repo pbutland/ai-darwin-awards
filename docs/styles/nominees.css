@@ -39,15 +39,20 @@ article.nominee summary::-webkit-details-marker {
 }
 
 article.nominee summary::after {
-    content: "\25BC";
-    margin-left: auto;
-    font-size: 1rem;
-    color: #888;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.5em;
+    background: url("../images/arrowhead.svg") no-repeat center center;
+    background-size: contain;
     transition: transform 0.2s;
-    font-size: 0.8em;
+    vertical-align: middle;
+    will-change: transform;
+    transform-origin: 50% 50%;
 }
 
-article.nominee[open] summary::after {
+article.nominee details[open] summary::after {
     transform: rotate(-180deg);
 }
 
