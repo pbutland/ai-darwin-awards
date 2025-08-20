@@ -17,7 +17,7 @@ function startFlashEffect(element, finalValue, finalLength) {
 
 function updateCountdown() {
   // Auto-updated by generate.ts - do not modify this date manually
-  const lastNomineeDate = '2025-08-07';
+  const lastNomineeDate = '2025-08-20';
 
   const today = new Date();
   const lastDate = new Date(lastNomineeDate);

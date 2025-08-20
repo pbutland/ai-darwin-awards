@@ -78,7 +78,7 @@ export function getSlug(nominee) {
 export function nomineeDetailHtml(nominee, nomineeTemplate) {
   const slug = getSlug(nominee);
   const summary = nominee.summary || nominee.sections?.[0]?.content?.slice(0, 160) || '';
-  const image = nominee.image ? nominee.image.replace(/^docs\/images\//, '') : 'aidarwinawards-banner.png';
+  const image = nominee.image ? nominee.image : 'aidarwinawards-banner.png';
   const nomineeUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   const breadcrumbTitle = nominee.title.split(' - ')[0];
   const detailsHtml = `
@@ -106,7 +106,7 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
     .replace(/\[Nominee Description\]/g, escapeHtml(summary))
     .replace(/\[Nominee Breadcrumb Title\]/g, escapeHtml(breadcrumbTitle))
     .replace(/\[nominee-slug\]/g, escapeHtml(slug))
-    .replace(/\[nominee-image\]/g, escapeHtml(image.replace(/\.(png|jpg|jpeg|svg)$/i, '')))
+    .replace(/\[nominee-image\]/g, image)
     .replace(/\[Image description\]/g, escapeHtml(nominee.title))
     .replace('[Details, sources, quotes, images]', detailsHtml)
     .replace(/\[Nominee tagline\]/g, escapeHtml(nominee.tagline));
