@@ -32,24 +32,26 @@
         .error-code {
             font-size: 8rem;
             font-weight: bold;
-            color: #00598F;
+            color: var(--color-primary);
             margin: 0;
             line-height: 1;
         }
 
         .error-message {
             font-size: 1.5rem;
-            color: #555;
+            color: var(--color-secondary);
             margin: 1rem 0 2rem 0;
         }
 
         .ai-quote {
-            background: #f0f8ff;
-            border-left: 4px solid #00598F;
-            padding: 1rem 1.5rem;
-            margin: 2rem 0;
+            background: var(--color-surface);
+            border-left: 4px solid var(--color-primary);
             font-style: italic;
-            color: #333;
+            border-radius: 0 6px 6px 0;
+            position: relative;
+            color: var(--color-text);
+            padding: 1rem 1.5rem;
+            margin: 2rem;
         }
 
         .navigation-links {
@@ -99,7 +101,7 @@
             <div class="error-message">Page Not Found</div>
             
             <p>Congratulations! You've discovered a page that doesn't exist. Our state-of-the-art AI navigation system confidently assured us this page was here, but apparently it was trained on a dataset that included wishful thinking.</p>
-            
+
             <div class="ai-quote" id="ai-quote">
                 "Don't worry, our AI is 99.9% confident this page exists. The remaining 0.1% is just statistical uncertainty."<br>
                 — Our AI-Powered Navigation System (probably)

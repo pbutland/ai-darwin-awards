@@ -1,16 +1,11 @@
-/* FAQ specific styles */
 .faq-item {
-    border-left: 4px solid #ffd700;
-    padding-left: 0;
+    border-left: 4px solid var(--color-primary);
     margin: 1.5rem 0;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-    transition: box-shadow 0.2s;
-}
-
-.faq-item[open] {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: var(--color-shadow);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    padding: 0;
 }
 
 .faq-item summary {
@@ -18,16 +13,16 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding: 1rem 1rem 1rem 1.2rem;
-    background: #f8f9fa;
-    border-radius: 0 6px 6px 0;
+    padding: 1rem;
+    background: var(--color-surface);
+    border-radius: 0 var(--radius) var(--radius) 0;
     font-size: 1.1rem;
     font-weight: 600;
     outline: none;
     list-style: none;
     user-select: none;
     transition: background 0.2s;
-    color: #00598F;
+    color: var(--color-primary);
 }
 
 .faq-summary-main {
@@ -35,13 +30,13 @@
     min-width: 0;
 }
 
-
 .faq-item summary:hover,
 .faq-item summary:focus {
-    background: #fff9e3;
+    background: var(--color-surface);
 }
 
-.faq-item summary::-webkit-details-marker {
+.faq-item summary::-webkit-details-marker,
+.faq-item summary::marker {
     display: none;
 }
 
@@ -65,18 +60,9 @@
 
 .faq-answer {
     padding: 1rem 1.5rem;
-    line-height: 1.6;
+    line-height: 1.5;
+    color: var(--color-text);
 }
-
-.highlight {
-    background: #fff4e5;
-    padding: 1rem;
-    border-radius: 4px;
-    border-left: 4px solid #ffa726;
-    margin: 1rem 0;
-    font-style: italic;
-}
-
 
 .faq-link-icon {
     width: 1em;
@@ -92,4 +78,11 @@ summary:hover .faq-link-icon,
 summary:focus-within .faq-link-icon {
     visibility: visible;
     opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    summary:hover .faq-link-icon,
+    summary:focus-within .faq-link-icon {
+        filter: brightness(0) invert(1);
+    }
 }

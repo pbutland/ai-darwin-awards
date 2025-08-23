@@ -7,7 +7,6 @@
   font-family: 'DSEG7-Classic', 'Roboto', 'Courier New', monospace;
   font-weight: 700;
   letter-spacing: 0.1em;
-  
   background: #000;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -17,17 +16,11 @@
   text-align: center;
   display: inline-block;
   z-index: 2;
-  
-  /* Typography - Terminal green */
   font-size: 3rem;
   color: #00ff41;
-  
-  /* Moderate CRT-style glow effect */
   text-shadow: 
     0 0 8px #00ff41,
     0 0 20px #00ff41;
-  
-  /* Position relative for layering */
   position: relative;
 }
 
