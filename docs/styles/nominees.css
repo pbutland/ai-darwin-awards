@@ -91,7 +91,7 @@ h3.category {
 .ineligible-badge {
     display: inline-flex;
     align-items: center;
-    padding: 0.3rem 0.6rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 1rem;
     font-size: 0.8rem;
     font-weight: 600;
@@ -191,4 +191,16 @@ h3.category {
 }
 .actions button img {
     filter: invert(1) brightness(2);
+}
+
+@media (max-width: 768px) {
+  article.nominee summary h3.category {
+    display: none;
+  }
+  article.nominee summary::after {
+    margin-left: auto;
+  }
+  .nominee-details {
+    padding: 1rem;
+  }
 }
