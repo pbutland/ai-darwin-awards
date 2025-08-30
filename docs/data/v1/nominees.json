@@ -1,5 +1,44 @@
 [
   {
+    "id": "deloitte-robo-debt-nominee",
+    "title": "Deloitte Citation Chaos - “Welfare Compliance Report Meets Robot Writer?”",
+    "category": "Suspected AI Mishap Award",
+    "badge": "Unverified",
+    "nominee": "Deloitte Australia for producing a government report containing citation errors so spectacular they raised immediate suspicions of AI involvement.",
+    "reportedBy": "Australian Financial Review investigation into suspicious content in government contractor reports - August 25, 2025.",
+    "reportedDate": "2025-08-25",
+    "tagline": "When your citations are so wrong, everyone assumes AI did it",
+    "sections": [
+      {
+        "heading": "The Discovery",
+        "content": "Deloitte Australia, one of the nation's premier consulting firms, found themselves in an embarrassing spotlight when errors were discovered in a major report they prepared for the federal government on welfare compliance. The errors were so peculiar and systematic that investigators immediately suspected artificial intelligence had been involved in the writing process—the modern equivalent of 'the dog ate my homework' but for professional services."
+      },
+      {
+        "heading": "The Suspicious Pattern",
+        "content": "The Australian Financial Review revealed that 'new errors have been found in a major report Deloitte prepared for the federal government, raising further suspicions some of the content' was AI-generated. The nature of these errors—apparently involving citations and quotes related to Australia's infamous robodebt case—were so characteristic of AI hallucinations that experts immediately pointed fingers at large language models rather than human incompetence."
+      },
+      {
+        "heading": "The Robodebt Irony",
+        "content": "If AI was indeed involved, the irony would be exquisite: using potentially unreliable artificial intelligence to analyse the consequences of unreliable automated systems. Robodebt became a national scandal precisely because automated systems made false determinations about welfare recipients. Having an AI potentially fabricate evidence about a case involving fake automated decisions would achieve what philosophers might call 'recursive digital incompetence.'"
+      },
+      {
+        "heading": "The Quandary",
+        "content": "Deloitte declined to answer questions about whether artificial intelligence was used in creating the report, leaving observers to choose between two equally entertaining possibilities: either the firm deployed AI so carelessly that it fabricated citations, or their human researchers produced work so error-prone that everyone assumed a machine must have done it. Both scenarios suggest a spectacular failure of quality control."
+      },
+      {
+        "heading": "Why They're Unverified",
+        "content": "This incident represents either the perfect AI Darwin Award candidate or the perfect example of how AI paranoia has reached peak absurdity. If confirmed as AI-generated errors, it would showcase the ultimate irony of robots lying about other robots' lies. If it's purely human error, it demonstrates that humans can now fail so spectacularly that artificial intelligence gets the blame. Either way, when your professional work is so flawed that everyone immediately suspects AI involvement, perhaps it's time to reassess your quality assurance processes."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Australian Financial Review: Deloitte report suspected of containing AI invented quote",
+        "url": "https://www.afr.com/companies/professional-services/deloitte-report-suspected-of-ai-invented-quote-from-robo-debt-case-20250825-p5mpjj"
+      }
+    ],
+    "image": "nominees/deloitte-citation-chaos.png"
+  },
+  {
     "id": "wa-lawyer-fake-citations-nominee",
     "title": "WA Lawyer - “Double AI Validation for Triple Fictional Citations”",
     "category": "Misplaced AI Confidence Award",
