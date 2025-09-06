@@ -4,6 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const shareBtn = e.target.closest('.share-button');
     if (shareBtn) {
       const url = shareBtn.getAttribute('data-share-url') || window.location.href;
+      
+      // Track share button click with Umami
+      if (typeof umami !== 'undefined') {
+        // Extract nominee name from URL for better tracking
+        const nomineeMatch = url.match(/nominees\/([^.]+)\.html/);
+        const nomineeName = nomineeMatch ? nomineeMatch[1] : 'unknown';
+        
+        umami.track('share-nominee', { 
+          nominee: nomineeName,
+          url: url,
+          page: window.location.pathname
+        });
+      }
+      
       copyToClipboard(url);
       showToast('Link copied to clipboard!');
       e.preventDefault();
