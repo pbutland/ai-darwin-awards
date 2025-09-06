@@ -58,8 +58,8 @@
     <script>
         // Sticky nominees button functionality
         document.addEventListener('DOMContentLoaded', function() {
-            const button = document.querySelector('.sticky-nominees-button');
-            const container = document.querySelector('.nominees-cta-container');
+            const button = document.getElementById('nominees-button');
+            const container = document.getElementById('nominees-cta-container');
             
             if (!button || !container) return;
             
@@ -101,11 +101,11 @@
     <main>
         <section>
             <div class="countdown-container">
-                <div class="countdown-label">Days Since Last AI catastrophe:</div>
+                <div class="countdown-label">Days Since Last Verified AI catastrophe:</div>
                 <div class="countdown-style" id="countdown-days">---</div>
             </div>
-            <div class="nominees-cta-container">
-                <button class="sticky-nominees-button" onclick="window.location.href='nominees-2025.html'">
+            <div id="nominees-cta-container" class="cta-container">
+                <button id="nominees-button" class="cta-button sticky-nominees-button" onclick="window.location.href='nominees-2025.html'">
                     <span class="button-text">See the Latest Nominees for 2025</span>
                     <span class="button-subtext">When AI Meets Human Overconfidence</span>
                 </button>
@@ -169,8 +169,14 @@
             <p>
                 Help us celebrate the pioneers who boldly went where no responsible person should go. Whether you've witnessed corporate AI overconfidence or experienced the delightful chaos of untested deployment, your nominations help build tomorrow's cautionary tales.
             </p>
+            <div class="cta-container nominate">
+                <button class="cta-button" onclick="window.location.href='nominate.html'">
+                    <span class="button-text">Submit Your Nomination</span>
+                    <span class="button-subtext">Help Document AI Misadventure for Posterity</span>
+                </button>
+            </div>
             <p>
-                <strong><a href="nominate.html">Submit your nomination</a></strong> and join our mission to document AI misadventure for educational purposes. Remember: today's catastrophically bad AI decision is tomorrow's AI Darwin Award winner!
+                Join our mission to document AI misadventure for educational purposes. Remember: today's catastrophically bad AI decision could well be tomorrow's AI Darwin Award winner!
             </p>
             <p><small><em>Disclaimer: By submitting a nomination, you acknowledge that the future of human civilisation may depend on people learning from these examples. No pressure.</em></small></p>
         </section>
