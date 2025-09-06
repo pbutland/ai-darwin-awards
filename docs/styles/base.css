@@ -138,10 +138,24 @@ blockquote {
 
 .footer {
     text-align: center;
-    color: var(--color-muted);
     font-size: 0.95rem;
     margin: 1.5rem 0;
     padding: 0 1rem;
+}
+
+.footer-links {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.footer-links a {
+    color: var(--color-muted);
+    text-decoration: none;
+    margin: 0 0.25rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 .footer-content {
