@@ -19,12 +19,7 @@ export function generateRSSFeed(nominees: any[]) {
       return `
     <item>
       <title><![CDATA[[${badge}] ${nominee.title}]]></title>
-      <description><![CDATA[
-        <p><strong>Category:</strong> ${nominee.category}</p>
-        <p><strong>Reported by:</strong> ${nominee.reportedBy}</p>
-        <p>${description}</p>
-        <p><a href="${nomineeUrl}">Read full details</a></p>
-      ]]></description>
+      <description><![CDATA[${description}]]></description>
       <link>${nomineeUrl}</link>
       <guid isPermaLink="true">${nomineeUrl}</guid>
       <pubDate>${pubDate}</pubDate>
