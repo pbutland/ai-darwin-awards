@@ -18,7 +18,7 @@ export function generateRSSFeed(nominees: any[]) {
       const badge = nominee.badge || 'Unverified';
       return `
     <item>
-      <title><![CDATA[${nominee.title}]]></title>
+      <title><![CDATA[[${badge}] ${nominee.title}]]></title>
       <description><![CDATA[
         <p><strong>Category:</strong> ${nominee.category}</p>
         <p><strong>Reported by:</strong> ${nominee.reportedBy}</p>
