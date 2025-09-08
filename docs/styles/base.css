@@ -197,6 +197,12 @@ blockquote {
   }
 }
 
+.rss-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em 0;
+}
+
 .footer {
     text-align: center;
     font-size: 0.95rem;
