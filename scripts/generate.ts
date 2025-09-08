@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { nomineeHtml, nomineeDetailHtml, getSlug, generateJsonLdNominees } from './nominees-util.js';
+import { generateRSSFeed } from './rss-utils.js';
 import { generateSitemap } from './sitemap-util.js';
 
 // Paths
@@ -78,5 +79,11 @@ try {
   prevSitemapXml = fs.readFileSync(sitemapPath, 'utf-8');
 } catch {}
 const sitemapXml = generateSitemap(baseUrl, docsDir, nomineeSlugs, prevSitemapXml);
+
 fs.writeFileSync(sitemapPath, sitemapXml, 'utf-8');
 console.log('Sitemap generated at docs/sitemap.xml');
+
+// Write RSS feed to project root as /rss.xml
+const rssContent = generateRSSFeed(nominees);
+fs.writeFileSync(path.join(__dirname, '../docs/rss.xml'), rssContent, 'utf-8');
+console.log('RSS feed generated at /rss.xml');
