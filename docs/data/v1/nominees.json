@@ -1,5 +1,44 @@
 [
   {
+    "id": "ai-darwin-awards-website-nominee",
+    "title": "AI Darwin Awards Website - \"The Ultimate Meta-Irony Achievement\"",
+    "category": "Recursive AI Hubris Award",
+    "badge": "Ineligible",
+    "nominee": "The AI Darwin Awards website itself for potentially using artificial intelligence to create content criticising artificial intelligence misuse.",
+    "reportedBy": "Anonymous nomination citing suspicious AI writing patterns identified using Wikipedia's Signs of AI Writing guidelines - September 10, 2025.",
+    "reportedDate": "2025-09-10",
+    "tagline": "When the watchers become the watched",
+    "sections": [
+      {
+        "heading": "The Accusation",
+        "content": "An anonymous submission alleged that the AI Darwin Awards website—dedicated to celebrating spectacular AI overconfidence—may itself demonstrate spectacular AI overconfidence by using artificial intelligence to generate its satirical commentary. The nomination cited telltale signs from Wikipedia's comprehensive guide to identifying AI-generated content, suggesting the site's authors might have deployed the very technology they critique to critique itself."
+      },
+      {
+        "heading": "The Evidence",
+        "content": "A careful analysis reveals several characteristics that align with known AI writing patterns: extensive use of em dashes for dramatic emphasis, promotional language structures, and the distinctive verbose style often associated with large language models attempting to sound sophisticated. The site's FAQ section displays particularly suspicious traits, including overly detailed explanations, systematic use of parallel structures, and the kind of elaborate self-referential humour that AI systems produce when prompted to be \"cleverly sarcastic.\" However, the content also demonstrates genuine understanding of the subject matter and maintains consistent satirical voice throughout—qualities that suggest either very sophisticated AI use or, more likely, human authorship with perhaps some AI assistance."
+      },
+      {
+        "heading": "The Irony",
+        "content": "If confirmed, this would represent the perfect recursive AI failure: a website warning about AI overconfidence potentially demonstrating AI overconfidence in its very construction. The site would join the ranks of those who looked at artificial intelligence and thought, \"You know what would be efficient? Using AI to write about why using AI is dangerous.\" It would be the digital equivalent of hiring a fox to write safety guidelines for henhouses, then being surprised when the manual contains chapters on \"Effective Chicken Seasoning Techniques.\""
+      },
+      {
+        "heading": "Why It's Ineligible",
+        "content": "This nomination fails to meet several key AI Darwin Award criteria despite its delicious irony. The alleged AI usage, if it exists, affects audiences seeking entertainment rather than people depending on AI for crucial decisions, lacks the catastrophic consequences typical of Darwin Award winners, and most critically, cannot be definitively verified. The writing patterns could equally indicate a human author with a penchant for dramatic punctuation and verbose explanations, or perhaps a human deliberately emulating AI writing styles for comedic effect. Moreover, the site demonstrates consistent understanding of AI limitations and maintains coherent satirical commentary throughout—suggesting that if AI was involved, it represents a deliberate creative choice rather than naive overconfidence in machine capabilities. The accusation itself creates the ultimate recursive loop: if this entry analyzing potential AI use is itself AI-generated, we've achieved peak technological self-awareness—or peak digital narcissism."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Signs of AI Writing - Comprehensive guide to identifying AI-generated content",
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+      },
+      {
+        "name": "Anonymous nomination submitted to AI Darwin Awards",
+        "url": "https://aidarwinawards.org/nominate.html"
+      }
+    ],
+    "image": "nominess/ai-darwin-awards-website.png"
+  },
+  {
     "id": "taco-bell-ai-drive-thru-nominee",
     "title": "Taco Bell AI Drive-Thru - “Hold the AI, Extra Chaos”",
     "category": "Misplaced AI Confidence Award",

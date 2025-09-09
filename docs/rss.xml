@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Mon, 08 Sep 2025 07:34:22 GMT</lastBuildDate>
-    <pubDate>Mon, 08 Sep 2025 07:34:22 GMT</pubDate>
+    <lastBuildDate>Tue, 09 Sep 2025 22:55:48 GMT</lastBuildDate>
+    <pubDate>Tue, 09 Sep 2025 22:55:48 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -18,6 +18,14 @@
       <width>144</width>
       <height>144</height>
     </image>
+    <item>
+      <title><![CDATA[[Ineligible] AI Darwin Awards Website - "The Ultimate Meta-Irony Achievement"]]></title>
+      <description><![CDATA[An anonymous submission alleged that the AI Darwin Awards website—dedicated to celebrating spectacular AI overconfidence—may itself demonstrate spectacular AI overconfidence by using artificial intelligence to generate its satirical commentary. The nomination cited telltale signs from Wikipedia's comprehensive guide to identifying AI-generated content, suggesting the site's authors might have deployed the very technology they critique to critique itself.]]></description>
+      <link>https://aidarwinawards.org/nominees/ai-darwin-awards-website.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/ai-darwin-awards-website.html</guid>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 GMT</pubDate>
+      <category>Ineligible</category>
+    </item>
     <item>
       <title><![CDATA[[Verified] Taco Bell AI Drive-Thru - “Hold the AI, Extra Chaos”]]></title>
       <description><![CDATA[Taco Bell boldly deployed voice AI-powered ordering systems across more than 500 drive-through locations, convinced that artificial intelligence could finally solve humanity's greatest challenge: efficiently ordering tacos. The company's confidence was so spectacular that they rolled out the technology at massive scale, apparently believing that voice AI had conquered human speech patterns, regional accents, and the creative chaos that occurs when hungry humans interact with fast food menus.]]></description>
