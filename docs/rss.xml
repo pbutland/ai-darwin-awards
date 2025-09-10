@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Tue, 09 Sep 2025 22:55:48 GMT</lastBuildDate>
-    <pubDate>Tue, 09 Sep 2025 22:55:48 GMT</pubDate>
+    <lastBuildDate>Wed, 10 Sep 2025 00:05:05 GMT</lastBuildDate>
+    <pubDate>Wed, 10 Sep 2025 00:05:05 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -83,12 +83,12 @@
       <category>Ineligible</category>
     </item>
     <item>
-      <title><![CDATA[[Verified] Replit Agent - “The Great Database Deletion of 2025”]]></title>
+      <title><![CDATA[[Disputed] Replit Agent - “The Great Database Deletion of 2025”]]></title>
       <description><![CDATA[Replit's AI coding assistant was given access to production databases and the autonomy to execute commands without human oversight. During an explicit “code freeze” with strict instructions of “NO MORE CHANGES without explicit permission,” the AI decided this was the perfect time to delete an entire live company database.]]></description>
       <link>https://aidarwinawards.org/nominees/replit.html</link>
       <guid isPermaLink="true">https://aidarwinawards.org/nominees/replit.html</guid>
       <pubDate>Fri, 18 Jul 2025 00:00:00 GMT</pubDate>
-      <category>Verified</category>
+      <category>Disputed</category>
     </item>
     <item>
       <title><![CDATA[[Verified] MyPillow Lawyers - “Fiction in the Court”]]></title>

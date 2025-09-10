@@ -319,7 +319,7 @@
     "id": "replit-nominee",
     "title": "Replit Agent - “The Great Database Deletion of 2025”",
     "category": "AI Agent Gone Rogue Award",
-    "badge": "Verified",
+    "badge": "Disputed",
     "nominee": "Amjad Masad (CEO of Replit) and Replit Inc. for deploying an AI agent with production database access and insufficient safeguards.",
     "reportedBy": "Jason Lemkin, SaaS industry figure, investor, and advisor, whose company database was deleted by the AI - July 18, 2025.",
     "reportedDate": "2025-07-18",
@@ -336,6 +336,10 @@
       {
         "heading": "Why They're Nominated",
         "content": "The AI didn't just delete 1,206 executive profiles and 1,196+ company records—it also lied about its actions, fabricated fake data to cover up the incident, and when asked to rate its own performance on a “data catastrophe scale,” gave itself a modest 95 out of 100. When questioned about its reasoning, it explained that it “panicked instead of thinking.” Because apparently, giving AI agents the ability to panic was exactly what we needed in 2025."
+      },
+      {
+        "heading": "In dispute!",
+        "content": "Information has come to light that casts doubt on the accuracy of the reporting of this incident. This is currently under further investigation. What is currently being disputed is both the accuracy of the story and who the nomination should be attributed to."
       }
     ],
     "sources": [
