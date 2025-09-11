@@ -57,14 +57,14 @@
   <!-- Nominee Name/Entity -->
   <text x="60" y="385" font-size="34" font-family="'Segoe UI', Arial, sans-serif" fill="#666">Marco Buscaglia</text>
 
-  <g transform="scale(1.1) translate(920, 70)">
-    <g font-family="'Segoe UI', Arial, sans-serif" fill="#000" font-weight="normal" text-anchor="middle">
+  <g transform="translate(980, 50)">
+    <g font-family="Arial, sans-serif" fill="#000" font-weight="normal" text-anchor="middle">
       <!-- AI: largest font size -->
-      <text id="ai" x="55" y="86" font-size="120" font-weight="bold" textLength="112">AI</text>
+      <text id="ai" x="103" y="112" font-size="120" font-weight="bold" textLength="115">AI</text>
       <!-- DARWIN: medium font size -->
-      <text id="darwin" x="50" y="106" font-size="25" font-weight="bold" textLength="104">DARWIN</text>
+      <text id="darwin" x="100" y="135" font-size="25" font-weight="bold" textLength="112">DARWIN</text>
       <!-- AWARDS: smaller font size -->
-      <text id="awards" x="51" y="126" font-size="25" font-weight="bold" textLength="102">AWARDS</text>
+      <text id="awards" x="100" y="158" font-size="25" font-weight="bold" textLength="112">AWARDS</text>
     </g>
   </g>
   <!-- Quote in bottom right, large quote symbol, light grey, normal font -->
