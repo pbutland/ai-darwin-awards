@@ -74,8 +74,20 @@ export function getSlug(nominee) {
   return nominee.id.replace(/-nominee$/, '');
 }
 
-// Generate detail HTML for a nominee, given the nominee object and the template string
-export function nomineeDetailHtml(nominee, nomineeTemplate) {
+// Generate detail HTML for a nominee, given the nominee object, template string, and optional prev/next nominees
+/**
+ * Generate detail HTML for a nominee, given the nominee object, template string, and optional prev/next nominees.
+ * @param nominee Nominee object
+ * @param nomineeTemplate HTML template string
+ * @param prevNominee Previous nominee object (or null)
+ * @param nextNominee Next nominee object (or null)
+ */
+export function nomineeDetailHtml(
+  nominee: any,
+  nomineeTemplate: string,
+  prevNominee: any = null,
+  nextNominee: any = null
+) {
   const slug = getSlug(nominee);
   const summary = nominee.summary || nominee.sections?.[0]?.content?.slice(0, 160) || '';
   const image = nominee.image ? nominee.image : 'aidarwinawards-banner.png';
@@ -95,6 +107,19 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
           <p><strong>Sources:</strong> ${nominee.sources.map((src) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>`).join(' | ')}</p>
         </div>
       `;
+
+  // Next/Previous links HTML
+  let navLinksHtml = '';
+  if (prevNominee || nextNominee) {
+    navLinksHtml = `
+      <hr class="nominee-nav-divider" />
+      <nav class="nominee-nav-links" aria-label="Nominee navigation">
+        ${prevNominee && typeof prevNominee === 'object' && prevNominee.title ? `<a class="prev-nominee-link" href="${getSlug(prevNominee)}.html">&larr; Previous: ${escapeHtml(String(prevNominee.title).split(' - ')[0])}</a>` : '<span></span>'}
+        ${nextNominee && typeof nextNominee === 'object' && nextNominee.title ? `<a class="next-nominee-link" href="${getSlug(nextNominee)}.html">Next: ${escapeHtml(String(nextNominee.title).split(' - ')[0])} &rarr;</a>` : '<span></span>'}
+      </nav>
+    `;
+  }
+
   // Get the first part of the title before the first ' - '
   const h1Title = nominee.title.split(' - ')[0];
   // Add script and toast container if not present
@@ -108,7 +133,7 @@ export function nomineeDetailHtml(nominee, nomineeTemplate) {
     .replace(/\[nominee-slug\]/g, escapeHtml(slug))
     .replace(/\[nominee-image\]/g, image)
     .replace(/\[Image description\]/g, escapeHtml(nominee.title))
-    .replace('[Details, sources, quotes, images]', detailsHtml)
+    .replace('[Details, sources, quotes, images]', detailsHtml + navLinksHtml)
     .replace(/\[Nominee tagline\]/g, escapeHtml(nominee.tagline));
   // Ensure actions.js is included
   if (!/actions\.js/.test(html)) {

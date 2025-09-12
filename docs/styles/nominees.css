@@ -1,3 +1,40 @@
+/* Navigation links for next/previous nominee */
+.nominee-nav-divider {
+    margin: 2.5rem 0 1.5rem 0;
+    border: none;
+    border-top: 2px solid var(--color-border);
+}
+
+.nominee-nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.nominee-nav-links a {
+    /* padding: 0.7em 1.2em; */
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.05em;
+    text-align: center;
+    min-width: 0;
+}
+   
+
+@media (max-width: 600px) {
+    .nominee-nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+    .nominee-nav-links a {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.7em 0.5em;
+    }
+}
 article.nominee {
     border-left: 4px solid var(--color-primary);
     margin: 1.5rem 0;
