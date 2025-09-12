@@ -24,17 +24,14 @@ if (!fs.existsSync(nomineesDir)) {
 // Read template
 const nomineeTemplate = fs.readFileSync(nomineeTemplatePath, 'utf-8');
 
-// Generate detail pages
-// Sort nominees by reportedDate ascending (chronological order)
-const sortedNominees = [...nominees].sort((a, b) => new Date(a.reportedDate).getTime() - new Date(b.reportedDate).getTime());
-
-for (let i = 0; i < sortedNominees.length; i++) {
-  const nominee = sortedNominees[i];
+// Generate detail pages in reverse order
+for (let i = nominees.length - 1; i >= 0; i--) {
+  const nominee = nominees[i];
   const slug = getSlug(nominee);
   const outPath = path.join(nomineesDir, `${slug}.html`);
   // Determine previous and next nominees (if any)
-  const prevNominee = i > 0 ? sortedNominees[i - 1] : null;
-  const nextNominee = i < sortedNominees.length - 1 ? sortedNominees[i + 1] : null;
+  const prevNominee = i < nominees.length - 1 ? nominees[i + 1] : null;
+  const nextNominee = i > 0 ? nominees[i - 1] : null;
   const html = nomineeDetailHtml(nominee, nomineeTemplate, prevNominee, nextNominee);
   fs.writeFileSync(outPath, html, 'utf-8');
   console.log(`Generated: docs/nominees/${slug}.html`);
