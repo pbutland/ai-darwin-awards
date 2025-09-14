@@ -542,6 +542,61 @@
     "image": "aidarwinawards-banner.png"
   },
   {
+    "id": "white-house-maha-report-nominee",
+    "title": "White House MAHA Report - “Make Citations Great Again”",
+    "category": "Government AI Hallucination Award",
+    "badge": "Unverified",
+    "nominee": "The White House, HHS, and the Trump administration's 'Make America Healthy Again' team for producing a health report featuring fabricated scientific citations that experts say bear the hallmarks of AI generation.",
+    "reportedBy": "Multiple major outlets including Washington Post, NOTUS, Forbes, and New York Times  - May 29, 2025.",
+    "reportedDate": "2025-05-29",
+    "tagline": "Alternative facts meet artificial intelligence",
+    "sections": [
+      {
+        "heading": "The Innovation",
+        "content": "The Trump administration's 'Make America Healthy Again' initiative promised to revolutionise American healthcare policy through evidence-based recommendations. The resulting report, developed over three months with HHS collaboration, represented what officials called comprehensive research into health policy—complete with extensive citations that would make any academic proud. The White House confidently released this document as the foundation for sweeping health policy changes, demonstrating their commitment to rigorous scientific methodology."
+      },
+      {
+        "heading": "The Fabrication Festival",
+        "content": "Multiple major news outlets discovered that the report contained fabricated scientific citations, with experts immediately suspecting AI involvement in the writing process. The most spectacular example involved citing Columbia University epidemiologist Katherine Keyes as the author of a paper she never wrote. When contacted by Axios reporter Sareen Habeshian, Dr Keyes confirmed she had not authored the referenced study, creating what STAT described as citations to studies that simply 'don't exist.' The pattern of errors was so characteristic of AI hallucinations that experts across multiple publications independently reached the same conclusion about likely artificial intelligence involvement."
+      },
+      {
+        "heading": "The Official Response",
+        "content": "When confronted with evidence of fabricated citations, the White House response demonstrated masterful spin techniques. Press Secretary Karoline Leavitt dismissed the fabricated citations as mere 'formatting issues'—apparently unaware that inventing nonexistent scientific papers represents a category error slightly more serious than inconsistent margins. HHS spokesperson Andrew Nixon confirmed there were 'minor citation and formatting errors' but assured the public that the report's 'substantive recommendations' remained sound. This response suggested that fabricated evidence is merely a cosmetic concern, like choosing the wrong font for a wedding invitation."
+      },
+      {
+        "heading": "The Academic Reality Check",
+        "content": "The incident revealed a fundamental misunderstanding of how scientific evidence works in policy development. Creating fictional studies to support health recommendations is rather like creating fictional ingredients to support recipe development—the end result might look impressive, but it's unlikely to nourish anyone. Dr Katherine Keyes' denial of authorship wasn't just embarrassing; it represented the kind of basic verification failure that would earn failing marks in undergraduate coursework, let alone federal health policy development."
+      },
+      {
+        "heading": "Damned If They Did, Damned If They Didn't",
+        "content": "While there is no definitive proof of AI involvement (yet), this nomination represents the perfect collision of governmental authority and spectacular failure of quality control that experts suspect may involve artificial intelligence overconfidence. Whether or not AI was actually used to generate citations, the White House managed to combine the credibility of government science with fabricated references that experts immediately recognised as characteristic of AI hallucinations. The response—dismissing fabricated scientific citations as 'formatting issues'—suggests either profound misunderstanding of scientific methodology or remarkable confidence that the public won't notice when the Emperor's new health policy has no actual citations. If AI was indeed involved, it would demonstrate breathtaking faith in machine-generated references for federal health policy. If it wasn't AI, then human researchers produced work so error-prone that everyone immediately assumed artificial intelligence must have been involved—which might be even more embarrassing. We eagerly await evidence from whistleblowers or officials confirming AI usage in order to verify this nomination, because we believe this could be a real contender for the top prize."
+      }
+    ],
+    "sources": [
+      {
+        "name": "The Washington Post: White House MAHA Report may have garbled science by using AI, experts say",
+        "url": "https://www.washingtonpost.com/health/2025/05/29/maha-rfk-jr-ai-garble/"
+      },
+      {
+        "name": "NOTUS: The MAHA Report Cites Studies That Don't Exist",
+        "url": "https://www.notus.org/health-science/make-america-healthy-again-report-citation-errors"
+      },
+      {
+        "name": "Forbes: Citations In RFK Jr.’s ‘MAHA’ Report On ‘Formatting Issues’",
+        "url": "https://www.forbes.com/sites/saradorn/2025/05/29/white-house-blames-nonexistent-medical-citations-in-rfk-jrs-maha-report-on-formatting-issues/"
+      },
+      {
+        "name": "Science Advisor: Trump officials downplay fake citations in high-profile report on children’s health",
+        "url": "https://www.science.org/content/article/trump-officials-downplay-fake-citations-high-profile-report-children-s-health"
+      },
+      {
+        "name": "STAT: The MAHA children’s health report mis-cited our research. That’s sloppy — and worrying",
+        "url": "https://www.statnews.com/2025/06/20/maha-children-health-report-citations-errors-sloppy/"
+      }
+    ],
+    "image": "nominees/white-house-maha-report.png"
+  },
+  {
     "id": "newspapers-nominee",
     "title": "Summer Reading List - “Literary Fiction About Fiction”",
     "category": "AI Journalism Failure Award",

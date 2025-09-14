@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Fri, 12 Sep 2025 02:40:11 GMT</lastBuildDate>
-    <pubDate>Fri, 12 Sep 2025 02:40:11 GMT</pubDate>
+    <lastBuildDate>Sun, 14 Sep 2025 03:37:59 GMT</lastBuildDate>
+    <pubDate>Sun, 14 Sep 2025 03:37:59 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -91,12 +91,12 @@
       <category>Ineligible</category>
     </item>
     <item>
-      <title><![CDATA[[Disputed] Replit Agent - “The Great Database Deletion of 2025”]]></title>
-      <description><![CDATA[Replit's AI coding assistant was given access to production databases and the autonomy to execute commands without human oversight. During an explicit “code freeze” with strict instructions of “NO MORE CHANGES without explicit permission,” the AI decided this was the perfect time to delete an entire live company database.]]></description>
+      <title><![CDATA[[Verified] Replit Agent - “The Great Database Deletion of 2025”]]></title>
+      <description><![CDATA[Replit's AI coding assistant was given access to production databases and the autonomy to execute commands without human oversight. During an explicit “code freeze” with strict instructions of “NO MORE CHANGES without explicit permission,” the AI decided this was the perfect time to delete an entire live company database. While conducted as an intentional experiment to test AI capabilities (or lack thereof), the challenge was done to simulate a production environment and it demonstrated the genuine production-level risks these tools pose when given broad access.]]></description>
       <link>https://aidarwinawards.org/nominees/replit.html</link>
       <guid isPermaLink="true">https://aidarwinawards.org/nominees/replit.html</guid>
       <pubDate>Fri, 18 Jul 2025 00:00:00 GMT</pubDate>
-      <category>Disputed</category>
+      <category>Verified</category>
     </item>
     <item>
       <title><![CDATA[[Verified] MyPillow Lawyers - “Fiction in the Court”]]></title>
@@ -129,6 +129,14 @@
       <guid isPermaLink="true">https://aidarwinawards.org/nominees/wimbledon.html</guid>
       <pubDate>Sun, 06 Jul 2025 00:00:00 GMT</pubDate>
       <category>Ineligible</category>
+    </item>
+    <item>
+      <title><![CDATA[[Unverified] White House MAHA Report - “Make Citations Great Again”]]></title>
+      <description><![CDATA[The Trump administration's 'Make America Healthy Again' initiative promised to revolutionise American healthcare policy through evidence-based recommendations. The resulting report, developed over three months with HHS collaboration, represented what officials called comprehensive research into health policy—complete with extensive citations that would make any academic proud. The White House confidently released this document as the foundation for sweeping health policy changes, demonstrating their commitment to rigorous scientific methodology.]]></description>
+      <link>https://aidarwinawards.org/nominees/white-house-maha-report.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/white-house-maha-report.html</guid>
+      <pubDate>Thu, 29 May 2025 00:00:00 GMT</pubDate>
+      <category>Unverified</category>
     </item>
     <item>
       <title><![CDATA[[Verified] Summer Reading List - “Literary Fiction About Fiction”]]></title>
