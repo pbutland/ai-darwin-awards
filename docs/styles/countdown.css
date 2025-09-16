@@ -1,0 +1,47 @@
+.countdown-container {
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.countdown-style {
+  font-family: 'DSEG7-Classic', 'Roboto', 'Courier New', monospace;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 1.5rem;
+  margin: 1rem auto;
+  width: fit-content;
+  text-align: center;
+  display: inline-block;
+  z-index: 2;
+  font-size: 3rem;
+  color: #00ff41;
+  text-shadow: 
+    0 0 8px #00ff41,
+    0 0 20px #00ff41;
+  position: relative;
+}
+
+/* Create the background '8' characters showing all segments */
+.countdown-style::before {
+  content: attr(data-countdown);
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DSEG7-Classic', 'Roboto', 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  color: #003300;
+  text-shadow: none;
+  z-index: -1;
+  pointer-events: none;
+}
