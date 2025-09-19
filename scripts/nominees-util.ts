@@ -1,5 +1,5 @@
 
-export function escapeHtml(str) {
+export function escapeHtml(str: string) {
   return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -30,14 +30,16 @@ export function generateJsonLdNominees(nominees: any[]) {
 export function nomineeHtml(nominee: any) {
   const slug = getSlug(nominee);
   const nomineeUrl = `nominees/${slug}.html`;
+  const halBadge = nominee.halCategory ? `<img src="images/hal9000.svg" alt="HAL 9000 Badge" title="HAL 9000 Category (See FAQs for details)" class="hal9000-badge" />` : '';
+  const halBadgeMobile = nominee.halCategory ? `<img src="images/hal9000.svg" alt="HAL 9000 Badge" title="HAL 9000 Category (See FAQs for details)" class="hal9000-badge-mobile" />` : '';
   const nomineeShareUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   return `
             <article class="nominee" id="${escapeHtml(nominee.id)}">
                 <details>
                     <summary>
                         <span class="nominee-title">${escapeHtml(nominee.title)}</span>
-                        <h3 class="category">${escapeHtml(nominee.category)}</h3>
-                        <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>
+                        <h3 class="category">${escapeHtml(nominee.category)}${halBadge}</h3>
+                        <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>${halBadgeMobile}
                     </summary>
                     <div class="nominee-details">
                         <p class="attribution">
@@ -69,7 +71,7 @@ export function nomineeHtml(nominee: any) {
 
 
 // Utility to get slug for a nominee
-export function getSlug(nominee) {
+export function getSlug(nominee: any) {
   if (nominee.slug) return nominee.slug;
   return nominee.id.replace(/-nominee$/, '');
 }
@@ -93,13 +95,14 @@ export function nomineeDetailHtml(
   const image = nominee.image ? nominee.image : 'aidarwinawards-banner.png';
   const nomineeUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   const breadcrumbTitle = nominee.title.split(' - ')[0];
+  const halBadge = nominee.halCategory ? `<img src="../images/hal9000.svg" alt="HAL 9000 Badge" title="HAL 9000 Category (See FAQs for details)" class="hal9000-badge-nominees-page" />` : '';
   const detailsHtml = `
         <div class="nominee-details">
           <div class="actions">
             <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
               <img src="../images/share.svg" alt="Share this nominee" />
             </button>
-            <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>
+            <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>${halBadge}
           </div>
           <p class="attribution"><strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}</p>
           <p class="attribution"><strong>Reported by:</strong> ${escapeHtml(nominee.reportedBy)}</p>

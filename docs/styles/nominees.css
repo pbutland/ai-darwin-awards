@@ -20,7 +20,6 @@
     text-align: center;
     min-width: 0;
 }
-   
 
 @media (max-width: 600px) {
     .nominee-nav-links {
@@ -120,6 +119,44 @@ h3.category {
 .nominee-section h3 {
     font-size: 1.1em;
     margin-block-end: 0;
+}
+
+.no-nominees-notice {
+    background: var(--color-surface);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+}
+
+.hal9000-badge,
+.hal9000-badge-nominees-page {
+    height: 2em;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-bottom: 0.2em;
+    display: inline-block;
+    position: static;
+}
+
+.hal9000-badge-nominees-page {
+    margin-bottom: 0;
+}
+
+.hal9000-badge-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hal9000-badge {
+        display: none;
+    }
+    .hal9000-badge-mobile {
+        display: inline-block;
+        height: 1.6em;
+        vertical-align: middle;
+        margin-left: 0.5em;
+        margin-bottom: 0.1em;
+    }
 }
 
 .disputed-badge,
