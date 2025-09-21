@@ -238,7 +238,9 @@ h3.category {
     font-weight: 600;
 }
 
-.share-button, .open-new-window-button {
+.comment-button,
+.share-button,
+.open-new-window-button {
     background: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: 50%;
@@ -258,13 +260,21 @@ h3.category {
     margin: 0 10px 0 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.share-button:hover, .open-new-window-button:hover {
+.comment-button:hover,
+.share-button:hover,
+.open-new-window-button:hover {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
     transform: scale(1.05);
 }
-.share-button:active, .open-new-window-button:active {
+.comment-button:active,
+.share-button:active,
+.open-new-window-button:active {
     transform: scale(0.95);
+}
+
+.comment-button[data-open-url] img {
+    filter: none;
 }
 
 .actions {

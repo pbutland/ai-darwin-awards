@@ -33,6 +33,15 @@ export function nomineeHtml(nominee: any) {
   const halBadge = nominee.halCategory ? `<img src="images/hal9000.svg" alt="HAL 9000 Badge" title="HAL 9000 Category (See FAQs for details)" class="hal9000-badge" />` : '';
   const halBadgeMobile = nominee.halCategory ? `<img src="images/hal9000.svg" alt="HAL 9000 Badge" title="HAL 9000 Category (See FAQs for details)" class="hal9000-badge-mobile" />` : '';
   const nomineeShareUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
+  // Social comment buttons
+  const blueskyButton = nominee.bluesky ? `
+                            <button class="comment-button" data-open-url="${escapeHtml(nominee.bluesky)}" title="Comment on Bluesky" aria-label="Comment on Bluesky">
+                                <img src="images/bluesky.svg" alt="Bluesky logo" />
+                            </button>` : '';
+  const redditButton = nominee.reddit ? `
+                            <button class="comment-button" data-open-url="${escapeHtml(nominee.reddit)}" title="Comment on Reddit" aria-label="Comment on Reddit">
+                                <img src="images/reddit.svg" alt="Reddit logo" />
+                            </button>` : '';
   return `
             <article class="nominee" id="${escapeHtml(nominee.id)}">
                 <details>
@@ -54,7 +63,7 @@ export function nomineeHtml(nominee: any) {
                             </button>
                             <button class="open-new-window-button" data-open-url="${escapeHtml(nomineeUrl)}" title="Open in new window" aria-label="Open in new window">
                                 <img src="images/open-new-window.svg" alt="Open in new window" />
-                            </button>
+                            </button>${blueskyButton}${redditButton}
                         </div>
                         ${nominee.sections.map((section: any) => `
                         <div class="nominee-section">
@@ -96,12 +105,21 @@ export function nomineeDetailHtml(
   const nomineeUrl = `https://aidarwinawards.org/nominees/${slug}.html`;
   const breadcrumbTitle = nominee.title.split(' - ')[0];
   const halBadge = nominee.halCategory ? `<img src="../images/hal9000.svg" alt="HAL 9000 Badge" title="HAL 9000 Category (See FAQs for details)" class="hal9000-badge-nominees-page" />` : '';
+  // Social comment buttons
+  const blueskyButton = nominee.bluesky ? `
+            <button class="comment-button" data-open-url="${escapeHtml(nominee.bluesky)}" title="Comment on Bluesky" aria-label="Comment on Bluesky">
+                <img src="../images/bluesky.svg" alt="Bluesky logo" />
+            </button>` : '';
+  const redditButton = nominee.reddit ? `
+            <button class="comment-button" data-open-url="${escapeHtml(nominee.reddit)}" title="Comment on Reddit" aria-label="Comment on Reddit">
+                <img src="../images/reddit.svg" alt="Reddit logo" />
+            </button>` : '';
   const detailsHtml = `
         <div class="nominee-details">
           <div class="actions">
             <button class="share-button" data-share-url="${nomineeUrl}" title="Share this nominee" aria-label="Share this nominee">
               <img src="../images/share.svg" alt="Share this nominee" />
-            </button>
+            </button>${blueskyButton}${redditButton}
             <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>${halBadge}
           </div>
           <p class="attribution"><strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}</p>

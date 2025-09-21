@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       showToast('Link copied to clipboard!');
       e.preventDefault();
     }
-    const openBtn = e.target.closest('.open-new-window-button');
+    const openBtn = e.target.closest('.open-new-window-button, .comment-button');
     if (openBtn) {
       const url = openBtn.getAttribute('data-open-url');
       if (url) window.open(url, '_blank', 'noopener');

@@ -37,7 +37,9 @@
         "url": "https://www.nbcnews.com/tech/elon-musk/tesla-full-self-driving-fails-train-crossings-drivers-warn-railroad-rcna225558"
       }
     ],
-    "image": "nominees/tesla-fsd-train-crossings.png"
+    "image": "nominees/tesla-fsd-train-crossings.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lzcttogvi226",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmgfz7/tesla_full_selfdriving_trains_vs_brains/"
   },
   {
     "id": "ai-darwin-awards-website-nominee",
@@ -116,7 +118,9 @@
         "url": "https://nypost.com/2025/08/29/business/ex-yahoo-exec-killed-his-mom-after-chatgpt-fed-his-paranoia-report/"
       }
     ],
-    "image": "nominees/chatgpt-paranoid-delusions.png"
+    "image": "nominees/chatgpt-paranoid-delusions.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lzamxdcb5k2y",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmeuya/chatgpt_confidant_when_ai_becomes_your_only_friend/"
   },
   {
     "id": "taco-bell-ai-drive-thru-nominee",
@@ -155,7 +159,9 @@
         "url": "https://www.wsj.com/articles/taco-bell-rethinks-future-of-voice-ai-at-the-drive-through-72990b5a"
       }
     ],
-    "image": "nominees/taco-bell-ai-drive-thru.png"
+    "image": "nominees/taco-bell-ai-drive-thru.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lz5yktic522j",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmet0n/taco_bell_ai_drivethru_hold_the_ai_extra_chaos/"
   },
   {
     "id": "deloitte-robo-debt-nominee",
@@ -241,7 +247,9 @@
         "url": "https://www.damiencharlotin.com/hallucinations/?q=&sort_by=-date&states=Australia&period_idx=0"
       }
     ],
-    "image": "nominees/wa-lawyer-fake-citations.png"
+    "image": "nominees/wa-lawyer-fake-citations.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lz3g3unte225",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmd928/wa_lawyer_double_ai_validation_for_triple/"
   },
   {
     "id": "chatgpt-salt-nominee",
@@ -315,7 +323,9 @@
         "url": "https://aclanthology.org/2025.acl-long.334/"
       }
     ],
-    "image": "nominees/gpt5-jailbreak.png"
+    "image": "nominees/gpt5-jailbreak.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lyycbbfy522u",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmd864/gpt5_jailbreak_one_hour_security_record/"
   },
   {
     "id": "airbnb-nominee",
@@ -350,7 +360,9 @@
         "url": "https://www.theguardian.com/technology/2025/aug/02/airbnb-guest-damage-claim-refund-photos"
       }
     ],
-    "image": "nominees/airbnb-host.png"
+    "image": "nominees/airbnb-host.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lyvxir3mnk2u",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmcayy/airbnb_host_aigenerated_damage_claims/"
   },
   {
     "id": "tea-nominee",
@@ -437,7 +449,9 @@
         "url": "https://x.com/amasad/status/1946986468586721478"
       }
     ],
-    "image": "nominees/replit.png"
+    "image": "nominees/replit.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lytczhua7c2h",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmbr85/replit_agent_the_great_database_deletion_of_2025/"
   },
   {
     "id": "mypillow-nominee",
@@ -472,7 +486,9 @@
         "url": "https://www.npr.org/2025/07/10/nx-s1-5463512/ai-courts-lawyers-mypillow-fines"
       }
     ],
-    "image": "nominees/mypillow-lawyers.png"
+    "image": "nominees/mypillow-lawyers.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lyrgbqzvi22k",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nmbg8s/mypillow_lawyers_fiction_in_the_court/"
   },
   {
     "id": "mcdonalds-nominee",
@@ -507,7 +523,9 @@
         "url": "https://www.wired.com/story/mcdonalds-ai-hiring-chat-bot-paradoxai/"
       }
     ],
-    "image": "nominees/mcdonalds-ai-chatbot.png"
+    "image": "nominees/mcdonalds-ai-chatbot.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lyoupudgws2x",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nlpqb0/mcdonalds_ai_chatbot_123456_security_excellence/"
   },
   {
     "id": "xbox-nominee",
@@ -542,7 +560,9 @@
         "url": "https://www.bbc.com/news/articles/ckglzxy389zo"
       }
     ],
-    "image": "nominees/xbox-ai-therapy.png"
+    "image": "nominees/xbox-ai-therapy.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lymilvrtns2r",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nlphy2/xbox_producer_chatgpt_therapy_for_layoffs/"
   },
   {
     "id": "wimbledon-nominee",
@@ -675,6 +695,8 @@
         "url": "https://www.404media.co/chicago-sun-times-prints-ai-generated-summer-reading-list-with-books-that-dont-exist/"
       }
     ],
-    "image": "nominees/summer-reading-list.png"
+    "image": "nominees/summer-reading-list.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lyjyz72utk24",
+    "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nllmtv/summer_reading_list_literary_fiction_about_fiction/"
   }
 ]
