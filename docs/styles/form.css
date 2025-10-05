@@ -11,6 +11,10 @@
     box-shadow: var(--color-shadow);
     border: 1px solid var(--color-border);
 }
+.form-responsive.voting {
+    padding-bottom: 120%;
+}
+
 .form-responsive iframe {
     position: absolute;
     top: 0;

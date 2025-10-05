@@ -7,6 +7,11 @@ const staticPages: Array<{ file: string; priority?: string; url?: string }> = [
   { file: 'index.html', url: '', priority: '1.0' }, // Use root URL for homepage
   { file: 'nominees-2025.html', priority: '0.9' },
   { file: 'faq.html', priority: '0.7' },
+// Uncomment once active
+//   { file: 'vote.html', priority: '0.9' },
+//   { file: 'winners.html', priority: '0.9' },
+//   { file: 'winners-2025.html', priority: '0.9' },
+//   { file: 'nominees-2026.html', priority: '0.9' },
 ];
 
 
