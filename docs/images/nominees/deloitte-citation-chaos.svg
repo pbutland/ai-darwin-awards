@@ -49,10 +49,10 @@
   </g>
   <!-- Short Title -->
   <text x="130" y="150" font-size="72" font-family="'Segoe UI', Arial, sans-serif" fill="#222" font-weight="bold">AI suspected citations</text>
-  <!-- Nominee Badge (Unverified) -->
-  <rect x="55" y="193" width="196" height="54" rx="27" fill="#fff4e6" stroke="#b85c00" stroke-width="2"/>
-  <text x="153" y="232" text-anchor="middle" font-size="34" font-family="'Segoe UI', Arial, sans-serif" fill="#b85c00" font-weight="bold">Unverified</text>
-  <text x="280" y="232" font-size="34" font-family="'Segoe UI', Arial, sans-serif" fill="#888">August 25, 2025</text>
+  <!-- Nominee Badge (Verified) -->
+  <rect x="60" y="193" width="162" height="54" rx="27" fill="#e8f5e8" stroke="#2d5016" stroke-width="2"/>
+  <text x="141" y="232" text-anchor="middle" font-size="34" font-family="'Segoe UI', Arial, sans-serif" fill="#2d5016" font-weight="bold">Verified</text>
+  <text x="268" y="232" font-size="34" font-family="'Segoe UI', Arial, sans-serif" fill="#888">Aug 28, 2025</text>
 
   <!-- Tagline -->
   <text x="60" y="323" font-size="43" font-family="'Segoe UI', Arial, sans-serif" fill="#00598F">Human mistakes that scream artificial intelligence</text>

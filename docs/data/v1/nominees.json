@@ -165,13 +165,13 @@
   },
   {
     "id": "deloitte-robo-debt-nominee",
-    "title": "Deloitte Citation Chaos - “Welfare Compliance Report Meets Robot Writer?”",
-    "category": "Suspected AI Mishap Award",
-    "badge": "Unverified",
-    "nominee": "Deloitte Australia for producing a government report containing citation errors so spectacular they raised immediate suspicions of AI involvement.",
+    "title": "Deloitte Citation Chaos - “Welfare Compliance Report Meets Robot Writer”",
+    "category": "Government AI Hallucination Award",
+    "badge": "Verified",
+    "nominee": "Deloitte Australia for producing a government report containing citation errors so spectacular they raised immediate suspicions of AI involvement, then admitting to using AI after initially declining to comment.",
     "reportedBy": "Australian Financial Review investigation into suspicious content in government contractor reports - August 25, 2025.",
     "reportedDate": "2025-08-25",
-    "tagline": "When your citations are so wrong, everyone assumes AI did it",
+    "tagline": "When your citations are so wrong, everyone assumes AI did it—and they're right",
     "sections": [
       {
         "heading": "The Discovery",
@@ -183,21 +183,25 @@
       },
       {
         "heading": "The Robodebt Irony",
-        "content": "If AI was indeed involved, the irony would be exquisite: using potentially unreliable artificial intelligence to analyse the consequences of unreliable automated systems. Robodebt became a national scandal precisely because automated systems made false determinations about welfare recipients. Having an AI potentially fabricate evidence about a case involving fake automated decisions would achieve what philosophers might call 'recursive digital incompetence.'"
+        "content": "The irony proved exquisite: using unreliable artificial intelligence to analyse the consequences of unreliable automated systems. Robodebt became a national scandal precisely because automated systems made false determinations about welfare recipients. Having an AI fabricate evidence about a case involving fake automated decisions achieved what philosophers might call 'recursive digital incompetence.'"
       },
       {
-        "heading": "The Quandary",
-        "content": "Deloitte declined to answer questions about whether artificial intelligence was used in creating the report, leaving observers to choose between two equally entertaining possibilities: either the firm deployed AI so carelessly that it fabricated citations, or their human researchers produced work so error-prone that everyone assumed a machine must have done it. Both scenarios suggest a spectacular failure of quality control."
+        "heading": "The Confession",
+        "content": "Initially, Deloitte declined to answer questions about whether artificial intelligence was used in creating the report. However, after University of Sydney academic Dr Christopher Rudge highlighted multiple errors and speculated about AI hallucinations, Deloitte was forced to issue a revised version of the $440,000 report. Buried in the methodology section was their quiet confession: they had used 'a generative AI large language model (Azure OpenAI GPT-4o) based tool chain' for what they euphemistically called 'traceability and documentation gaps.' The revised report deleted a dozen nonexistent references, fabricated quotes from Federal Court judgments, and imaginary academic papers—while Deloitte agreed to refund the government partially for their AI-assisted fiction writing."
       },
       {
-        "heading": "Why They're Unverified",
-        "content": "This incident represents either the perfect AI Darwin Award candidate or the perfect example of how AI paranoia has reached peak absurdity. If confirmed as AI-generated errors, it would showcase the ultimate irony of robots lying about other robots' lies. If it's purely human error, it demonstrates that humans can now fail so spectacularly that artificial intelligence gets the blame. Either way, when your professional work is so flawed that everyone immediately suspects AI involvement, perhaps it's time to reassess your quality assurance processes."
+        "heading": "Why They're Now Verified",
+        "content": "What began as suspicion based on telltale AI hallucination patterns has now been confirmed through Deloitte's own admission. This case perfectly demonstrates the AI Darwin Award criteria: spectacular overconfidence in artificial intelligence, deployment without adequate verification, and a cover-up attempt that made the situation worse. Dr Rudge concluded that 'the core analysis was done by an AI' and declared the recommendations untrustworthy—academic speak for 'you can't build policy on robot fantasies.' Deloitte's journey from 'we don't comment on our methods' to 'okay, we used AI and it hallucinated everything' represents the complete lifecycle of AI overconfidence meeting professional accountability. When your $440,000 government report is so obviously AI-generated that academics immediately spot the hallucinations, and you have to issue refunds while quietly admitting to using GPT-4o, you've achieved the perfect storm of technological hubris and quality control failure that defines the AI Darwin Awards."
       }
     ],
     "sources": [
       {
         "name": "Australian Financial Review: Deloitte report suspected of containing AI invented quote",
         "url": "https://www.afr.com/companies/professional-services/deloitte-report-suspected-of-ai-invented-quote-from-robo-debt-case-20250825-p5mpjj"
+      },
+      {
+        "name": "Deloitte to refund government, admits using AI in $440k report",
+        "url": "https://www.afr.com/companies/professional-services/deloitte-to-refund-government-after-admitting-ai-errors-in-440k-report-20251005-p5n05p"
       }
     ],
     "image": "nominees/deloitte-citation-chaos.png"
@@ -654,6 +658,10 @@
       {
         "name": "STAT: The MAHA children’s health report mis-cited our research. That’s sloppy — and worrying",
         "url": "https://www.statnews.com/2025/06/20/maha-children-health-report-citations-errors-sloppy/"
+      },
+      {
+        "name": "The MAHA Report’s AI fingerprints, annotated",
+        "url": "https://www.washingtonpost.com/health/2025/05/30/maha-report-ai-white-house/"
       }
     ],
     "image": "nominees/white-house-maha-report.png"
