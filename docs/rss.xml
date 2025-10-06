@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Wed, 17 Sep 2025 00:22:14 GMT</lastBuildDate>
-    <pubDate>Wed, 17 Sep 2025 00:22:14 GMT</pubDate>
+    <lastBuildDate>Mon, 06 Oct 2025 05:09:32 GMT</lastBuildDate>
+    <pubDate>Mon, 06 Oct 2025 05:09:32 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -152,6 +152,14 @@
       <link>https://aidarwinawards.org/nominees/newspapers.html</link>
       <guid isPermaLink="true">https://aidarwinawards.org/nominees/newspapers.html</guid>
       <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
+      <category>Verified</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] Tromsø Municipality - “Closing Schools with Fictional Sources”]]></title>
+      <description><![CDATA[Tromsø Municipality faced the challenging task of justifying the closure of eight schools and several kindergartens—a decision that would affect thousands of families and reshape the city's educational landscape. Rather than conduct thorough research using actual academic sources, the municipal administration discovered the efficiency of artificial intelligence assistance. They confidently deployed AI to help create a comprehensive 120-page report that would serve as the foundation for one of the most significant educational policy decisions in the municipality's recent history. The report needed robust academic backing to convince sceptical residents and politicians that school closures were justified, so naturally, they turned to technology that specialises in producing convincing-sounding content.]]></description>
+      <link>https://aidarwinawards.org/nominees/tromso-municipality-fake-citations.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/tromso-municipality-fake-citations.html</guid>
+      <pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate>
       <category>Verified</category>
     </item>
   </channel>

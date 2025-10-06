@@ -698,5 +698,56 @@
     "image": "nominees/summer-reading-list.png",
     "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3lyjyz72utk24",
     "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nllmtv/summer_reading_list_literary_fiction_about_fiction/"
+  },
+  {
+    "id": "tromso-municipality-fake-citations-nominee",
+    "title": "Tromsø Municipality - “Closing Schools with Fictional Sources”",
+    "category": "Legal AI Hallucination Award",
+    "badge": "Verified",
+    "nominee": "Tromsø Municipality and Municipal Director Stig Tore Johnsen for using artificial intelligence to generate research citations for a critical school closure report, creating a policy foundation built entirely on fabricated academic sources.",
+    "reportedBy": "NRK investigation with follow-up reporting by David Gerard and multiple Norwegian outlets - March 28, 2025.",
+    "reportedDate": "2025-03-28",
+    "tagline": "When policy meets fiction",
+    "sections": [
+      {
+        "heading": "The Innovation",
+        "content": "Tromsø Municipality faced the challenging task of justifying the closure of eight schools and several kindergartens—a decision that would affect thousands of families and reshape the city's educational landscape. Rather than conduct thorough research using actual academic sources, the municipal administration discovered the efficiency of artificial intelligence assistance. They confidently deployed AI to help create a comprehensive 120-page report that would serve as the foundation for one of the most significant educational policy decisions in the municipality's recent history. The report needed robust academic backing to convince sceptical residents and politicians that school closures were justified, so naturally, they turned to technology that specialises in producing convincing-sounding content."
+      },
+      {
+        "heading": "The Fabrication Festival",
+        "content": "The municipality's spectacular display of confidence in AI-generated research resulted in a report where only seven of 18 cited sources actually existed. The AI had helpfully invented academic works including “Quality in School: Learning, Well-being and Relationships” by Professor Thomas Nordahl and “Inclusion and Quality in Kindergarten and School” by Professor Peder Haug. When contacted by journalists, Professor Nordahl observed: “I've been quoted and misinterpreted before, but I've never been quoted before on something I never wrote.” Professor Haug noted that whilst he had written a book titled “Inclusion” in 2014, the AI had creatively updated both the title and publication year to 2024, presumably to make it appear more current and relevant to the municipality's needs."
+      },
+      {
+        "heading": "The Democratic Foundation",
+        "content": "The most delicious irony emerged when journalists discovered that whilst Professor Nordahl had never written the fictional book the municipality cited, he had actually authored a real 2022 report titled “School size and relationships with student well-being and learning”—research that the municipality had completely ignored in favour of AI-generated alternatives. Professor Nordahl noted the peculiar situation: “It's a bit strange that they don't use what I've done, but use something completely different.” The municipality had essentially bypassed genuine academic research to embrace fictional academic research that happened to support their predetermined conclusions."
+      },
+      {
+        "heading": "The Administrative Scandal",
+        "content": "Municipal Director Stig Tore Johnsen eventually admitted that humans have written the knowledge base, but artificial intelligence has been used as an aid, calling the situation “embarrassing” and acknowledging “we deeply regret” the errors. The consultation process was suspended for six months whilst the municipality attempted to rebuild their policy foundation using sources that actually exist. Jonas Stein, an associate professor at UiT The Arctic University of Norway, called it “perhaps the first major AI scandal in the Norwegian public sector,” noting this was “classic Chat GPT and something that happens all the time in student work.” The revelation that a major municipal policy decision was based on AI hallucinations prompted calls for comprehensive reviews of all municipal reports and the implementation of AI literacy courses for government employees."
+      },
+      {
+        "heading": "Why They're Nominated",
+        "content": "This nomination represents the perfect storm of artificial intelligence meeting administrative overconfidence in the most consequential possible context: democratic decision-making. Tromsø Municipality managed to base major policy decisions affecting thousands of families on research that existed only in the fevered imagination of large language models. The municipality's touching faith that AI could generate credible academic sources without verification demonstrates either breathtaking technological naivety or a profound misunderstanding of how evidence-based policy should work. When your municipal report contains more fictional citations than a fantasy novel, and you're using these fabrications to justify closing schools, perhaps it's time to reconsider whether artificial intelligence has truly mastered the art of academic research. The fact that the municipality ignored genuine research whilst embracing fictional research that supported their preferred outcome suggests that AI was being used not as a research tool but as a confirmation bias generator—exactly the kind of spectacular misuse of technology that exemplifies the AI Darwin Awards principle of artificial intelligence colliding with natural stupidity."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NRK: Municipality caught using AI: – This is embarrassing",
+        "url": "https://www.nrk.no/tromsogfinnmark/brukte-ki-for-a-lage-ny-skolestruktur-i-tromso_-flere-feil-oppdaget-1.17359090"
+      },
+      {
+        "name": "David Gerard: How can Tromsø, Norway shut down some schools? Let's ask the AI!",
+        "url": "https://pivot-to-ai.com/2025/03/28/how-can-tromso-norway-shut-down-some-schools-lets-ask-the-ai/"
+      },
+      {
+        "name": "Digi.no: The scandal in Tromsø: The municipality used sources that AI had fabricated",
+        "url": "https://www.digi.no/artikler/skandalen-i-tromso-kommunen-brukte-kilder-som-ki-hadde-diktet-opp/557342"
+      },
+      {
+        "name": "Tromsø Municipality - New kindergarten and school structure report",
+        "url": "https://tromso.kommune.no/document/4564"
+      }
+    ],
+    "image": "aidarwinawards-banner.png"
   }
 ]
