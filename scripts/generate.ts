@@ -32,38 +32,54 @@ for (let i = nominees.length - 1; i >= 0; i--) {
   // Determine previous and next nominees (if any)
   const prevNominee = i < nominees.length - 1 ? nominees[i + 1] : null;
   const nextNominee = i > 0 ? nominees[i - 1] : null;
-  const html = nomineeDetailHtml(nominee, nomineeTemplate, prevNominee, nextNominee);
+  const nomineeYear = String(new Date(nominee.reportedDate).getFullYear());
+  // Replace [YEAR] in the template
+  const nomineeTemplateForYear = nomineeTemplate.replace(/\[YEAR\]/g, nomineeYear);
+  const html = nomineeDetailHtml(nominee, nomineeTemplateForYear, prevNominee, nextNominee);
   fs.writeFileSync(outPath, html, 'utf-8');
   console.log(`Generated: docs/nominees/${slug}.html`);
 }
 
 // Update nominees-2025.html
-let html = fs.readFileSync(htmlPath, 'utf-8');
 
-// Replace the HTML nominees section
-html = html.replace(
-  /<!-- BEGIN NOMINEES -->(.|\n|\r)*?<!-- END NOMINEES -->/g,
-  `<!-- BEGIN NOMINEES -->${nominees.map(nomineeHtml).join('\n')}
+// Group nominees by year
+const nomineesByYear: Record<string, typeof nominees> = {};
+for (const nominee of nominees) {
+  const year = String(new Date(nominee.reportedDate).getFullYear());
+  if (!nomineesByYear[year]) nomineesByYear[year] = [];
+  nomineesByYear[year].push(nominee);
+}
+
+// For each year, update nominees-YYYY.html
+for (const year of Object.keys(nomineesByYear)) {
+  const yearNominees = nomineesByYear[year];
+  const yearHtmlPath = path.join(__dirname, `../docs/nominees-${year}.html`);
+  let yearHtml = fs.readFileSync(yearHtmlPath, 'utf-8');
+
+  // Replace the HTML nominees section
+  yearHtml = yearHtml.replace(
+    /<!-- BEGIN NOMINEES -->(.|\n|\r)*?<!-- END NOMINEES -->/g,
+    `<!-- BEGIN NOMINEES -->${yearNominees.map(nomineeHtml).join('\n')}
             <!-- END NOMINEES -->`
-);
-
-// Replace the JSON-LD hasPart array
-const jsonLdNominees = generateJsonLdNominees(nominees);
-const jsonLdString = JSON.stringify(jsonLdNominees, null, 2).replace(/(?<=\n)^/gm, '            ');
-html = html.replace(
-  /"hasPart": \[[\s\S]*?\]/,
-  `"hasPart": ${jsonLdString}`
-);
-
-fs.writeFileSync(htmlPath, html, 'utf-8');
+  );
+  // Replace the JSON-LD hasPart array
+  const jsonLdNominees = generateJsonLdNominees(yearNominees);
+  const jsonLdString = JSON.stringify(jsonLdNominees, null, 2).replace(/(?<=\n)^/gm, '            ');
+  yearHtml = yearHtml.replace(
+    /"hasPart": \[[\s\S]*?\]/,
+    `"hasPart": ${jsonLdString}`
+  );
+  fs.writeFileSync(yearHtmlPath, yearHtml, 'utf-8');
+  console.log(`Nominee HTML generated for year ${year}: docs/nominees-${year}.html`);
+}
 
 console.log('Nominee HTML and detail pages generated.');
 
 // Calculate the most recent nominee date and update JavaScript
 const lastNomineeDate = nominees
-  .filter(n => n.badge === 'Verified')
-  .map(n => new Date(n.reportedDate))
-  .sort((a, b) => b.getTime() - a.getTime())[0]
+  .filter((n: any) => n.badge === 'Verified')
+  .map((n: any) => new Date(n.reportedDate))
+  .sort((a: Date, b: Date) => b.getTime() - a.getTime())[0]
   .toISOString().split('T')[0];
 
 // Update the JavaScript file with the latest nominee date
