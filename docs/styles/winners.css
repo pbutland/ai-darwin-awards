@@ -235,6 +235,146 @@
 }
 
 /* Dark mode adjustments */
+
+/* Navigation section styling */
+.navigation-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.navigation-section .secondary-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.navigation-section .secondary-cta {
+    padding: 0.6rem 1.2rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.navigation-section .secondary-cta:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+/* Winners summary grid */
+.winners-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.winner-card-preview {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: calc(var(--radius) - 1px);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.winner-card-preview:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.winner-rank {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.winner-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--color-primary);
+}
+
+.winner-brief {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    margin: 0.5rem 0 1rem 0;
+    line-height: 1.5;
+}
+
+.winner-links {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.winner-links .primary-link {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.winner-links .primary-link:hover {
+    text-decoration: underline;
+}
+
+.winner-links .secondary-link {
+    color: var(--color-muted);
+    text-decoration: none;
+}
+
+.winner-links .secondary-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.year-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.view-all-winners {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.view-all-winners:hover {
+    background: var(--color-accent);
+    text-decoration: none;
+}
+
+.view-nominees {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    text-decoration: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    transition: all 0.2s ease;
+}
+
+.view-nominees:hover {
+    background: var(--color-bg);
+    text-decoration: none;
+}
+
+/* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
     .year-entry:hover,
     .stat-item:hover,
@@ -252,5 +392,13 @@
     
     .winner-card.runner-up {
         background: linear-gradient(135deg, var(--color-surface) 0%, rgba(192, 192, 192, 0.1) 100%);
+    }
+    
+    .year-entry.special-year {
+        background: linear-gradient(135deg, #0d0d1a 0%, #0a0f1e 100%);
+    }
+    
+    .winner-card-preview:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
 }
