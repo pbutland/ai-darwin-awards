@@ -1,5 +1,48 @@
 [
   {
+    "id": "spotify-ai-spam-tracks-nominee",
+    "title": "Spotify AI Spam Tracks - “75 Million Songs of Artificial Nonsense”",
+    "category": "AI Fraud Innovation Award",
+    "badge": "Verified",
+    "nominee": "Anonymous fraudsters and the entire ecosystem of AI music generation scammers for creating an artificial music catalogue that rivals Spotify's legitimate offerings whilst systematically defrauding genuine artists.",
+    "reportedBy": "Dan Milmo, Global Technology Editor for The Guardian, and Brian Hiatt, Rolling Stone - September 25, 2025.",
+    "reportedDate": "2025-09-25",
+    "tagline": "When artificial intelligence meets natural greed",
+    "sections": [
+      {
+        "heading": "The Innovation",
+        "content": "Enterprising fraudsters discovered the perfect collision of artificial intelligence and streaming economics: AI tools could generate vast quantities of 'music' faster than Spotify could detect it, whilst the platform's royalty system would dutifully pay out for any track streamed longer than 30 seconds. This created what economists might call 'the perfect spam economy'—where algorithms generate content, algorithms recommend it, and algorithms pay for it, all whilst human artists watch their royalty payments get diluted by an ocean of artificial meditation music and counterfeit celebrity tracks."
+      },
+      {
+        "heading": "The Scale of Ambition",
+        "content": "The scope of this AI-assisted fraud was genuinely breathtaking: 75 million spam tracks removed in just one year, rivalling Spotify's entire legitimate catalogue of 100 million songs. These weren't amateur efforts—scammers deployed sophisticated strategies including 'impersonations, ultra-short tracks and mass uploads of artificial music' ranging from meditation instrumentals to deepfake versions of famous artists. The operation was so comprehensive that Deezer reported 28% of all daily uploads were fully AI-generated, creating what industry experts might diplomatically call 'an authenticity crisis.'"
+      },
+      {
+        "heading": "The Economic Genius",
+        "content": "The beauty of this scheme lay in its elegant simplicity: every stream exceeding 30 seconds generated royalties, meaning scammers could upload thousands of AI-generated ambient tracks, meditation music, or counterfeit versions of popular songs and collect payments whilst legitimate artists saw their revenue diluted. The most notorious example was 'Heart on My Sleeve,' featuring AI-generated vocals purporting to be Drake and the Weeknd, which demonstrated how artificial intelligence could create convincing impersonations of real artists and monetise their stolen voices."
+      },
+      {
+        "heading": "The Streaming Platform Response",
+        "content": "Spotify's response revealed the remarkable challenge of policing artificial creativity: the platform had to develop AI systems to detect AI-generated spam, creating what philosophers might call 'recursive artificial intelligence conflict.' The company implemented a spam filter to identify fraudulent uploaders whilst simultaneously welcoming legitimate AI-generated music, proving that distinguishing between 'good AI' and 'bad AI' requires the kind of nuanced judgment that humans struggle with, let alone automated systems. Meanwhile, the case of Velvet Sundown—an entirely AI-generated 'band' that accumulated over a million monthly listeners before revealing its artificial nature—demonstrated that audiences couldn't necessarily tell the difference either."
+      },
+      {
+        "heading": "Why They're Nominated",
+        "content": "This represents the perfect AI Darwin Award scenario: criminals deploying artificial intelligence to systematically defraud creative industries at unprecedented scale, whilst streaming platforms scramble to deploy more AI to combat the AI fraud, all whilst human artists suffer the economic consequences. The scammers achieved the remarkable feat of creating an artificial music economy that threatened to overwhelm the real one, proving that when artificial intelligence meets natural greed, the results can be both technically impressive and morally bankrupt. The fact that 75 million fake tracks could infiltrate a major streaming platform demonstrates either spectacular overconfidence in AI-generated content detection or a business model so focused on quantity over quality that it took years to notice nearly half their catalogue might be artificial. Either way, it showcases the perfect storm of AI capabilities being used for precisely the wrong reasons by precisely the wrong people."
+      }
+    ],
+    "sources": [
+      {
+        "name": "The Guardian: Spotify removes 75m spam tracks in past year as AI increases ability to make fake music",
+        "url": "https://www.theguardian.com/music/2025/sep/25/spotify-removes-75m-spam-tracks-past-year-ai-increases-ability-make-fake-music"
+      },
+      {
+        "name": "Rolling Stone: Spotify Embraces AI Music With New Policies, While Combating 'Spam' and 'Slop'",
+        "url": "https://www.rollingstone.com/music/music-features/spotify-not-banning-ai-music-new-guidelines-1235434946/"
+      }
+    ],
+    "image": "nominees/spotify-ai-spam-tracks.png"
+  },
+  {
     "id": "tesla-fsd-train-crossings-nominee",
     "title": "Tesla Full Self-Driving - “Trains vs. Brains”",
     "category": "AI Agent Gone Rogue Award",

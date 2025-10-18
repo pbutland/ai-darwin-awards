@@ -20,7 +20,7 @@ function updateCountdown() {
   if (!countdownElement) return;
 
   // Auto-updated by generate.ts - do not modify this date manually
-  const lastNomineeDate = '2025-09-16';
+  const lastNomineeDate = '2025-09-25';
 
   const today = new Date();
   const lastDate = new Date(lastNomineeDate);
