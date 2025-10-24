@@ -5,7 +5,6 @@ export function generateRSSFeed(nominees: any[]) {
   const baseUrl = 'https://aidarwinawards.org';
   const rssItems = nominees
     .sort((a, b) => new Date(b.reportedDate || '2025-01-01').getTime() - new Date(a.reportedDate || '2025-01-01').getTime())
-    .slice(0, 20)
     .map(nominee => {
       const slug = nominee.slug || getSlug(nominee);
       const description = nominee.sections && nominee.sections.length > 0
