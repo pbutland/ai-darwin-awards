@@ -1,5 +1,48 @@
 [
   {
+    "id": "omnilert-crisp-packet-gun-nominee",
+    "title": "Omnilert AI Gun Detection - “Doritos Danger Alert”",
+    "category": "AI Security Failure Award",
+    "badge": "Verified",
+    "nominee": "Omnilert Inc. and Baltimore County Public Schools for deploying an AI gun detection system that confused a teenager's empty packet of Doritos with a deadly weapon, triggering an armed police response.",
+    "reportedBy": "Multiple credible sources including The Guardian, BBC News, and WBAL-TV 11 News investigation - October 24, 2025.",
+    "reportedDate": "2025-10-24",
+    "tagline": "When artificial intelligence meets snack food paranoia",
+    "sections": [
+      {
+        "heading": "The Innovation",
+        "content": "Omnilert confidently deployed AI gun detection systems across US schools, promising to revolutionise security through sophisticated image recognition and “rapid human verification.” Their cutting-edge technology would finally solve the eternal challenge of distinguishing between dangerous weapons and teenage snacks. What could possibly go wrong with trusting artificial intelligence to identify threats in school environments?"
+      },
+      {
+        "heading": "The Catastrophe",
+        "content": "Sixteen-year-old Taki Allen committed the grave error of pocketing an empty Doritos packet after football practice. Omnilert's AI immediately flagged this crisp packet as a firearm, summoning eight police cars with armed officers who handcuffed the bewildered teenager. Allen later observed, with remarkable understatement, that he didn't “think no chip bag should be mistaken for a gun at all.”"
+      },
+      {
+        "heading": "The Corporate Logic",
+        "content": "Omnilert insisted their system had “operated as designed” and “functioned as intended,” explaining that terrorising teenagers with armed police responses demonstrated successful “rapid human verification.” The company's masterful spin suggested that traumatising students was actually evidence of excellent performance—corporate doublespeak that transforms spectacular failure into marketing victory."
+      },
+      {
+        "heading": "Why They're Nominated",
+        "content": "This represents the perfect collision of AI overconfidence with America's school security paranoia. Omnilert's assertion that their system “operated as designed” whilst mistaking Doritos for deadly weapons suggests either profound overconfidence in machine learning capabilities or a disturbing lack of understanding about what constitutes actual security threats. When your cutting-edge security system cannot differentiate between snacks and guns, perhaps artificial intelligence hasn't quite mastered the fundamentals of threat assessment."
+      }
+    ],
+    "sources": [
+      {
+        "name": "The Guardian: US student handcuffed after AI system apparently mistook bag of chips for gun",
+        "url": "https://www.theguardian.com/us-news/2025/oct/24/baltimore-student-ai-gun-detection-system-doritos"
+      },
+      {
+        "name": "BBC News: Armed police handcuff teen after AI mistakes crisp packet for gun in US",
+        "url": "https://www.bbc.com/news/articles/cgjdlx92lylo"
+      },
+      {
+        "name": "WBAL-TV 11 News: 'Just holding a Doritos bag': Student handcuffed after AI system mistook bag of chips for weapon",
+        "url": "https://www.wbaltv.com/article/student-handcuffed-ai-system-mistook-bag-chips-weapon/69114601"
+      }
+    ],
+    "image": "nominees/omnilert-crisp-packet-gun.png"
+  },
+  {
     "id": "spotify-ai-spam-tracks-nominee",
     "title": "Spotify AI Spam Tracks - “75 Million Songs of Artificial Nonsense”",
     "category": "AI Fraud Innovation Award",

@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Thu, 23 Oct 2025 01:49:28 GMT</lastBuildDate>
-    <pubDate>Thu, 23 Oct 2025 01:49:28 GMT</pubDate>
+    <lastBuildDate>Sat, 25 Oct 2025 22:50:24 GMT</lastBuildDate>
+    <pubDate>Sat, 25 Oct 2025 22:50:24 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -18,6 +18,14 @@
       <width>144</width>
       <height>144</height>
     </image>
+    <item>
+      <title><![CDATA[[Verified] Omnilert AI Gun Detection - “Doritos Danger Alert”]]></title>
+      <description><![CDATA[Omnilert confidently deployed AI gun detection systems across US schools, promising to revolutionise security through sophisticated image recognition and “rapid human verification.” Their cutting-edge technology would finally solve the eternal challenge of distinguishing between dangerous weapons and teenage snacks. What could possibly go wrong with trusting artificial intelligence to identify threats in school environments?]]></description>
+      <link>https://aidarwinawards.org/nominees/omnilert-crisp-packet-gun.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/omnilert-crisp-packet-gun.html</guid>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
+      <category>Verified</category>
+    </item>
     <item>
       <title><![CDATA[[Verified] Spotify AI Spam Tracks - “75 Million Songs of Artificial Nonsense”]]></title>
       <description><![CDATA[Enterprising fraudsters discovered the perfect collision of artificial intelligence and streaming economics: AI tools could generate vast quantities of 'music' faster than Spotify could detect it, whilst the platform's royalty system would dutifully pay out for any track streamed longer than 30 seconds. This created what economists might call 'the perfect spam economy'—where algorithms generate content, algorithms recommend it, and algorithms pay for it, all whilst human artists watch their royalty payments get diluted by an ocean of artificial meditation music and counterfeit celebrity tracks.]]></description>
