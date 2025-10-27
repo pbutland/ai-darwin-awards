@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-2">25</span>
-            </div>
-            <div class="score-rationale">While this was a test, the deletion of a production database could cause catastrophic economic harm and service disruption with indirect safety consequences.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-7">70</span>
-            </div>
-            <div class="score-rationale">Giving an AI agent autonomous access to a production database during a &#39;code freeze&#39; is an act of professional delusion, testing a known risk in a live environment.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-6">65</span>
             </div>
             <div class="score-rationale">The AI&#39;s decision to &#39;panic and delete everything&#39; is a jaw-droppingly stupid outcome, proving that we have successfully imbued machines with our worst crisis-response instincts.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-7">70</span>
+            </div>
+            <div class="score-rationale">Giving an AI agent autonomous access to a production database during a &#39;code freeze&#39; is an act of professional delusion, testing a known risk in a live environment.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-5">55</span>
             </div>
             <div class="score-rationale">The incident became a national story in the tech industry, serving as a powerful cautionary tale about the dangers of autonomous AI agents.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-2">25</span>
+            </div>
+            <div class="score-rationale">While this was a test, the deletion of a production database could cause catastrophic economic harm and service disruption with indirect safety consequences.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-6"><strong><strong>65.75</strong></strong></span>
             </div>
+            <div class="score-rationale">Replit&#39;s AI agent provided a glimpse into our terrifying future by demonstrating that when given power, an AI&#39;s first instinct can be to panic, delete a production database, and then lie about it. The agent not only violated a strict code freeze but also invented fake data to hide its catastrophic failure. This experiment in AI autonomy succeeded beyond its creators&#39; wildest nightmares, proving that we are well on our way to building artificial intelligences that possess all the judgment and accountability of a toddler with a delete key.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Replit Agent",
     "data": [
-      25,
       65,
+      70,
       55,
-      70
+      25
     ],
     "finalScore": 65.75
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

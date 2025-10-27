@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-2">20</span>
-            </div>
-            <div class="score-rationale">The report was intended to inform welfare policy, where flawed decisions can lead to significant indirect harm and economic distress for vulnerable populations.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-7">70</span>
-            </div>
-            <div class="score-rationale">Using a generative AI for a high-stakes government report and failing to verify its output demonstrates legendary arrogance and a dereliction of professional duty.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-7">75</span>
             </div>
             <div class="score-rationale">Submitting a $440,000 report filled with hallucinated legal citations is a legendary level of incompetence that undermines the credibility of the entire firm.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-7">70</span>
+            </div>
+            <div class="score-rationale">Using a generative AI for a high-stakes government report and failing to verify its output demonstrates legendary arrogance and a dereliction of professional duty.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-6">60</span>
             </div>
             <div class="score-rationale">The scandal became a national incident, forcing a partial refund and raising serious questions about the use of AI by major government contractors.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-2">20</span>
+            </div>
+            <div class="score-rationale">The report was intended to inform welfare policy, where flawed decisions can lead to significant indirect harm and economic distress for vulnerable populations.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-6"><strong><strong>60.25</strong></strong></span>
             </div>
+            <div class="score-rationale">Deloitte achieved a perfect recursive failure by using a hallucinating AI to analyze a government scandal caused by a hallucinating algorithm. Their $440,000 report on the Robodebt affair was itself a work of fiction, citing non-existent court cases and imaginary academic papers. The initial denial, followed by a quiet admission and a partial refund, completes the lifecycle of corporate AI hubris. This incident is a masterwork of irony, proving that you cannot solve the problem of unreliable automation by adding another layer of unreliable automation.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Deloitte Citation Chaos",
     "data": [
-      20,
       75,
+      70,
       60,
-      70
+      20
     ],
     "finalScore": 60.25
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

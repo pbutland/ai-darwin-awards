@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-1">10</span>
-            </div>
-            <div class="score-rationale">The potential for harm was primarily to the client&#39;s immigration case, which could have life-altering consequences, but without a direct physical threat.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-6">65</span>
-            </div>
-            <div class="score-rationale">The lawyer&#39;s belief that using a second AI to &#39;validate&#39; the first AI&#39;s fabrications would lead to accuracy is a legendary display of arrogance and misunderstanding.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-6">60</span>
             </div>
             <div class="score-rationale">Submitting a legal brief with four entirely fictional cases is a jaw-dropping failure of the most basic professional duty to verify sources.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-6">65</span>
+            </div>
+            <div class="score-rationale">The lawyer&#39;s belief that using a second AI to &#39;validate&#39; the first AI&#39;s fabrications would lead to accuracy is a legendary display of arrogance and misunderstanding.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-4">45</span>
             </div>
             <div class="score-rationale">The case became a national incident within the legal community, serving as a stark warning and prompting a judicial rebuke.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-1">10</span>
+            </div>
+            <div class="score-rationale">The potential for harm was primarily to the client&#39;s immigration case, which could have life-altering consequences, but without a direct physical threat.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-5"><strong><strong>53</strong></strong></span>
             </div>
+            <div class="score-rationale">This lawyer pioneered a bold new legal strategy: if one AI&#39;s hallucinations aren&#39;t enough, add a second AI to double-down on the fiction. Their touching faith in a recursive validation loop of pure invention demonstrates a profound misunderstanding of both law and technology. The act of submitting a legal filing based entirely on imaginary precedents is a special kind of professional negligence. It serves as a powerful lesson that two artificial wrongs don&#39;t make a legal right, and that the most fundamental task of a lawyer—checking one&#39;s sources—cannot be outsourced to a machine that dreams.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "WA Lawyer",
     "data": [
-      10,
       60,
+      65,
       45,
-      65
+      10
     ],
     "finalScore": 53
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

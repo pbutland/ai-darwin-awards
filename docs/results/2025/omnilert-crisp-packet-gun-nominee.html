@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-4">45</span>
-            </div>
-            <div class="score-rationale">Triggered an armed police response involving eight cars for a snack food item. While no one was physically harmed, the potential for tragic escalation in such a scenario is significant.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-7">75</span>
-            </div>
-            <div class="score-rationale">The company&#39;s insistence that the system &#39;operated as designed&#39; by mistaking a chip bag for a gun demonstrates a legendary level of corporate delusion and refusal to acknowledge obvious flaws.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-6">65</span>
             </div>
             <div class="score-rationale">Deploying a security system in schools that cannot differentiate between a deadly weapon and a teenager&#39;s snack is a jaw-dropping failure of basic object recognition and threat assessment.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-7">75</span>
+            </div>
+            <div class="score-rationale">The company&#39;s insistence that the system &#39;operated as designed&#39; by mistaking a chip bag for a gun demonstrates a legendary level of corporate delusion and refusal to acknowledge obvious flaws.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-5">55</span>
             </div>
             <div class="score-rationale">The incident received national media attention, raising serious questions about the reliability of AI security systems in sensitive environments like schools.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-4">45</span>
+            </div>
+            <div class="score-rationale">Triggered an armed police response involving eight cars for a snack food item. While no one was physically harmed, the potential for tragic escalation in such a scenario is significant.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-6"><strong><strong>60.5</strong></strong></span>
             </div>
+            <div class="score-rationale">Omnilert achieved a masterclass in corporate doublespeak by framing the terrorising of a teenager over a Doritos bag as a system success. Their technology, designed to protect schools, proved incapable of distinguishing between a firearm and snack food, yet the company declared it &#39;functioned as intended.&#39; This incident highlights a spectacular failure of both technology and common sense, where the primary function demonstrated was the ability to escalate a harmless situation into an armed police incident with breathtaking efficiency.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Omnilert AI Gun Detection",
     "data": [
-      45,
       65,
+      75,
       55,
-      75
+      45
     ],
     "finalScore": 60.5
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

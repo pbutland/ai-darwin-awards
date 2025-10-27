@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-0">5</span>
-            </div>
-            <div class="score-rationale">The harm is emotional and psychological, not physical. The suggestion is merely tone-deaf, not directly dangerous.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-5">50</span>
-            </div>
-            <div class="score-rationale">The executive&#39;s suggestion shows a professional delusion about AI&#39;s ability to handle complex human emotional trauma like job loss.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-4">45</span>
             </div>
             <div class="score-rationale">Suggesting laid-off employees turn to a chatbot for emotional support is a facepalm-worthy failure of human empathy and corporate communication.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-5">50</span>
+            </div>
+            <div class="score-rationale">The executive&#39;s suggestion shows a professional delusion about AI&#39;s ability to handle complex human emotional trauma like job loss.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-3">35</span>
             </div>
             <div class="score-rationale">The post became a minor national incident on social media, serving as a lesson in corporate tone-deafness but with limited broader impact.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-0">5</span>
+            </div>
+            <div class="score-rationale">The harm is emotional and psychological, not physical. The suggestion is merely tone-deaf, not directly dangerous.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-3"><strong><strong>34.5</strong></strong></span>
             </div>
+            <div class="score-rationale">In a moment of breathtakingly poor judgment, an Xbox executive suggested that employees laid off by the company could find solace by talking to the very technology that is fueling industry-wide job cuts. This recommendation to use ChatGPT for &#39;emotional clarity&#39; after being made redundant is a masterwork of corporate tone-deafness. It perfectly captures the mindset that sees AI as a solution for everything, including the human suffering it helps create. The swift deletion of the post could not erase this perfect example of misplaced AI evangelism.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Xbox Producer",
     "data": [
-      5,
       45,
+      50,
       35,
-      50
+      5
     ],
     "finalScore": 34.5
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

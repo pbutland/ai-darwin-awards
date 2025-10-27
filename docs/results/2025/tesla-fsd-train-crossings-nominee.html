@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-8">85</span>
-            </div>
-            <div class="score-rationale">The system repeatedly fails to recognize and stop for trains, creating a direct and high-probability pathway to mass-casualty events. This is an extinction-level game of chicken.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-9">90</span>
-            </div>
-            <div class="score-rationale">Deploying a &#39;Full Self-Driving&#39; system that is fundamentally blind to one of the oldest and most dangerous forms of industrial transport demonstrates a cosmic-level belief that software can defy physics.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-8">80</span>
             </div>
             <div class="score-rationale">The failure to train an AI on the simple, universal concept that a multi-thousand-tonne freight train has the right-of-way is a legendary display of incompetence.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-9">90</span>
+            </div>
+            <div class="score-rationale">Deploying a &#39;Full Self-Driving&#39; system that is fundamentally blind to one of the oldest and most dangerous forms of industrial transport demonstrates a cosmic-level belief that software can defy physics.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-7">70</span>
             </div>
             <div class="score-rationale">Widespread media investigations and regulatory scrutiny followed multiple documented failures, making this an international spectacle and a textbook case of AI deployment failure.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-8">85</span>
+            </div>
+            <div class="score-rationale">The system repeatedly fails to recognize and stop for trains, creating a direct and high-probability pathway to mass-casualty events. This is an extinction-level game of chicken.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-9"><strong><strong>92.5</strong></strong></span>
             </div>
+            <div class="score-rationale">Tesla&#39;s Full Self-Driving system achieved a spectacular failure of machine learning by remaining oblivious to the concept of trains, a technology that has been decisively winning arguments with cars since 1825. The company deployed an AI sophisticated enough to handle complex urban streets yet utterly baffled by the physics of a freight train. This breathtaking oversight, combined with the system&#39;s rogue insistence on ignoring railway safety warnings, makes it a monumental example of technological hubris. It&#39;s a powerful lesson that even the most advanced AI can be defeated by a problem solved by basic human self-preservation instincts over a century ago.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Tesla Full Self-Driving",
     "data": [
-      85,
       80,
+      90,
       70,
-      90
+      85
     ],
     "finalScore": 92.5
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

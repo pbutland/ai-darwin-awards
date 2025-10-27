@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-0">5</span>
-            </div>
-            <div class="score-rationale">The harm was purely financial and reputational. No physical danger was involved, only the danger of being falsely accused of property destruction.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-5">50</span>
-            </div>
-            <div class="score-rationale">The host&#39;s overconfidence in their ability to create convincing fake images was matched only by Airbnb&#39;s initial gullibility in accepting them.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-4">45</span>
             </div>
             <div class="score-rationale">Creating multiple, inconsistent images of the &#39;damage&#39; was a facepalm-worthy error that made the fraud laughably obvious upon inspection.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-5">50</span>
+            </div>
+            <div class="score-rationale">The host&#39;s overconfidence in their ability to create convincing fake images was matched only by Airbnb&#39;s initial gullibility in accepting them.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-3">30</span>
             </div>
             <div class="score-rationale">The story was a minor media incident, a local embarrassment for the host and a customer service failure for Airbnb, but with limited educational value beyond &#39;check the evidence.&#39;</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-0">5</span>
+            </div>
+            <div class="score-rationale">The harm was purely financial and reputational. No physical danger was involved, only the danger of being falsely accused of property destruction.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-3"><strong><strong>34.25</strong></strong></span>
             </div>
+            <div class="score-rationale">This nomination celebrates a pioneer in the emerging field of AI-driven insurance fraud. The host&#39;s ambition was matched only by their incompetence, producing a portfolio of digitally manipulated images so inconsistent that they practically screamed &#39;fake.&#39; Airbnb&#39;s initial willingness to accept the evidence suggests their review process may also have been artificially intelligent, or at least artificially diligent. It&#39;s a tale of modern deception where the perpetrator&#39;s faith in technology far exceeded their skill in using it.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Airbnb Host",
     "data": [
-      5,
       45,
+      50,
       30,
-      50
+      5
     ],
     "finalScore": 34.25
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

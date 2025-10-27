@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-0">1</span>
-            </div>
-            <div class="score-rationale">Completely harmless, unless you count the existential despair of a reader trying to find a book that doesn&#39;t exist.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-5">55</span>
-            </div>
-            <div class="score-rationale">The writer&#39;s faith in AI to generate a factual reading list, and the publisher&#39;s failure to verify it, shows a collective professional delusion.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-6">60</span>
             </div>
             <div class="score-rationale">Publishing a summer reading list where two-thirds of the books are fictional is a jaw-dropping failure of the most basic journalistic duty: fact-checking.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-5">55</span>
+            </div>
+            <div class="score-rationale">The writer&#39;s faith in AI to generate a factual reading list, and the publisher&#39;s failure to verify it, shows a collective professional delusion.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-4">45</span>
             </div>
             <div class="score-rationale">The syndicated article became a national embarrassment for major newspapers, highlighting the perils of AI in journalism.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-0">1</span>
+            </div>
+            <div class="score-rationale">Completely harmless, unless you count the existential despair of a reader trying to find a book that doesn&#39;t exist.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-4"><strong><strong>40.75</strong></strong></span>
             </div>
+            <div class="score-rationale">This incident represents a new frontier in literary criticism: reviewing books that don&#39;t exist. A freelance writer, aided by a confidently hallucinating AI, produced a summer reading list for major newspapers that was itself a work of fiction. The subsequent apologies from the publishers could not undo the damage of recommending imaginary novels to an unsuspecting public. It&#39;s a beautiful case of AI-assisted journalism failing at its most fundamental task, creating a meta-narrative about fiction that was, itself, entirely fictional.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Summer Reading List",
     "data": [
-      1,
       60,
+      55,
       45,
-      55
+      1
     ],
     "finalScore": 40.75
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

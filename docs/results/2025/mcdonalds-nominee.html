@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-1">15</span>
-            </div>
-            <div class="score-rationale">The exposure of personal data for 64 million people creates significant indirect risk of fraud, identity theft, and targeted scams.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-4">45</span>
-            </div>
-            <div class="score-rationale">Deploying an AI to handle millions of job applications without implementing even the most basic security protocols is a case of overconfident amateurism.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-7">75</span>
             </div>
             <div class="score-rationale">Protecting a database of 64 million personal records with the password &#39;123456&#39; is a legendary level of incompetence that defies belief.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-4">45</span>
+            </div>
+            <div class="score-rationale">Deploying an AI to handle millions of job applications without implementing even the most basic security protocols is a case of overconfident amateurism.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-6">60</span>
             </div>
             <div class="score-rationale">This became a national incident, a major media story that highlighted the severe risks of entrusting sensitive data to poorly secured third-party AI systems.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-1">15</span>
+            </div>
+            <div class="score-rationale">The exposure of personal data for 64 million people creates significant indirect risk of fraud, identity theft, and targeted scams.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-4"><strong><strong>47.25</strong></strong></span>
             </div>
+            <div class="score-rationale">McDonald&#39;s and Paradox.ai achieved a spectacular fusion of cutting-edge AI and Stone Age security. They built a sophisticated chatbot to handle hiring, then protected the personal data of 64 million applicants with a password that would be too simple for a child&#39;s treehouse. The fact that the AI was already notorious for its inability to understand applicants adds a layer of delicious incompetence to the whole affair. This incident is a powerful reminder that the most advanced AI system is only as strong as its dumbest password.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "McDonald's AI Chatbot",
     "data": [
-      15,
       75,
+      45,
       60,
-      45
+      15
     ],
     "finalScore": 47.25
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

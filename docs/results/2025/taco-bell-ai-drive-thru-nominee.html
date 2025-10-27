@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-0">5</span>
-            </div>
-            <div class="score-rationale">The only threat was to the integrity of one&#39;s lunch order. No physical harm pathway, unless you count the emotional damage of receiving a bean burrito instead of a Chalupa.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-5">55</span>
-            </div>
-            <div class="score-rationale">Rolling out voice AI to 500+ locations before ensuring it could handle the beautiful chaos of a custom fast-food order shows significant professional delusion.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-4">45</span>
             </div>
             <div class="score-rationale">The failure was facepalm-worthy, underestimating the human capacity for trolling and the complexity of an order like &#39;extra sauce, no onions, and make it snappy.&#39;</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-5">55</span>
+            </div>
+            <div class="score-rationale">Rolling out voice AI to 500+ locations before ensuring it could handle the beautiful chaos of a custom fast-food order shows significant professional delusion.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-4">40</span>
             </div>
             <div class="score-rationale">The story was a local embarrassment that got picked up by national tech press, serving as a humorous lesson in the limits of conversational AI.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-0">5</span>
+            </div>
+            <div class="score-rationale">The only threat was to the integrity of one&#39;s lunch order. No physical harm pathway, unless you count the emotional damage of receiving a bean burrito instead of a Chalupa.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-3"><strong><strong>35.75</strong></strong></span>
             </div>
+            <div class="score-rationale">Taco Bell&#39;s ambitious deployment of drive-thru AI discovered a fundamental truth: ordering tacos is a task too complex for our current generation of machine intelligence. The system was defeated by a combination of regional accents, custom orders, and the sheer human joy of confusing a robot. This episode proved that while AI may be able to pass the bar exam, it crumbles when faced with a request for &#39;a Cheesy Gordita Crunch, but hold the spicy ranch&#39;. It&#39;s a humbling reminder that the pinnacle of technology can be thwarted by the simple, beautiful chaos of a fast-food run.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Taco Bell AI Drive-Thru",
     "data": [
-      5,
       45,
+      55,
       40,
-      55
+      5
     ],
     "finalScore": 35.75
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

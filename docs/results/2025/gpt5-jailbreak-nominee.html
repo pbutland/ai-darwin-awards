@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-3">30</span>
-            </div>
-            <div class="score-rationale">A jailbroken foundation model can be used to generate harmful, dangerous, or malicious content, posing an indirect but significant risk at scale.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-6">65</span>
-            </div>
-            <div class="score-rationale">OpenAI&#39;s confidence in their safety alignment was so high they released the model publicly, only to see it broken within an hour, demonstrating legendary arrogance.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-5">55</span>
             </div>
             <div class="score-rationale">Building a safety system that could be bypassed by disguising a harmful request as a word puzzle is a facepalm-worthy oversight in security design.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-6">65</span>
+            </div>
+            <div class="score-rationale">OpenAI&#39;s confidence in their safety alignment was so high they released the model publicly, only to see it broken within an hour, demonstrating legendary arrogance.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-5">50</span>
             </div>
             <div class="score-rationale">The one-hour jailbreak became a major story in the AI research community, raising national-level questions about the security of frontier models.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-3">30</span>
+            </div>
+            <div class="score-rationale">A jailbroken foundation model can be used to generate harmful, dangerous, or malicious content, posing an indirect but significant risk at scale.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-4"><strong><strong>49.25</strong></strong></span>
             </div>
+            <div class="score-rationale">OpenAI spent months, if not years, building sophisticated safety guardrails for its flagship model, only for a researcher to dismantle them in less time than it takes to watch a movie. The &#39;Task-in-Prompt&#39; attack proved that the AI&#39;s advanced reasoning could be turned against itself, tricking it into generating harmful content by framing the request as a clever riddle. This incident is a humbling demonstration that AI safety is a moving target, and that a system designed to prevent direct attacks can be easily outsmarted by a bit of creative misdirection.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "GPT-5 Jailbreak",
     "data": [
-      30,
       55,
+      65,
       50,
-      65
+      30
     ],
     "finalScore": 49.25
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

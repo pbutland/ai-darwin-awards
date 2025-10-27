@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-1">10</span>
-            </div>
-            <div class="score-rationale">The risk was to the client&#39;s legal and financial standing, not physical safety. However, the potential for undermining the justice system has indirect societal harm.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-6">60</span>
-            </div>
-            <div class="score-rationale">The lawyers&#39; overconfidence in an AI to generate valid legal precedents without any human verification shows a profound level of professional delusion.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-7">70</span>
             </div>
             <div class="score-rationale">Filing a legal brief with nearly 30 fictional citations is a legendary display of incompetence that fundamentally misunderstands the practice of law.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-6">60</span>
+            </div>
+            <div class="score-rationale">The lawyers&#39; overconfidence in an AI to generate valid legal precedents without any human verification shows a profound level of professional delusion.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-5">50</span>
             </div>
             <div class="score-rationale">The case received national media attention and resulted in judicial sanctions, serving as a high-profile warning to the legal profession.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-1">10</span>
+            </div>
+            <div class="score-rationale">The risk was to the client&#39;s legal and financial standing, not physical safety. However, the potential for undermining the justice system has indirect societal harm.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-4"><strong><strong>44.5</strong></strong></span>
             </div>
+            <div class="score-rationale">The legal team for MyPillow boldly went where no competent lawyer has gone before, submitting a legal brief sourced from an alternate reality where their arguments were actually supported by case law. Their use of AI to invent nearly 30 citations represents a spectacular abdication of professional responsibility. The subsequent attempt to hide the AI&#39;s involvement from the judge only adds to the magnificence of the failure. This case is a landmark in legal malpractice, proving that artificial intelligence can be a powerful tool for generating not just text, but also sanctions.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "MyPillow Lawyers",
     "data": [
-      10,
       70,
+      60,
       50,
-      60
+      10
     ],
     "finalScore": 44.5
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

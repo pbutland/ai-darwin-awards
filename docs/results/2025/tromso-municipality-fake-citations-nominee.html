@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-3">35</span>
-            </div>
-            <div class="score-rationale">Basing school closure decisions on fabricated evidence has the potential for significant, long-term indirect harm to thousands of children and families.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-7">75</span>
-            </div>
-            <div class="score-rationale">Using AI to generate academic sources for a major policy report, without verification, is an act of legendary arrogance in public administration.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-8">80</span>
             </div>
             <div class="score-rationale">Ignoring actual, relevant research in favor of AI-hallucinated papers that support a desired outcome is a legendary level of incompetence and confirmation bias.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-7">75</span>
+            </div>
+            <div class="score-rationale">Using AI to generate academic sources for a major policy report, without verification, is an act of legendary arrogance in public administration.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-6">65</span>
             </div>
             <div class="score-rationale">This became the first major AI scandal in the Norwegian public sector, forcing a six-month suspension of the democratic process and making international news.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-3">35</span>
+            </div>
+            <div class="score-rationale">Basing school closure decisions on fabricated evidence has the potential for significant, long-term indirect harm to thousands of children and families.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-6"><strong><strong>66</strong></strong></span>
             </div>
+            <div class="score-rationale">The municipality of Tromsø has pioneered the use of AI for evidence-based policy-making, where the &#39;evidence&#39; is entirely fabricated by the AI. To justify closing eight schools, the administration produced a report citing academic works that existed only in a chatbot&#39;s imagination, while pointedly ignoring real research on the topic. This spectacular misuse of technology turned a critical public policy document into a work of fantasy. It&#39;s a landmark case of confirmation bias as a service, where AI was used not to find the truth, but to invent a more convenient one.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Tromsø Municipality",
     "data": [
-      35,
       80,
+      75,
       65,
-      75
+      35
     ],
     "finalScore": 66
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',

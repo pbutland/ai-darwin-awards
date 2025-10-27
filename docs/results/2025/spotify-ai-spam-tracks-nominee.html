@@ -60,24 +60,17 @@
         <div class="score-breakdown">
           <div class="score-row">
             <div class="score-row-header">
-              <span class="score-category">Lethality</span>
-              <span class="score-value heat-text-1">15</span>
-            </div>
-            <div class="score-rationale">The harm is primarily economic, diluting the royalty pool for human artists and threatening their livelihoods, which can have indirect health and survival consequences.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Hubris</span>
-              <span class="score-value heat-text-6">60</span>
-            </div>
-            <div class="score-rationale">The platform&#39;s business model, focused on massive content ingestion, created an environment ripe for exploitation, demonstrating professional delusion about the potential for AI-driven fraud at scale.</div>
-          </div>
-          <div class="score-row">
-            <div class="score-row-header">
-              <span class="score-category">Stupidity</span>
+              <span class="score-category">Folly</span>
               <span class="score-value heat-text-5">50</span>
             </div>
             <div class="score-rationale">Allowing a volume of fraudulent tracks nearly equal to their entire legitimate catalogue to be uploaded shows a facepalm-worthy lack of foresight in policing their own platform.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Arrogance</span>
+              <span class="score-value heat-text-6">60</span>
+            </div>
+            <div class="score-rationale">The platform&#39;s business model, focused on massive content ingestion, created an environment ripe for exploitation, demonstrating professional delusion about the potential for AI-driven fraud at scale.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -85,6 +78,13 @@
               <span class="score-value heat-text-6">65</span>
             </div>
             <div class="score-rationale">The removal of 75 million tracks became an international story, forcing a public reckoning with AI&#39;s role in creative industries and exposing systemic vulnerabilities in streaming economics.</div>
+          </div>
+          <div class="score-row">
+            <div class="score-row-header">
+              <span class="score-category">Lethality</span>
+              <span class="score-value heat-text-1">15</span>
+            </div>
+            <div class="score-rationale">The harm is primarily economic, diluting the royalty pool for human artists and threatening their livelihoods, which can have indirect health and survival consequences.</div>
           </div>
           <div class="score-row">
             <div class="score-row-header">
@@ -111,6 +111,7 @@
               <span class="score-category">Final Score</span>
               <span class="score-value heat-text-5"><strong><strong>51.25</strong></strong></span>
             </div>
+            <div class="score-rationale">This nomination celebrates the birth of a fully automated fraudulent economy, where AI generates content, AI promotes it, and algorithms pay for it. The sheer scale of 75 million spam tracks demonstrates a system so focused on growth it failed to notice its library was being overwhelmed by artificial nonsense. The scammers showcased a brilliant, if morally bankrupt, exploitation of streaming economics, forcing Spotify into a recursive battle of AI versus AI. It&#39;s a landmark case of artificial intelligence being used to systematically devalue human creativity for profit.</div>
           </div>
         </div>
       </section>
@@ -151,10 +152,10 @@
   {
     "name": "Spotify AI Spam Tracks",
     "data": [
-      15,
       50,
+      60,
       65,
-      60
+      15
     ],
     "finalScore": 51.25
   }
@@ -176,7 +177,7 @@
       new Chart(canvas, {
         type: 'radar',
         data: {
-          labels: ['Lethality', 'Stupidity', 'Impact', 'Hubris'],
+          labels: ['Folly', 'Arrogance', 'Impact', 'Lethality'],
           datasets: [{
             data: nominee.data,
             backgroundColor: isDarkMode ? 'rgba(110, 168, 230, 0.2)' : 'rgba(37, 99, 166, 0.2)',
