@@ -21,20 +21,32 @@
   <!-- Logo (top right) -->
   <g opacity="0.15" transform="translate(650,50) scale(2.5)">
     <g transform="rotate(45 100 100)">
+      <!-- Yellow square with slightly rounded corners -->
       <rect x="30" y="30" width="140" height="140" rx="8" fill="#FFD600" />
+      <!-- Inset black border with same curvature -->
       <rect x="36" y="36" width="128" height="128" rx="4" fill="none" stroke="black" stroke-width="4" />
     </g>
     <g transform="scale(1.25) translate(30,38)">
+      <!-- Robot head main body -->
       <rect x="20" y="25" width="60" height="50" rx="8" ry="8" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+
+      <!-- Antenna -->
       <line x1="50" y1="25" x2="50" y2="15" stroke="#333" stroke-width="2"/>
+      <circle cx="50" cy="12" r="3" fill="#ff4444" stroke="#333" stroke-width="1"/>
+
+      <!-- Eyes -->
       <circle cx="35" cy="42" r="8" fill="#fff" stroke="#444" stroke-width="2"/>
       <circle cx="65" cy="42" r="8" fill="#fff" stroke="#444" stroke-width="2"/>
       <circle cx="35" cy="42" r="3" fill="#444"/>
       <circle cx="65" cy="42" r="3" fill="#444"/>
+
+      <!-- Mouth/speaker grille -->
       <rect x="35" y="58" width="30" height="8" rx="4" fill="#fff" stroke="#444" stroke-width="2"/>
       <line x1="42" y1="62" x2="42" y2="66" stroke="#444" stroke-width="2"/>
       <line x1="50" y1="62" x2="50" y2="66" stroke="#444" stroke-width="2"/>
       <line x1="58" y1="62" x2="58" y2="66" stroke="#444" stroke-width="2"/>
+
+      <!-- Neck connector -->
       <rect x="45" y="75" width="10" height="8" fill="#ccc" stroke="#333" stroke-width="2"/>
     </g>
     <g transform="translate(95,23) rotate(20) scale(0.18)">
