@@ -51,6 +51,9 @@ export function nomineeHtml(nominee: any) {
                         <span class="${escapeHtml(nominee.badge.toLowerCase())}-badge">${escapeHtml(nominee.badge)}</span>${halBadgeMobile}
                     </summary>
                     <div class="nominee-details">
+                        <div class="permalink">
+                            <a href="${escapeHtml(nomineeUrl)}">Permalink to this nominee →</a>
+                        </div>
                         <p class="attribution">
                             <strong>Nominee:</strong> ${escapeHtml(nominee.nominee)}
                         </p>
@@ -60,9 +63,6 @@ export function nomineeHtml(nominee: any) {
                         <div class="actions">
                             <button class="share-button" data-share-url="${escapeHtml(nomineeShareUrl)}" title="Share this nominee" aria-label="Share this nominee">
                                 <img src="images/share.svg" alt="Share this nominee" />
-                            </button>
-                            <button class="open-new-window-button" data-open-url="${escapeHtml(nomineeUrl)}" title="Open in new window" aria-label="Open in new window">
-                                <img src="images/open-new-window.svg" alt="Open in new window" />
                             </button>${blueskyButton}${redditButton}
                         </div>
                         ${nominee.sections.map((section: any) => `
