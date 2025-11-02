@@ -2,15 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import { nomineeHtml, nomineeDetailHtml, getSlug, generateJsonLdNominees } from './nominees-util.js';
 import { generateRSSFeed } from './rss-utils.js';
-import { generateSitemap } from './sitemap-util.js';
+import { updateSitemapFile } from './sitemap-util.js';
 
 // Paths
 const nomineesPath = path.join(__dirname, '../docs/data/v1/nominees.json');
 const htmlPath = path.join(__dirname, '../docs/nominees-2025.html');
 const nomineesDir = path.join(__dirname, '../docs/nominees');
-const nomineeTemplatePath = path.join(__dirname, 'nominee-template.html');
+const nomineeTemplatePath = path.join(__dirname, 'templates/nominee-template.html');
 const docsDir = path.join(__dirname, '../docs');
-const sitemapPath = path.join(docsDir, 'sitemap.xml');
 const baseUrl = 'https://aidarwinawards.org';
 
 // Read nominees JSON
@@ -93,15 +92,7 @@ fs.writeFileSync(jsPath, jsContent, 'utf-8');
 console.log(`Updated countdown date to: ${lastNomineeDate}`);
 
 // Generate sitemap.xml
-const nomineeSlugs = nominees.map(getSlug);
-let prevSitemapXml: string | undefined = undefined;
-try {
-  prevSitemapXml = fs.readFileSync(sitemapPath, 'utf-8');
-} catch {}
-const sitemapXml = generateSitemap(baseUrl, docsDir, nomineeSlugs, prevSitemapXml);
-
-fs.writeFileSync(sitemapPath, sitemapXml, 'utf-8');
-console.log('Sitemap generated at docs/sitemap.xml');
+updateSitemapFile(baseUrl, docsDir);
 
 // Write RSS feed to project root as /rss.xml
 const rssContent = generateRSSFeed(nominees);

@@ -2,18 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { getCommittedFileContents } from './git-utils.js';
 
-// List of static HTML files to always include in the sitemap, with optional priority
-const staticPages: Array<{ file: string; priority?: string; url?: string }> = [
-  { file: 'index.html', url: '', priority: '1.0' }, // Use root URL for homepage
-  { file: 'nominees-2025.html', priority: '0.9' },
-  { file: 'faq.html', priority: '0.7' },
-// Uncomment once active
-//   { file: 'vote.html', priority: '0.9' },
-//   { file: 'winners.html', priority: '0.9' },
-//   { file: 'winners-2025.html', priority: '0.9' },
-//   { file: 'nominees-2026.html', priority: '0.9' },
-];
-
+const excludePages = new Set<string>([
+  '404.html',
+  'site-map.html'
+]);
 
 // Helper to get lastmod for a file, using git and previous sitemap.xml if available
 function getLastMod({ filePath, url, prevSitemapMap }: { filePath: string, url: string, prevSitemapMap: Map<string, string> | null }): string {
@@ -51,8 +43,18 @@ function getLastMod({ filePath, url, prevSitemapMap }: { filePath: string, url: 
       return '';
     }
   } else {
-    // Use previous lastmod from sitemap
-    return prevSitemapMap.get(url) || '';
+    // File unchanged from git - use previous sitemap lastmod if available
+    const prevLastmod = prevSitemapMap.get(url);
+    if (prevLastmod) {
+      return prevLastmod;
+    }
+    // File wasn't in previous sitemap - use git commit date or mtime as fallback
+    try {
+      const stats = fs.statSync(filePath);
+      return stats.mtime.toLocaleDateString('sv-SE');
+    } catch {
+      return '';
+    }
   }
 }
 
@@ -75,7 +77,63 @@ export function parseSitemapLastmod(sitemapXml: string): Map<string, string> {
   return map;
 }
 
-export function generateSitemap(baseUrl: string, docsDir: string, nomineeSlugs: string[], prevSitemapXml?: string) {
+function getPriority(file: string): string {
+  // Homepage gets highest priority
+  if (file === 'index.html') return '1.0';
+  
+  // Year-based nominee pages and results pages
+  if (/^nominees-\d{4}\.html$/.test(file)) return '0.9';
+  if (file.includes('results/') && file.endsWith('/results.html')) return '0.9';
+  
+  // Vote and winners pages
+  if (file === 'vote.html' || file === 'winners.html' || /^winners-\d{4}\.html$/.test(file)) return '0.9';
+  
+  // Individual nominee and result pages
+  if (file.startsWith('nominees/') || file.includes('results/')) return '0.8';
+  
+  // Everything else (FAQ, etc.)
+  return '0.7';
+}
+
+function getUrlPath(file: string): string {
+  // Homepage should be root URL
+  if (file === 'index.html') return '';
+  return file;
+}
+
+function scanDirectory(dir: string, baseDir: string, relativePath: string = ''): Array<{ file: string; priority: string }> {
+  const pages: Array<{ file: string; priority: string }> = [];
+  
+  const entries = fs.readdirSync(dir);
+  
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry);
+    const relPath = relativePath ? `${relativePath}/${entry}` : entry;
+    const stat = fs.statSync(fullPath);
+    
+    if (stat.isDirectory()) {
+      // Recursively scan subdirectories
+      pages.push(...scanDirectory(fullPath, baseDir, relPath));
+    } else if (stat.isFile() && entry.endsWith('.html')) {
+      pages.push({ file: relPath, priority: getPriority(relPath) });
+    }
+  }
+  
+  return pages;
+}
+
+function scanAllPages(docsDir: string): Array<{ file: string; priority: string }> {
+  return scanDirectory(docsDir, docsDir);
+}
+
+export function updateSitemapFile(baseUrl: string, docsDir: string) {
+  // Read existing sitemap for lastmod preservation
+  const sitemapPath = path.join(docsDir, 'sitemap.xml');
+  let prevSitemapXml: string | undefined;
+  try {
+    prevSitemapXml = fs.readFileSync(sitemapPath, 'utf-8');
+  } catch {}
+
   // Parse previous sitemap if available
   let prevSitemapMap: Map<string, string> | null = null;
   if (prevSitemapXml) {
@@ -86,21 +144,20 @@ export function generateSitemap(baseUrl: string, docsDir: string, nomineeSlugs: 
     }
   }
 
-  const staticEntries = staticPages.map(({ file, priority, url }) => {
+  // Scan for all pages
+  const allPages = scanAllPages(docsDir).filter(({ file }) => !excludePages.has(file));
+
+  // Generate entries for all pages
+  const entries = allPages.map(({ file, priority }) => {
     const filePath = path.join(docsDir, file);
-    const pageUrl = url !== undefined ? url : file; // Use custom URL if provided, otherwise use filename
-    const fullUrl = pageUrl ? `${baseUrl}/${pageUrl}` : baseUrl; // Handle root URL case
+    const urlPath = getUrlPath(file);
+    const fullUrl = urlPath ? `${baseUrl}/${urlPath}` : baseUrl;
     const lastmod = getLastMod({ filePath, url: fullUrl, prevSitemapMap });
-    return sitemapEntry(fullUrl, lastmod, priority || '0.7');
+    return sitemapEntry(fullUrl, lastmod, priority);
   });
 
-  const nomineeEntries = nomineeSlugs.map(slug => {
-    const filePath = path.join(docsDir, 'nominees', `${slug}.html`);
-    const url = `${baseUrl}/nominees/${slug}.html`;
-    const lastmod = getLastMod({ filePath, url, prevSitemapMap });
-    return sitemapEntry(url, lastmod, '0.8');
-  });
-
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...staticEntries, ...nomineeEntries].join('\n')}\n</urlset>\n`;
-  return sitemap;
+  // Generate and write sitemap
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
+  fs.writeFileSync(sitemapPath, sitemap, 'utf-8');
+  console.log('Sitemap updated at docs/sitemap.xml');
 }

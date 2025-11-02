@@ -5,6 +5,7 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "generate": "tsx scripts/generate.ts"
+    "generate": "tsx scripts/generate.ts",
+    "generate-results": "tsx scripts/generate-results.ts"
   }
 }
