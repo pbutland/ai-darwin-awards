@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/data/v1/results.schema.json",
+  "title": "AI Darwin Awards Results List",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id", "eligible", "badge", "scores"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the result, matching the nominee ID"
+      },
+      "eligible": {
+        "type": "boolean",
+        "description": "Whether the nominee is eligible for the award"
+      },
+      "badge": {
+        "type": "string",
+        "description": "Badge status for the nominee",
+        "enum": ["Verified", "Ineligible", "Unverified"]
+      },
+      "scores": {
+        "type": "object",
+        "required": [
+          "lethality", "lethalityReason",
+          "hubris", "hubrisReason",
+          "stupidity", "stupidityReason",
+          "impact", "impactReason",
+          "baseScore", "bonuses", "penalties", "finalScore"
+        ],
+        "properties": {
+          "lethality": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Score for potential harm or actual damage caused"
+          },
+          "lethalityReason": {
+            "type": "string",
+            "description": "Explanation for the lethality score"
+          },
+          "hubris": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Score for overconfidence in AI capabilities"
+          },
+          "hubrisReason": {
+            "type": "string",
+            "description": "Explanation for the hubris score"
+          },
+          "stupidity": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Score for the logical flaws or obvious predictability of failure"
+          },
+          "stupidityReason": {
+            "type": "string",
+            "description": "Explanation for the stupidity score"
+          },
+          "impact": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Score for cultural resonance and media coverage"
+          },
+          "impactReason": {
+            "type": "string",
+            "description": "Explanation for the impact score"
+          },
+          "baseScore": {
+            "type": "number",
+            "description": "Calculated base score from the four component scores"
+          },
+          "bonuses": {
+            "type": "array",
+            "description": "Array of bonus modifiers applied to the score",
+            "items": {
+              "type": "object",
+              "required": ["type", "points", "reason"],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "Type of bonus modifier"
+                },
+                "points": {
+                  "type": "number",
+                  "description": "Points added by this bonus"
+                },
+                "reason": {
+                  "type": "string",
+                  "description": "Explanation for why this bonus applies"
+                }
+              }
+            }
+          },
+          "penalties": {
+            "type": "array",
+            "description": "Array of penalty modifiers applied to the score",
+            "items": {
+              "type": "object",
+              "required": ["type", "points", "reason"],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "Type of penalty modifier"
+                },
+                "points": {
+                  "type": "number",
+                  "description": "Points deducted by this penalty"
+                },
+                "reason": {
+                  "type": "string",
+                  "description": "Explanation for why this penalty applies"
+                }
+              }
+            }
+          },
+          "finalScore": {
+            "type": "number",
+            "description": "Final calculated score after bonuses and penalties"
+          }
+        }
+      },
+      "overallRationale": {
+        "type": "string",
+        "description": "Overall explanation and rationale for the scoring and eligibility determination"
+      }
+    }
+  }
+}

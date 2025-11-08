@@ -30,10 +30,11 @@ The automation script (`scripts/generate-nominees.ts`) is designed to keep the n
    npm install
    ```
 
-2. **Edit nominee data** in `scripts/nominees-2025.json` as needed.
+2. **Edit nominee data** in `/docs/data/v1/nominees.json` and `/docs/data/v1/results.json` as needed.
 
-3. **Run the script** to update the HTML:
+3. **Run the script** to generate the HTML:
    ```sh
    npm run generate
    ```
-   This will read the JSON, generate nominee HTML, create a sitemap, and update `nominees-2025.html` between the designated comment markers.
+   This will read the JSON, generate nominee HTML files, results HTML files, create a sitemap,
+   and create `nominees-YYYY.html` and `results-YYYY.html` files.

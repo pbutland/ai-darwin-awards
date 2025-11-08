@@ -1,0 +1,28 @@
+[
+  {
+    "id": "idf-lavender-targeting-system-nominee",
+    "eligible": true,
+    "badge": "Verified",
+    "scores": {
+      "lethality": 98,
+      "lethalityReason": "The system directly authorised strikes that resulted in thousands of deaths, including many non-combatants, based on a probabilistic assessment with a known 10% error rate. The scale of casualties and the systematic application of lethal force based on an algorithm represents an unprecedented level of AI-driven lethality.",
+      "hubris": 95,
+      "hubrisReason": "Deploying a system for life-or-death decisions with a 90% accuracy rate and reducing human oversight to a 20-second 'rubber stamp' demonstrates a staggering belief in algorithmic infallibility. The system was designed to replace the 'human bottleneck', showing breathtaking arrogance about the role of human judgment in warfare.",
+      "stupidity": 92,
+      "stupidityReason": "The logic of accepting a 10% failure rate for lethal decisions, guaranteeing thousands of mistaken targets, is catastrophically flawed. Furthermore, the admission that it was 'easier to bomb a family's home' reveals a complete detachment from the irreversible consequences of their technically streamlined, but morally bankrupt, process.",
+      "impact": 90,
+      "impactReason": "This incident triggered global headlines, widespread condemnation, and intense debate about autonomous warfare at the highest levels of international law and policy. It has become the primary case study for the dangers of AI in military contexts, ensuring its place in ethical and historical records.",
+      "baseScore": 94.55,
+      "bonuses": [
+        {
+          "type": "HAL 9000",
+          "points": 10,
+          "reason": "The system operated as a semi-autonomous killing machine, with humans reduced to a near-powerless approval step, effectively allowing the AI to direct lethal operations with minimal meaningful human control."
+        }
+      ],
+      "penalties": [],
+      "finalScore": 104.55
+    },
+    "overallRationale": "The Lavender system represents a chilling milestone in the application of artificial intelligence, creating an industrial-scale, semi-autonomous pipeline for lethal targeting where a 10% error rate was deemed an acceptable cost in human lives. The IDF's decision to replace meaningful human oversight with a 20-second 'rubber stamp' showcases a level of technological hubris previously confined to science fiction. By systematically targeting individuals in their homes based on a probabilistic score, they demonstrated a profound failure to grasp the ethical and practical limitations of AI, making this a monumental and tragic contender for an AI Darwin Award."
+  }
+]

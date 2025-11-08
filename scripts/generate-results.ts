@@ -260,7 +260,7 @@ try {
   const nomineesPath = path.join(__dirname, '../docs/data/v1/nominees.json');
   const baseOutputDir = path.join(__dirname, '../docs/results');
   const templatePath = path.join(__dirname, 'templates/results-template.html');
-  const nomineeTemplatePath = path.join(__dirname, 'templates/nominee-results-template.html');
+  const nomineeTemplatePath = path.join(__dirname, 'templates/results-nominee-template.html');
 
   // Load data
   const allResults: ResultsNominee[] = JSON.parse(fs.readFileSync(resultsPath, 'utf-8'));

@@ -950,5 +950,52 @@
     "image": "nominees/tromso-municipality-fake-citations.png",
     "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3m2ivscyfqk2t",
     "reddit": "https://www.reddit.com/r/AIDarwinAwards/comments/1nzayf7/troms%C3%B8_municipality_closing_schools_with/"
+  },
+  {
+    "id": "idf-lavender-targeting-system-nominee",
+    "title": "IDF Lavender AI Targeting System - “The Algorithm of Destruction”",
+    "category": "AI Agent Gone Rogue Award",
+    "badge": "Verified",
+    "nominee": "The Israel Defense Forces and Unit 8200 for deploying AI targeting systems with minimal human oversight that treated 90% accuracy as sufficient for life-and-death decisions affecting tens of thousands of civilians.",
+    "reportedBy": "Yuval Abraham, +972 Magazine and Local Call investigation with testimony from six Israeli intelligence officers - April 3, 2024.",
+    "reportedDate": "2024-04-03",
+    "tagline": "When artificial intelligence meets industrial-scale targeting",
+    "sections": [
+      {
+        "heading": "The Innovation",
+        "content": "The Israeli military developed “Lavender,” an AI system designed to revolutionise warfare by automatically identifying suspected militants amongst Gaza's 2.3 million residents. The system gave almost every person in Gaza a rating from 1 to 100, expressing how likely they were to be militants. Combined with “The Gospel” (which targets buildings) and “Where's Daddy?” (which tracks individuals to their homes), this represented what the military believed was the future of precision warfare—replacing the “human bottleneck” of careful target verification with the speed of artificial intelligence."
+      },
+      {
+        "heading": "The Mathematical Confidence",
+        "content": "After testing showed Lavender achieved 90% accuracy in identifying militant affiliation, the military authorised its sweeping use. This statistical approach meant that for every 37,000 people marked by the system, approximately 3,700 would be incorrectly identified—but this margin of error was deemed acceptable. Human oversight was reduced to roughly 20 seconds per target, with personnel serving as what sources described as “rubber stamps” whose only task was verifying the target was male. The system would flag individuals based on communication patterns, device usage, and other “features,” sometimes misidentifying police officers, civil defence workers, or civilians who happened to share names with actual militants."
+      },
+      {
+        "heading": "The Systematic Implementation",
+        "content": "The AI systems were combined with devastating efficiency: Lavender would mark individuals, “Where's Daddy?” would track them to their family homes, and bombing would commence—typically at night when entire families were present. The military systematically chose to target people in their private residences rather than during military activities, as sources explained it was “much easier to bomb a family's home” from an intelligence perspective. Junior operatives were killed using “dumb bombs” rather than precision weapons, with one source noting: “You don't want to waste expensive bombs on unimportant people.” Pre-authorised civilian casualty limits allowed up to 15-20 civilian deaths per junior militant and over 100 civilian deaths per senior commander."
+      },
+      {
+        "heading": "The Human Cost",
+        "content": "According to Palestinian Health Ministry data relied upon by the Israeli military, approximately 15,000 Palestinians were killed in the first six weeks of the war. Intelligence sources testified that thousands of civilians—predominantly women and children—were killed due to the AI systems' targeting decisions. Entire families were eliminated while sleeping in their homes. In some cases, sources revealed, the intended target wasn't even present when the house was bombed, having moved elsewhere after the AI tracking systems last detected them. One source described authorising the bombing of “hundreds” of private homes of alleged junior operatives, knowing that many attacks would kill civilians and entire families as “collateral damage.”"
+      },
+      {
+        "heading": "Why They're Nominated",
+        "content": "This represents the most consequential collision of artificial intelligence with human life documented to date. The Israeli military's deployment of AI systems that treated 90% accuracy as sufficient for targeting decisions demonstrates catastrophic overconfidence in machine learning capabilities when applied to life-and-death situations. The systematic reduction of human oversight to mere seconds per target, combined with pre-authorised civilian casualty limits, created what sources described as an “automated” killing system where thousands of people died based on algorithmic assessments rather than careful human judgment. When intelligence officers testify that they had “zero added value as a human, apart from being a stamp of approval,” the fundamental principle of meaningful human control over lethal autonomous systems has been abandoned. The system's known 10% error rate, applied across tens of thousands of targets, represents not just statistical miscalculation but a profound misunderstanding of the irreversible nature of taking human life. This incident exemplifies the ultimate AI Darwin Award scenario: the deployment of artificial intelligence in the most consequential human domain—decisions about life and death—without adequate safeguards, oversight, or appreciation for the technology's fundamental limitations."
+      }
+    ],
+    "sources": [
+      {
+        "name": "+972 Magazine and Local Call: 'Lavender': The AI machine directing Israel's bombing spree in Gaza",
+        "url": "https://www.972mag.com/lavender-ai-israeli-army-gaza/"
+      },
+      {
+        "name": "The Guardian: “The machine did it coldly”: Israel used AI to identify 37,000 Hamas targets",
+        "url": "https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes"
+      },
+      {
+        "name": "Wikipedia: AI-assisted targeting in the Gaza Strip - Comprehensive documentation of systems and sources",
+        "url": "https://en.wikipedia.org/wiki/AI-assisted_targeting_in_the_Gaza_Strip"
+      }
+    ],
+    "image": "nominees/idf-lavender-targeting-system.png"
   }
 ]

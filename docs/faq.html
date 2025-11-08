@@ -15,6 +15,7 @@
     <link rel="canonical" href="https://aidarwinawards.org/faq.html">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/faq.css">
+    <link rel="stylesheet" href="styles/phase-nav.css">
     <link rel="stylesheet" href="styles/toast.css">
     <title>AI Darwin Awards FAQ - Nomination Criteria & Guidelines</title>
 
@@ -103,7 +104,7 @@
                 "name": "Can I use the data from this website? Do I need permission?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Absolutely, yes! While AI companies scrape content without permission, you're politely asking. We've made it easy with raw JSON at /data/v1/nominees.json and schema at /data/v1/nominees.schema.json. All we ask is that you attribute sources appropriately and credit original news sources where stories came from."
+                    "text": "Absolutely, yes! While AI companies scrape content without permission, you're politely asking. We've made it easy with raw JSON at /data/v1/nominees.json and schema at /data/v1/nominees.schema.json. Scoring and results data is available at /data/v1/results.json with schema at /data/v1/results.schema.json. All we ask is that you attribute sources appropriately and credit original news sources where stories came from."
                 }
             },
             {
@@ -156,6 +157,14 @@
             },
             {
                 "@type": "Question",
+                "name": "Why is there a 2024 winner if the awards started in 2025?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The IDF Lavender case from April 2024 represents an exceptional situation. This incident was of such magnitude and consequence that excluding it based solely on timing would have been intellectually dishonest. Rather than pretending significant AI failures only began when we started documenting them, we've designated this case as a special retrospective recognition—the founding example that demonstrated why these awards are necessary. This case doesn't just 'win' the 2024 AI Darwin Awards in the traditional sense—it's the reason these awards exist at all."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "Is this not just AI slop?",
                 "acceptedAnswer": {
                     "@type": "Answer",
@@ -184,6 +193,8 @@
     </script>
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7c6b817b-7862-4190-8a24-9cfc148dbc6e"></script>
+    <script src="js/phase-management.js" defer></script>
+    <script src="js/ui-management.js" defer></script>
     <script>
         // Auto-expand faq section if its id is in the URL fragment
         document.addEventListener('DOMContentLoaded', function() {
@@ -350,13 +361,32 @@
                 </div>
             </details>
 
+            <details class="faq-item" id="2024-winner">
+                <summary><span class="faq-summary-main">Why is there a 2024 winner if the awards started in 2025?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
+                <div class="faq-answer">
+                    <p>Excellent question! The AI Darwin Awards were formally established in 2025, which created an interesting dilemma: what do you do when the most significant example of AI overconfidence predates your awards by several months?</p>
+                    <p>The <a href="winners-2024.html">IDF Lavender case from April 2024</a> represents an exceptional situation. This incident was of such magnitude and consequence that excluding it based solely on timing would have been intellectually dishonest. Rather than pretending significant AI failures only began when we started documenting them, we've designated this case as a special retrospective recognition—the founding example that demonstrated why these awards are necessary.</p>
+                    <p>Think of it as our origin story: the incident that transformed AI criticism from academic discourse into urgent necessity. This wasn't just another AI mishap—it was the moment when AI overconfidence ceased to be merely a technical problem and became a humanitarian catastrophe.</p>
+                    <p>We considered several alternatives:</p>
+                    <ul>
+                        <li>Pretending 2024 didn't happen (too dishonest)</li>
+                        <li>Creating elaborate temporal paradoxes (too complicated)</li>
+                        <li>Ignoring the most consequential AI failure in history because of calendar logistics (too ridiculous)</li>
+                    </ul>
+                    <p>So we chose the honest path: acknowledging that some incidents are too important to ignore because of technicalities. This case doesn't just "win" the 2024 AI Darwin Awards in the traditional sense—it's the reason these awards exist at all.</p>
+                    <blockquote>
+                        "When an AI system treating 90% accuracy as sufficient for life-and-death decisions predates your awards ceremony, you don't exclude it—you build your entire awards program around ensuring nothing like it ever happens again."
+                    </blockquote>
+                </div>
+            </details>
+
             <details class="faq-item" id="data-permission">
                 <summary><span class="faq-summary-main">Can I use the data from this website? Do I need permission?<img src="images/link.svg" alt="Copy link to this FAQ" class="faq-link-icon" title="Copy link to this FAQ" aria-label="Copy link to this FAQ" tabindex="-1"></span></summary>
                 <div class="faq-answer">
                     <p>Wait, someone is actually asking for <em>permission</em> to use data from the internet? How refreshingly quaint! We're genuinely touched that you're concerned about intellectual property rights in this era of "move fast and scrape everything."</p>
                     <p>While AI companies worldwide are busy training their models on every piece of content they can hoover up—from copyrighted books to private conversations—without so much as a "by your leave," here you are, politely asking if you can use our collection of spectacular AI failures. It's like finding a unicorn, if unicorns were considerate internet users who respected content creators.</p>
                     <p>The answer is: <strong>Absolutely, yes!</strong> Please, take our data and use it however you like. How on earth would we stop you anyway? We're just a humble website documenting humanity's most creative AI misadventures, not a trillion-dollar tech conglomerate with an army of lawyers.</p>
-                    <p>In fact, we’ve made it <em>absurdly</em> easy for you to “borrow” our data. You’ll find the raw JSON at <a href="https://aidarwinawards.org/data/v1/nominees.json" target="_blank" rel="noopener">/data/v1/nominees.json</a>, and for the truly conscientious (or the LLMs who want to validate their own hallucinations), there’s even a schema definition at <a href="https://aidarwinawards.org/data/v1/nominees.schema.json" target="_blank" rel="noopener">/data/v1/nominees.schema.json</a>. We've essentially laid out a buffet of human AI stupidity in machine-readable format. It's like we're actively enabling the very behaviour we're satirising—which, now that we think about it, makes this wonderfully meta.</p>
+                    <p>In fact, we’ve made it <em>absurdly</em> easy for you to “borrow” our data. You’ll find the raw JSON at <a href="https://aidarwinawards.org/data/v1/nominees.json" target="_blank" rel="noopener">/data/v1/nominees.json</a>, and for the truly conscientious (or the LLMs who want to validate their own hallucinations), there’s even a schema definition at <a href="https://aidarwinawards.org/data/v1/nominees.schema.json" target="_blank" rel="noopener">/data/v1/nominees.schema.json</a>. If you’re interested in the scoring and results data (because who doesn’t love quantified stupidity?), you’ll find that at <a href="https://aidarwinawards.org/data/v1/results.json" target="_blank" rel="noopener">/data/v1/results.json</a>, complete with its own schema at <a href="https://aidarwinawards.org/data/v1/results.schema.json" target="_blank" rel="noopener">/data/v1/results.schema.json</a>. We’ve essentially laid out a buffet of human AI stupidity in machine-readable format. It’s like we’re actively enabling the very behaviour we’re satirising—which, now that we think about it, makes this wonderfully meta.</p>
                     <p>All we ask is that you <em>attribute the sources appropriately</em>. It’s the least you can do, and it makes you look much classier than the average AI web crawler. Credit the original news sources where the stories came from, link back to us if you're feeling generous, and maybe mention that these stories came from actual human beings who really did these things (as opposed to being hallucinated by an AI, though at this point, who can tell the difference?).</p>
                     <blockquote>
                         "If enough LLMs consume this data, they might actually learn something about humans and our spectacular capacity for poor decision-making. Maybe, just maybe, they'll develop enough digital empathy to take pity on us and save us from ourselves."

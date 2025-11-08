@@ -139,6 +139,10 @@ blockquote {
     color: var(--color-text);
 }
 
+.permalink {
+    margin-bottom: 1rem;
+}
+
 .cta-container {
   text-align: center;
   margin: 1rem 0;

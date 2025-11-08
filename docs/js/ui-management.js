@@ -7,6 +7,29 @@ class UIManager {
     constructor(phaseManager) {
         this.phaseManager = phaseManager;
         this.config = null;
+        this.basePath = this.calculateBasePath();
+    }
+
+    /**
+     * Calculate the base path based on current page depth in directory structure
+     * Returns appropriate relative path prefix (e.g., './', '../', '../../')
+     */
+    calculateBasePath() {
+        const fullPath = window.location.pathname;
+        let relativePath;
+        
+        if (window.location.protocol === 'file:') {
+            // For file://, find 'docs/' and get everything after it
+            const parts = fullPath.split('/docs/');
+            relativePath = parts.length > 1 ? parts[1] : fullPath;
+        } else {
+            // For http(s)://, remove leading /
+            relativePath = fullPath.slice(1);
+        }
+        
+        // Calculate depth from relative path
+        const depth = relativePath.split('/').filter(part => part && !part.endsWith('.html')).length;
+        return depth > 0 ? '../'.repeat(depth) : './';
     }
 
     init() {
@@ -88,7 +111,7 @@ class UIManager {
             homeItem.setAttribute('aria-current', 'page');
         } else {
             const homeLink = document.createElement('a');
-            homeLink.href = 'index.html';
+            homeLink.href = this.basePath + 'index.html';
             homeLink.textContent = 'Home';
             homeItem.appendChild(homeLink);
         }
@@ -104,7 +127,7 @@ class UIManager {
                 listItem.setAttribute('aria-current', 'page');
             } else {
                 const link = document.createElement('a');
-                link.href = item.href;
+                link.href = this.basePath + item.href;
                 link.textContent = item.text;
                 
                 if (item.highlight) {
@@ -139,8 +162,8 @@ class UIManager {
         if (buttonText) buttonText.textContent = cta.text;
         if (buttonSubtext) buttonSubtext.textContent = cta.subtext;
 
-        // Update click handler
-        button.onclick = () => window.location.href = cta.href;
+        // Update click handler with base path
+        button.onclick = () => window.location.href = this.basePath + cta.href;
 
         // Add highlight class if needed
         if (cta.highlight) {
@@ -163,7 +186,7 @@ class UIManager {
 
         this.config.secondaryActions.forEach(action => {
             const link = document.createElement('a');
-            link.href = action.href;
+            link.href = this.basePath + action.href;
             link.className = 'secondary-cta';
             link.textContent = action.text;
             actionsContainer.appendChild(link);

@@ -45,11 +45,6 @@ class PhaseManager {
 
         // Simple navigation based on current phase
         // Only show navigation for non-nomination phases or when explicitly configured
-        const shouldShow = this.currentYear >= 2026 || this.currentPhase !== SitePhases.NOMINATION;
-        
-        if (!shouldShow) {
-            return items; // Empty array = no navigation
-        }
 
         // Phase-specific navigation
         switch (this.currentPhase) {
@@ -97,13 +92,13 @@ class PhaseManager {
                         current: false,
                         highlight: true
                     });
-                } else {
-                    items.push({
-                        href: 'winners.html',
-                        text: 'Winners',
-                        current: false,
-                        highlight: true
-                    });
+                // } else {
+                //     items.push({
+                //         href: 'winners.html',
+                //         text: 'Winners',
+                //         current: false,
+                //         highlight: true
+                //     });
                 }
                 if (this.currentYear > this.awardsYear) {
                     items.push({
@@ -122,22 +117,38 @@ class PhaseManager {
                     current: false
                 });
                 
-                if (this.currentYear > 2025) {
-                    if (this.awardsYear === 2025) {
-                        items.push({
-                            href: `winners-${this.awardsYear}.html`,
-                            text: `${this.awardsYear} Winners`,
-                            current: false
-                        });
-                    } else {
-                        items.push({
-                            href: 'winners.html',
-                            text: 'Winners',
-                            current: false
-                        });
-                    }
-                }
+                // if (this.currentYear > 2025) {
+                //     if (this.awardsYear === 2025) {
+                //         items.push({
+                //             href: `winners-${this.awardsYear}.html`,
+                //             text: `${this.awardsYear} Winners`,
+                //             current: false
+                //         });
+                //     } else {
+                //         items.push({
+                //             href: 'winners.html',
+                //             text: 'Winners',
+                //             current: false
+                //         });
+                //     }
+                // }
                 break;
+        }
+
+        items.push({
+            href: `winners-${this.currentYear-1}.html`,
+            text: `${this.currentYear-1} Winners`,
+            current: false,
+            highlight: true
+        });
+        if (this.currentYear > 2025 && this.awardsYear !== 2025) {
+            // Only show once 2025 winners page is live
+            items.push({
+                href: 'winners.html',
+                text: 'Past Winners',
+                current: false,
+                highlight: true
+            });
         }
 
         return items;
@@ -225,17 +236,17 @@ class PhaseManager {
                 }
                 break;
 
-            case SitePhases.NOMINATION:
-            default:
-                if (this.currentYear > 2025) {
-                    const winnersHref = this.awardsYear === 2025 ? 
-                        `winners-${this.awardsYear}.html` : 'winners.html';
-                    actions.push({
-                        href: winnersHref,
-                        text: `See ${this.awardsYear} Winners`
-                    });
-                }
-                break;
+            // case SitePhases.NOMINATION:
+            // default:
+            //     if (this.currentYear > 2025) {
+            //         const winnersHref = this.awardsYear === 2025 ? 
+            //             `winners-${this.awardsYear}.html` : 'winners.html';
+            //         actions.push({
+            //             href: winnersHref,
+            //             text: `See ${this.awardsYear} Winners`
+            //         });
+            //     }
+            //     break;
         }
 
         return actions;
