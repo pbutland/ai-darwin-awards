@@ -192,8 +192,8 @@ class UIManager {
             actionsContainer.appendChild(link);
         });
 
-        // Insert after primary CTA
-        const primaryCTA = document.querySelector('.cta-container');
+        // Insert after primary CTA (home page only)
+        const primaryCTA = document.getElementById('nominees-cta-container');
         if (primaryCTA) {
             primaryCTA.insertAdjacentElement('afterend', actionsContainer);
         }

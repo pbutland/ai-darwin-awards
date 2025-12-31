@@ -11,7 +11,6 @@ A satirical project documenting the most spectacular, misguided, or catastrophic
 - `styles/`: CSS files for site styling.
 - `email-templates/`: Markdown templates for acceptance/rejection emails.
 
-
 ## Automation Script
 
 The automation script (`scripts/generate-nominees.ts`) is designed to keep the nominee details on the website consistent, up-to-date, and optimised for both readers and social media/SEO. It works by:
@@ -38,3 +37,16 @@ The automation script (`scripts/generate-nominees.ts`) is designed to keep the n
    ```
    This will read the JSON, generate nominee HTML files, results HTML files, create a sitemap,
    and create `nominees-YYYY.html` and `results-YYYY.html` files.
+
+## Testing
+
+The different phases of the website can be tested by starting up a HTTP server in the `docs` folder.
+E.g.
+```
+http-server -p 8000
+```
+Then open up the `http://localhost:8000/site-map.html` url in a browser, select the phase that you wish
+to test the website for and click the "Analyse Site" button.
+
+The results will display a list of all the pages that will be "live" and where they are linked from,
+along with any pages that are inaccessible via links from other pages (i.e. "dark").

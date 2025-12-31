@@ -11,8 +11,8 @@ const SitePhases = {
 };
 
 // CONFIGURATION: Change this to set the current phase manually
-const CURRENT_PHASE = SitePhases.NOMINATION;
-const CURRENT_YEAR = 2025;
+const CURRENT_PHASE = SitePhases.VOTING;
+const CURRENT_YEAR = 2026;
 const AWARDS_YEAR = 2025; // The year being awarded
 
 class PhaseManager {
@@ -60,13 +60,6 @@ class PhaseManager {
                     current: false,
                     highlight: true
                 });
-                if (this.currentYear > this.awardsYear) {
-                    items.push({
-                        href: `nominees-${this.currentYear}.html`,
-                        text: `${this.currentYear} Nominees`,
-                        current: false
-                    });
-                }
                 break;
 
             case SitePhases.RESULTS_PENDING:
@@ -75,81 +68,30 @@ class PhaseManager {
                     text: `${this.awardsYear} Nominees`,
                     current: false
                 });
-                if (this.currentYear > this.awardsYear) {
-                    items.push({
-                        href: `nominees-${this.currentYear}.html`,
-                        text: `${this.currentYear} Nominees`,
-                        current: false
-                    });
-                }
                 break;
 
             case SitePhases.RESULTS_AVAILABLE:
-                if (this.awardsYear === 2025) {
-                    items.push({
-                        href: `winners-${this.awardsYear}.html`,
-                        text: `${this.awardsYear} Winners`,
-                        current: false,
-                        highlight: true
-                    });
-                // } else {
-                //     items.push({
-                //         href: 'winners.html',
-                //         text: 'Winners',
-                //         current: false,
-                //         highlight: true
-                //     });
-                }
-                if (this.currentYear > this.awardsYear) {
-                    items.push({
-                        href: `nominees-${this.currentYear}.html`,
-                        text: `${this.currentYear} Nominees`,
-                        current: false
-                    });
-                }
-                break;
-
-            case SitePhases.NOMINATION:
-            default:
                 items.push({
-                    href: `nominees-${this.currentYear}.html`,
-                    text: `${this.currentYear} Nominees`,
-                    current: false
+                    href: `winners-${this.awardsYear}.html`,
+                    text: `${this.awardsYear} Winners`,
+                    current: false,
+                    highlight: true
                 });
-                
-                // if (this.currentYear > 2025) {
-                //     if (this.awardsYear === 2025) {
-                //         items.push({
-                //             href: `winners-${this.awardsYear}.html`,
-                //             text: `${this.awardsYear} Winners`,
-                //             current: false
-                //         });
-                //     } else {
-                //         items.push({
-                //             href: 'winners.html',
-                //             text: 'Winners',
-                //             current: false
-                //         });
-                //     }
-                // }
                 break;
         }
 
         items.push({
-            href: `winners-${this.currentYear-1}.html`,
-            text: `${this.currentYear-1} Winners`,
+            href: `nominees-${this.currentYear}.html`,
+            text: `${this.currentYear} Nominees`,
+            current: false
+        });
+
+        items.push({
+            href: 'winners.html',
+            text: 'Past Winners',
             current: false,
             highlight: true
         });
-        if (this.currentYear > 2025 && this.awardsYear !== 2025) {
-            // Only show once 2025 winners page is live
-            items.push({
-                href: 'winners.html',
-                text: 'Past Winners',
-                current: false,
-                highlight: true
-            });
-        }
 
         return items;
     }
