@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Modern favicon setup -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Darwin Awards Nominees - Browse nominees from previous years who demonstrated spectacular creativity in catastrophically bad AI decisions.">
+    <meta name="keywords" content="AI Darwin Awards nominees, AI failures archive, worst AI decisions history, artificial intelligence disasters, AI mishaps nominees">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AI Darwin Awards">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; connect-src 'self' https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self';">
+
+    <link rel="canonical" href="https://aidarwinawards.org/nominees.html">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/phase-nav.css">
+    <link rel="stylesheet" href="styles/nominees.css">
+    <style>
+        .year-list {
+            margin: 1.5rem 0;
+        }
+        .year-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--color-surface);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--color-primary);
+        }
+        .year-item h3 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+        .year-item h3 a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .year-item h3 a::after {
+            content: " →";
+            font-weight: 400;
+            opacity: 0.6;
+            margin-left: 0.5em;
+            transition: opacity 0.2s, transform 0.2s;
+            display: inline-block;
+        }
+        .year-item:hover h3 a::after {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+        .year-item h3 a:hover {
+            text-decoration: underline;
+        }
+        .year-description {
+            color: var(--color-muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+    </style>
+    <title>AI Darwin Awards Nominees - Archive of Spectacular AI Failures</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="AI Darwin Awards Nominees - Archive of Spectacular AI Failures" />
+    <meta property="og:description" content="Browse nominees from previous years who demonstrated spectacular creativity in catastrophically bad AI decisions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aidarwinawards.org/nominees.html" />
+    <meta property="og:site_name" content="AI Darwin Awards" />
+    <meta property="og:image" content="https://aidarwinawards.org/images/aidarwinawards-banner.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AI Darwin Awards Nominees - Archive of spectacular AI failures" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Darwin Awards Nominees - Archive of Spectacular AI Failures" />
+    <meta name="twitter:description" content="Browse nominees from previous years who demonstrated spectacular creativity in catastrophically bad AI decisions." />
+    <meta name="twitter:image" content="https://aidarwinawards.org/images/aidarwinawards-banner.png" />
+    <meta name="twitter:image:alt" content="AI Darwin Awards Nominees - Archive of spectacular AI failures" />
+
+    <!-- JSON-LD for WebPage structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "AI Darwin Awards Nominees",
+        "description": "Browse nominees from previous years who demonstrated spectacular creativity in catastrophically bad AI decisions.",
+        "url": "https://aidarwinawards.org/nominees.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "AI Darwin Awards",
+            "url": "https://aidarwinawards.org"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://aidarwinawards.org/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Nominees",
+                    "item": "https://aidarwinawards.org/nominees.html"
+                }
+            ]
+        }
+    }
+    </script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="7c6b817b-7862-4190-8a24-9cfc148dbc6e"></script>
+    <script src="js/phase-management.js" defer></script>
+    <script src="js/ui-management.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/aidarwinawards-logo.svg" alt="AI Darwin Awards Logo" style="height: 10em; width: auto;" />
+        <h1>AI Darwin Awards Nominees</h1>
+        <div class="subtitle">Archive of Spectacular AI Failures</div>
+    </header>
+    <main>
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="current">Nominees</li>
+            </ol>
+        </nav>
+        <section>
+            <h2>Contenders for Catastrophically Bad AI Decisions</h2>
+            <p>
+                Welcome to our archive of distinguished nominees—the visionaries who looked at artificial intelligence and thought, "What's the worst that could happen?" These brave pioneers earned their nominations by demonstrating remarkable creativity in deploying AI systems with predictably spectacular results.
+            </p>
+            <p>
+                Not every nominee can win, but each has contributed invaluable lessons to humanity's collective understanding of how not to use cutting-edge technology. From algorithmic disasters to automated mayhem, our nominees represent the finest examples of ambition meeting artificial intelligence—with entertaining consequences.
+            </p>
+        </section>
+
+        <section class="nominees-by-year">
+            <h2>Nominees by Year</h2>
+            
+            <div class="year-list">
+                <div class="year-item">
+                    <h3><a href="nominees-2025.html">2025 Nominees</a></h3>
+                    <p class="year-description">
+                        The inaugural year of the AI Darwin Awards featured an impressive field of contenders who demonstrated that safety protocols are merely suggestions and ethical guidelines are more like gentle recommendations.
+                    </p>
+                </div>
+
+                <div class="year-item">
+                    <h3><a href="nominees-2024.html">2024 Nominees</a></h3>
+                    <p class="year-description">
+                        <strong>⚠️ Special Retrospective Recognition:</strong> While the AI Darwin Awards were established in 2025, one incident from 2024 demanded recognition—the watershed moment that transformed AI criticism from academic discourse into urgent necessity.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>What Makes a Nominee?</h2>
+            <p>Our nominees are selected based on their outstanding achievements in:</p>
+            <ul>
+                <li><strong>Scale of Impact:</strong> Making headlines for all the wrong reasons</li>
+                <li><strong>Creative Misapplication:</strong> Finding innovative new ways to deploy AI inappropriately</li>
+                <li><strong>Confident Incompetence:</strong> Unwavering faith in systems clearly not ready for deployment</li>
+                <li><strong>Unintended Consequences:</strong> The beautiful chaos of "But the AI passed all our tests!"</li>
+                <li><strong>Educational Value:</strong> Providing cautionary tales for future generations</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="images/sparkles.svg" alt="AI Darwin Awards Logo" class="footer-logo" loading="lazy">
+            <div class="footer-text-group">
+                <div class="footer-title">AI Darwin Awards</div>
+                <div class="footer-tagline">Preserving Poor Decisions for Posterity</div>
+            </div>
+            <img src="images/sparkles.svg" alt="AI Darwin Awards Logo" class="footer-logo" loading="lazy">
+        </div>
+        <div class="footer">
+            <div class="footer-links">
+                <a href="faq.html">FAQ</a> |
+                <a href="nominate.html">Nominate</a>
+            </div>
+            &copy; 2025 AI Darwin Awards. No humans or robots were harmed (yet) in the making of this website.
+        </div>
+    </footer>
+</body>
+
+</html>

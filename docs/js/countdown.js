@@ -80,6 +80,15 @@ function updateVotingCountdown() {
     const isAwardsYearPage = window.location.pathname.includes(`nominees-${awardsYear}.html`);
     const isCurrentYearPage = window.location.pathname.includes(`nominees-${currentYear}.html`);
     
+    // Hide countdown on awards year page once results are pending or available
+    if (isAwardsYearPage && (currentPhase === 'results_pending' || currentPhase === 'results_available')) {
+        const countdownContainer = countdownElement.closest('.countdown-container');
+        if (countdownContainer) {
+            countdownContainer.style.display = 'none';
+        }
+        return;
+    }
+    
     let votingDate;
     let labelText;
     

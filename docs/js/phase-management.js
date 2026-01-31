@@ -11,7 +11,7 @@ const SitePhases = {
 };
 
 // CONFIGURATION: Change this to set the current phase manually
-const CURRENT_PHASE = SitePhases.VOTING;
+const CURRENT_PHASE = SitePhases.RESULTS_PENDING;
 const CURRENT_YEAR = 2026;
 const AWARDS_YEAR = 2025; // The year being awarded
 
@@ -62,14 +62,6 @@ class PhaseManager {
                 });
                 break;
 
-            case SitePhases.RESULTS_PENDING:
-                items.push({
-                    href: `nominees-${this.awardsYear}.html`,
-                    text: `${this.awardsYear} Nominees`,
-                    current: false
-                });
-                break;
-
             case SitePhases.RESULTS_AVAILABLE:
                 items.push({
                     href: `winners-${this.awardsYear}.html`,
@@ -83,6 +75,12 @@ class PhaseManager {
         items.push({
             href: `nominees-${this.currentYear}.html`,
             text: `${this.currentYear} Nominees`,
+            current: false
+        });
+
+        items.push({
+            href: 'nominees.html',
+            text: 'Past Nominees',
             current: false
         });
 
@@ -108,9 +106,9 @@ class PhaseManager {
 
             case SitePhases.RESULTS_PENDING:
                 return {
-                    href: `nominees-${this.awardsYear}.html`,
-                    text: `${this.awardsYear} Nominees`,
-                    subtext: 'Results Coming Soon!',
+                    href: `nominees-${this.currentYear}.html`,
+                    text: `See the Latest Nominees for ${this.currentYear}`,
+                    subtext: 'When AI Meets Human Overconfidence',
                     highlight: false
                 };
 
@@ -152,25 +150,8 @@ class PhaseManager {
                 }
                 break;
 
-            case SitePhases.RESULTS_PENDING:
-                if (this.currentYear > this.awardsYear) {
-                    actions.push({
-                        href: 'nominate.html',
-                        text: `Nominate for ${this.currentYear}`
-                    });
-                    actions.push({
-                        href: `nominees-${this.currentYear}.html`,
-                        text: `View ${this.currentYear} Nominees`
-                    });
-                }
-                break;
-
             case SitePhases.RESULTS_AVAILABLE:
                 if (this.currentYear > this.awardsYear) {
-                    actions.push({
-                        href: 'nominate.html',
-                        text: `Nominate for ${this.currentYear}`
-                    });
                     actions.push({
                         href: `nominees-${this.currentYear}.html`,
                         text: `View ${this.currentYear} Nominees`
@@ -209,7 +190,7 @@ class PhaseManager {
                     type: 'info',
                     icon: '⏳',
                     message: `Voting has closed for ${this.awardsYear}. Results will be announced soon!`,
-                    dismissible: false
+                    dismissible: true
                 };
 
             case SitePhases.RESULTS_AVAILABLE:
