@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Fri, 07 Nov 2025 23:45:06 GMT</lastBuildDate>
-    <pubDate>Fri, 07 Nov 2025 23:45:06 GMT</pubDate>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:01 GMT</lastBuildDate>
+    <pubDate>Sun, 01 Feb 2026 00:00:01 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -25,6 +25,14 @@
       <guid isPermaLink="true">https://aidarwinawards.org/winners-2024.html</guid>
       <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
       <category>Results</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] ICE AI Recruitment Screening - “Officer? Close Enough!”]]></title>
+      <description><![CDATA[Facing pressure from the White House to rapidly deploy 10,000 new immigration enforcement officers, ICE embraced cutting-edge artificial intelligence to streamline their recruitment process. The AI tool was tasked with identifying applicants possessing prior law enforcement experience for the accelerated “LEO programme”—requiring merely four weeks of online training rather than the standard eight-week in-person academy course covering immigration law, firearms handling, and physical fitness. What could possibly go wrong with letting algorithms decide who needs proper training before being handed a badge and a gun?]]></description>
+      <link>https://aidarwinawards.org/nominees/ice-ai-recruitment-screening.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/ice-ai-recruitment-screening.html</guid>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+      <category>Verified</category>
     </item>
     <item>
       <title><![CDATA[[Verified] Omnilert AI Gun Detection - “Doritos Danger Alert”]]></title>
