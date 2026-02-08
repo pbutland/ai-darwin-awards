@@ -220,6 +220,7 @@
 
 .winner-card ul {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 .winner-card:hover {
