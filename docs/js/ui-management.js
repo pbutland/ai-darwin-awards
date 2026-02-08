@@ -164,13 +164,6 @@ class UIManager {
 
         // Update click handler with base path
         button.onclick = () => window.location.href = this.basePath + cta.href;
-
-        // Add highlight class if needed
-        if (cta.highlight) {
-            button.classList.add('highlight-cta');
-        } else {
-            button.classList.remove('highlight-cta');
-        }
     }
 
     renderSecondaryActions() {

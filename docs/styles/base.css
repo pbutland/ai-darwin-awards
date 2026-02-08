@@ -193,17 +193,6 @@ blockquote {
   font-weight: normal;
 }
 
-/* Highlight CTA for special phases */
-.cta-button.highlight-cta {
-  background: var(--color-accent);
-  animation: cta-pulse 2s infinite;
-}
-
-.cta-button.highlight-cta:hover {
-  background: var(--color-primary);
-  animation: none;
-}
-
 @keyframes cta-pulse {
   0%, 100% { 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(94, 168, 230, 0.3);
