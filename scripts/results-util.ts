@@ -9,6 +9,7 @@ export interface Nominee {
   badge: string;
   summary?: string;
   sections?: Array<{ heading: string; content: string }>;
+  image?: string;
 }
 
 export interface SecondaryPoints {
@@ -124,6 +125,7 @@ function generateNomineeResultPage(
   nomineeTemplate: string
 ): string {
   const displayName = nominee ? getDisplayName(nominee) : result.id;
+  const image = nominee?.image ? nominee.image : 'aidarwinawards-banner.png';
   const scores = result.scores;
   
   const nomineeRadarData = [{
@@ -152,6 +154,7 @@ function generateNomineeResultPage(
     .replace(/\[YEAR\]/g, year)
     .replace(/\[NOMINEE_NAME\]/g, escapeHtml(displayName))
     .replace(/\[NOMINEE_ID\]/g, result.id?.replace(/-nominee$/, ''))
+    .replace(/\[NOMINEE_IMAGE\]/g, image)
     .replace(/\[LETHALITY\]/g, String(scores.lethality))
     .replace(/\[LETHALITY_CLASS\]/g, getHeatTextClass(scores.lethality))
     .replace(/\[HUBRIS\]/g, String(scores.hubris))
