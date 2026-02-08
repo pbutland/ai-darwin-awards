@@ -10,12 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="[YEAR] AI Darwin Award Results - Complete scoring breakdown and data visualization of this year's most spectacular AI failures.">
     <meta name="keywords" content="[YEAR] AI Darwin Awards results, AI failure analysis, artificial intelligence scoring, AI disaster visualization">
-    <!-- <meta name="robots" content="index, follow"> -->
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow">
     <meta name="author" content="AI Darwin Awards">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cloud.umami.is https://cdn.jsdelivr.net; connect-src 'self' https://api-gateway.umami.dev https://cdn.jsdelivr.net; object-src 'none'; base-uri 'self'; form-action 'self';">
 
-    <!-- <link rel="canonical" href="https://aidarwinawards.org/results/[YEAR]/results.html"> -->
+    <link rel="canonical" href="https://aidarwinawards.org/results/[YEAR]/results.html">
     <link rel="stylesheet" href="../../styles/base.css">
     <link rel="stylesheet" href="../../styles/phase-nav.css">
     <link rel="stylesheet" href="../../styles/results.css">
@@ -39,9 +38,55 @@
     <meta name="twitter:image" content="https://aidarwinawards.org/images/aidarwinawards-banner.png" />
     <meta name="twitter:image:alt" content="[YEAR] AI Darwin Award Results - Complete scoring breakdown" />
 
+    <!-- JSON-LD for WebPage structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "[YEAR] AI Darwin Award Results",
+        "description": "[YEAR] AI Darwin Award Results - Complete scoring breakdown and data visualization of this year's most spectacular AI failures.",
+        "url": "https://aidarwinawards.org/results/[YEAR]/results.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "AI Darwin Awards",
+            "url": "https://aidarwinawards.org"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://aidarwinawards.org/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Winners",
+                    "item": "https://aidarwinawards.org/winners.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "[YEAR] Winners",
+                    "item": "https://aidarwinawards.org/winners-[YEAR].html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Results",
+                    "item": "https://aidarwinawards.org/results/[YEAR]/results.html"
+                }
+            ]
+        }
+    }
+    </script>
+
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="7c6b817b-7862-4190-8a24-9cfc148dbc6e"></script>
     <script src="../../js/phase-management.js" defer></script>
     <script src="../../js/ui-management.js" defer></script>
 
