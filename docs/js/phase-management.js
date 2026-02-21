@@ -11,9 +11,9 @@ const SitePhases = {
 };
 
 // CONFIGURATION: Change this to set the current phase manually
-const CURRENT_PHASE = SitePhases.RESULTS_AVAILABLE;
+const CURRENT_PHASE = SitePhases.NOMINATION;
 const CURRENT_YEAR = 2026;
-const AWARDS_YEAR = 2025; // The year being awarded
+const AWARDS_YEAR = 2026; // The year being awarded
 
 class PhaseManager {
     constructor() {
