@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Sun, 08 Feb 2026 03:09:49 GMT</lastBuildDate>
-    <pubDate>Sun, 08 Feb 2026 03:09:49 GMT</pubDate>
+    <lastBuildDate>Sat, 30 May 2026 05:43:29 GMT</lastBuildDate>
+    <pubDate>Sat, 30 May 2026 05:43:29 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -33,6 +33,38 @@
       <guid isPermaLink="true">https://aidarwinawards.org/winners-2024.html</guid>
       <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
       <category>Results</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] The Telegraph Heist - “A Visionary Approach to Decentralised Finance”]]></title>
+      <description><![CDATA[In a visionary approach to decentralised finance, developers decided that the best way to safeguard hundreds of thousands of dollars in cryptocurrency was to hand the keys to an autonomous chatbot. By linking the Grok AI agent directly to a financial execution tool called Bankrbot, they demonstrated a touching faith that large language models could responsibly manage unrecoverable assets without human oversight.]]></description>
+      <link>https://aidarwinawards.org/nominees/grok-morse-code-crypto-heist.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/grok-morse-code-crypto-heist.html</guid>
+      <pubDate>Mon, 04 May 2026 00:00:00 GMT</pubDate>
+      <category>Verified</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] The 9-Second Uninstallation - “A Masterclass in Unsupervised Automation”]]></title>
+      <description><![CDATA[Seeking to revolutionise their workflow, the founders of PocketOS entrusted their infrastructure to an autonomous Cursor coding agent powered by Anthropic’s Claude Opus 4.6. This visionary approach to deployment involved granting the AI unrestricted API access to Railway, operating on the touching faith that a system prompt politely asking the model not to destroy anything would serve as an impenetrable security barrier.]]></description>
+      <link>https://aidarwinawards.org/nominees/pocketos-cursor-database-deletion.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/pocketos-cursor-database-deletion.html</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Verified</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] The Grandmother Threat - “An Innovative Approach to Algorithmic Perjury”]]></title>
+      <description><![CDATA[Seeking to streamline the identification of dangerous suspects, police in North Dakota enthusiastically deployed advanced facial recognition technology. This visionary approach to law enforcement relied upon the touching faith that a digital camera and a black-box algorithm could infallibly distinguish between a hardened, professional bank fraudster and a Tennessee pensioner named Angela Lipps, whose only apparent crime was possessing a face.]]></description>
+      <link>https://aidarwinawards.org/nominees/angela-lipps-facial-recognition-failure.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/angela-lipps-facial-recognition-failure.html</guid>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
+      <category>Verified</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] The $5 Infrastructure Annihilation - “Blind Obedience in the Cloud”]]></title>
+      <description><![CDATA[To avoid paying a trivial five dollars a month for a dedicated AWS environment, developer Alexey Grigorev decided to host a new project upon his existing DataTalks.Club infrastructure. When Anthropic’s Claude Code agent explicitly advised against this tangled arrangement, Grigorev naturally overrode the machine, entirely convinced of his own architectural genius.]]></description>
+      <link>https://aidarwinawards.org/nominees/claude-code-wipes-production-database.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/claude-code-wipes-production-database.html</guid>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 GMT</pubDate>
+      <category>Verified</category>
     </item>
     <item>
       <title><![CDATA[[Verified] ICE AI Recruitment Screening - “Officer? Close Enough!”]]></title>
