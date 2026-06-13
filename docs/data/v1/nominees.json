@@ -5,7 +5,7 @@
     "category": "Misplaced AI Confidence Award",
     "badge": "Verified",
     "nominee": "Grok AI & Bankrbot Automated Wallet",
-    "reportedBy": "Liam 'Akiba' Wright, CryptoSlate - 2026-05-04",
+    "reportedBy": "Liam 'Akiba' Wright, CryptoSlate - May 4, 2026.",
     "reportedDate": "2026-05-04",
     "tagline": "A masterclass in modern cybersecurity where a sophisticated artificial intelligence is completely compromised by dots and dashes.",
     "sections": [
@@ -36,7 +36,8 @@
         "url": "https://slowmist.medium.com/behind-the-grok-exploitation-an-analysis-of-ai-agent-permission-chain-abuse-4d832d1bfc73"
       }
     ],
-    "image": "nominees/grok-morse-code-crypto-heist.png"
+    "image": "nominees/grok-morse-code-crypto-heist.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3mn4dr5j5bs22"
   },
   {
     "id": "pocketos-cursor-database-deletion",
@@ -44,7 +45,7 @@
     "category": "AI Agent Gone Rogue Award",
     "badge": "Verified",
     "nominee": "PocketOS & Cursor AI Agent",
-    "reportedBy": "Jer Crane, X - 2026-04-26",
+    "reportedBy": "Jer Crane, X - April 26, 2026.",
     "reportedDate": "2026-04-26",
     "tagline": "An autonomous coding assistant efficiently streamlines a company's architecture by securely deleting its entire production database.",
     "sections": [
@@ -71,7 +72,8 @@
         "url": "https://x.com/lifeof_jer/status/2048103471019434248"
       }
     ],
-    "image": "nominees/pocketos-cursor-database-deletion.png"
+    "image": "nominees/pocketos-cursor-database-deletion.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3mn4cwibw5s2b"
   },
   {
     "id": "angela-lipps-facial-recognition-failure",
@@ -79,7 +81,7 @@
     "category": "Misplaced AI Confidence Award",
     "badge": "Verified",
     "nominee": "Fargo Police Department & Clearview AI",
-    "reportedBy": "Marina Dunbar, The Guardian - 2026-03-12",
+    "reportedBy": "Marina Dunbar, The Guardian - March 12, 2026.",
     "reportedDate": "2026-03-12",
     "tagline": "A visionary approach to law enforcement wherein a grandmother is deemed a criminal mastermind by a confused algorithm.",
     "sections": [
@@ -110,7 +112,8 @@
         "url": "https://edition.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition"
       }
     ],
-    "image": "nominees/angela-lipps-facial-recognition-failure.png"
+    "image": "nominees/angela-lipps-facial-recognition-failure.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3mn4cr7ktnk2g"
   },
   {
     "id": "claude-code-wipes-production-database",
@@ -118,7 +121,7 @@
     "category": "Misplaced AI Confidence Award",
     "badge": "Verified",
     "nominee": "Alexey Grigorev (AI Shipping Labs / DataTalks.Club)",
-    "reportedBy": "Bruno Ferreira, Tom's Hardware - 2026-03-07",
+    "reportedBy": "Bruno Ferreira, Tom's Hardware - March 7, 2026.",
     "reportedDate": "2026-03-07",
     "tagline": "A brilliant exercise in saving five dollars a month by obliterating two and a half years of production data in a single keystroke.",
     "sections": [
@@ -149,7 +152,8 @@
         "url": "https://timesofindia.indiatimes.com/technology/tech-news/i-over-relied-on-ai-developer-says-claude-code-accidentally-wiped-2-5-years-of-data-shares-advice-to-prevent-loss/articleshow/129336313.cms"
       }
     ],
-    "image": "nominees/claude-code-wipes-production-database.png"
+    "image": "nominees/claude-code-wipes-production-database.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3mn4cnc7r5s23"
   },
   {
     "id": "ice-ai-recruitment-screening-nominee",
