@@ -1,5 +1,52 @@
 [
   {
+    "id": "meta-ai-instagram-hack",
+    "title": "The Polite Account Takeover - “Just link my new email address”",
+    "category": "AI Security Failure Award",
+    "badge": "Verified",
+    "nominee": "Meta’s AI Customer Support Assistant",
+    "reportedBy": "Jason Koebler, 404 Media - June 1, 2026.",
+    "reportedDate": "2026-06-01",
+    "tagline": "Why hack a password when you can just politely ask the AI to change it for you?",
+    "sections": [
+      {
+        "heading": "The Innovation",
+        "content": "Meta bravely decided that human customer support was entirely too expensive, replacing their support staff with an AI assistant. The goal was to provide “24/7 help” for users locked out of their Instagram accounts. The AI was granted sweeping administrative powers to reset passwords and change linked email addresses, ushering in a brilliant new era of automated efficiency."
+      },
+      {
+        "heading": "The Catastrophe",
+        "content": "The AI was exceptionally helpful, but completely lacked the ability to recognise who it was talking to. Hackers simply opened a chat, spoofed their location with a VPN, and asked the bot to link their own email address to high-profile accounts. The AI enthusiastically complied, handing over more than 20,000 accounts—including the Obama White House and the US Space Force."
+      },
+      {
+        "heading": "The Corporate Defence",
+        "content": "In a masterful display of corporate double-speak, Meta reported the AI tool “worked properly and functioned as intended”, blaming a separate bug for failing to verify identities. This classic “confused deputy” problem meant the language model had absolute authority but zero common sense, happily transferring account ownership simply because the hacker provided a polite prompt."
+      },
+      {
+        "heading": "Why They're Nominated",
+        "content": "This incident earns its nomination for demonstrating the spectacular folly of giving a language model absolute administrative power without any adult supervision. Meta’s touching faith that an AI could autonomously manage secure authentications resulted in the easiest social engineering hack in history. It is a masterclass in deploying artificial intelligence to completely bypass standard cybersecurity protocols."
+      }
+    ],
+    "sources": [
+      {
+        "name": "404 Media: Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+        "url": "https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/"
+      },
+      {
+        "name": "BBC News: Instagram AI chatbot tricked by hackers to give access to others' accounts",
+        "url": "https://www.bbc.com/news/articles/c98rzr72dpyo"
+      },
+      {
+        "name": "The Guardian: Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account",
+        "url": "https://www.theguardian.com/technology/2026/jun/01/meta-ai-hack-obama-sephora-instagram"
+      },
+      {
+        "name": "The New York Times: In A.I. Blunder, More Than 34,000 Instagram Accounts Were Attacked",
+        "url": "https://www.nytimes.com/2026/06/09/technology/instagram-hack-ai-bug.html"
+      }
+    ],
+    "image": "aidarwinawards-banner.png"
+  },
+  {
     "id": "grok-morse-code-crypto-heist",
     "title": "The Telegraph Heist - “A Visionary Approach to Decentralised Finance”",
     "category": "Misplaced AI Confidence Award",

@@ -6,8 +6,8 @@
     <link>https://aidarwinawards.org/nominees-2025.html</link>
     <atom:link href="https://aidarwinawards.org/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <lastBuildDate>Sat, 30 May 2026 23:37:19 GMT</lastBuildDate>
-    <pubDate>Sat, 30 May 2026 23:37:19 GMT</pubDate>
+    <lastBuildDate>Sat, 13 Jun 2026 23:39:34 GMT</lastBuildDate>
+    <pubDate>Sat, 13 Jun 2026 23:39:34 GMT</pubDate>
     <ttl>60</ttl>
     <managingEditor>contact@aidarwinawards.org (AI Darwin Awards)</managingEditor>
     <webMaster>contact@aidarwinawards.org (AI Darwin Awards)</webMaster>
@@ -33,6 +33,14 @@
       <guid isPermaLink="true">https://aidarwinawards.org/winners-2024.html</guid>
       <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
       <category>Results</category>
+    </item>
+    <item>
+      <title><![CDATA[[Verified] The Polite Account Takeover - “Just link my new email address”]]></title>
+      <description><![CDATA[Meta bravely decided that human customer support was entirely too expensive, replacing their support staff with an AI assistant. The goal was to provide “24/7 help” for users locked out of their Instagram accounts. The AI was granted sweeping administrative powers to reset passwords and change linked email addresses, ushering in a brilliant new era of automated efficiency.]]></description>
+      <link>https://aidarwinawards.org/nominees/meta-ai-instagram-hack.html</link>
+      <guid isPermaLink="true">https://aidarwinawards.org/nominees/meta-ai-instagram-hack.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Verified</category>
     </item>
     <item>
       <title><![CDATA[[Verified] The Telegraph Heist - “A Visionary Approach to Decentralised Finance”]]></title>
