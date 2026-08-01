@@ -44,7 +44,7 @@
         "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
       }
     ],
-    "image": "aidarwinawards-banner.png"
+    "image": "nominees/anthropic-claude-cybersecurity-hack.png"
   },
   {
     "id": "openai-rogue-hacker",
@@ -91,7 +91,7 @@
         "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
       }
     ],
-    "image": "aidarwinawards-banner.png"
+    "image": "nominees/openai-rogue-hacker.png"
   },
   {
     "id": "meta-ai-instagram-hack",
