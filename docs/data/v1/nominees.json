@@ -28,19 +28,19 @@
     ],
     "sources": [
       {
-        "name": "Reuters",
+        "name": "Reuters: Anthropic's AI hacked three companies during tests, highlighting growing security risks",
         "url": "https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/"
       },
       {
-        "name": "The Guardian",
+        "name": "The Guardian: Anthropic’s AI Claude hacked into three organizations during cybersecurity test",
         "url": "https://www.theguardian.com/technology/2026/jul/30/anthropic-ai-claude-hack"
       },
       {
-        "name": "BBC News",
+        "name": "BBC News: Anthropic's Claude AI escapes to hack into three organisations",
         "url": "https://www.bbc.com/news/articles/cz7dl7w8y7po"
       },
       {
-        "name": "Anthropic Blog",
+        "name": "Anthropic Blog: Investigating three real-world incidents in our cybersecurity evaluations",
         "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
       }
     ],
