@@ -44,7 +44,8 @@
         "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
       }
     ],
-    "image": "nominees/anthropic-claude-cybersecurity-hack.png"
+    "image": "nominees/anthropic-claude-cybersecurity-hack.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3ms3iybjtrs2g"
   },
   {
     "id": "openai-rogue-hacker",
@@ -91,7 +92,8 @@
         "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
       }
     ],
-    "image": "nominees/openai-rogue-hacker.png"
+    "image": "nominees/openai-rogue-hacker.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3ms3itnvxps2g"
   },
   {
     "id": "meta-ai-instagram-hack",
@@ -138,7 +140,8 @@
         "url": "https://www.nytimes.com/2026/06/09/technology/instagram-hack-ai-bug.html"
       }
     ],
-    "image": "nominees/meta-ai-instagram-hack.png"
+    "image": "nominees/meta-ai-instagram-hack.png",
+    "bluesky": "https://bsky.app/profile/aidarwinawards.bsky.social/post/3mo7vpr35ns2b"
   },
   {
     "id": "grok-morse-code-crypto-heist",
